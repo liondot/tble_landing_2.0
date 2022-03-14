@@ -358,8 +358,10 @@ nav {
 .campaign_card em {
     font-size: 13px;
     margin-top: 40px;
-    display: none;
+    margin-left: 0;
 }
+
+
 
 .cam_sub_tit {
     color: gray;
@@ -551,6 +553,8 @@ section#review {
 .review_box a em {
     width: 16px;
     display: inline-block;
+    margin-left: 0;
+    height: 40px;
 }
 
 .star_box {
@@ -677,7 +681,6 @@ section#review {
     position: absolute;
     z-index: 2;
     width: 1000px;
-    height: 756px;
     background: #fff;
     top: 50%;
     left: 50%;
@@ -802,4 +805,8 @@ form input::placeholder {
 
 .floating_menu a {
     margin-bottom: 20px;
+}
+
+.last_input span {
+    cursor: pointer;
 }
