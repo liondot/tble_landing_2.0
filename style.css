@@ -20,10 +20,10 @@ body {
     overflow-x: hidden;
     font-family: 'Noto Sans KR', sans-serif;
 }
-/* 
+
 html {
     scroll-behavior: smooth;
-  } */
+  }
 
 li {
     list-style: none;
