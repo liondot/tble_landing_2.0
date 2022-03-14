@@ -19,6 +19,7 @@ visualBtn.addEventListener('click', () => {
     scrollTo.scrollIntoView({behavior: 'smooth'})
 });
 
+
 // floating_menu scrollY 
 const ftMenu = document.querySelector('.floating_menu');
 document.addEventListener('scroll', () => {

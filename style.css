@@ -355,7 +355,7 @@ section:before{
 .campaign_card em {
     font-size: 13px;
     margin-top: 40px;
-    display: inline-block;
+    display: none;
 }
 
 .cam_sub_tit {
