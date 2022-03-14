@@ -21,9 +21,9 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-  }
+  } */
 
 li {
     list-style: none;
@@ -134,14 +134,16 @@ nav {
     margin: 0 auto;
 }
 
-section:before {
+section:before{
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
+
 
 
 /************** 메인 비주얼 영역 **************/
@@ -196,6 +198,7 @@ section:before {
     text-align: center;
     line-height: 93px;
     cursor: pointer;
+    margin-top: 45px;
 }
 
 .visual_btn img {
@@ -261,6 +264,133 @@ section:before {
 #growth:before {
     background: url(imgs/section_growth.jpg) no-repeat 100% / auto;
 }
+
+/* ****************** campaign ****************** */
+
+#campaign {
+    display: flex;
+    align-items: center;
+    height: 1000px;
+}
+
+.campaign_con {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+.campaign_con h3 {
+    font-size: 45px;
+    font-weight: lighter;
+    letter-spacing: -1px;
+    color: #3b3b3b;
+    margin-bottom: 30px;
+}
+
+.campaign_con h3 strong:first-child {
+    color: #fabe00;
+}
+
+.campaign_con h3 strong {
+    color: #000;
+}
+
+.campaign_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.more_btn {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.campaing_more {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.campaing_more i {
+    margin-left: 10px;
+}
+
+.campaign_cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaign_card {
+    width: 285px;
+}
+
+.campaign_card img {
+    width: 100%;
+    height: 285px;
+}
+
+.campaign_card strong {
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.campaign_card span {
+    border: 1px solid gray;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin: 10px 0 25px;
+    display: inline-block;
+}
+
+.campaign_card em {
+    font-size: 13px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.cam_sub_tit {
+    color: gray;
+}
+
+.cam_sub_tit strong {
+    position: relative;
+    color: #000;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.cam_sub_tit .fir {
+    color: gray;
+}
+
+.campaign_card em b {
+    color: #fabe00;
+}
+
+.campaign_cards .slick-slide {
+    margin: 10px;
+    
+}
+
+.campaign_cards .slick-dots {
+    bottom: -66px;
+}
+
+.campaign_cards .slick-dots li {
+    margin: 0;
+}
+
+
 /************** 캠페인 수 영역 **************/
 
 #campaign_number {
@@ -283,16 +413,227 @@ section:before {
 #mkt_order:before {
     background: url(imgs/section_mkt_order.jpg) no-repeat 100% / auto;
 }
-/************** 인플루언서 후기 영역 **************/
+
+/* ****************** review ****************** */
+section#review {
+    height: 502px;
+    margin: 100px 0;
+}
+
 #review {
-    width: 100%;
-    height: 1180px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.review_con {
+    display: flex;
     position: relative;
 }
 
-#review:before {
-    background: url(imgs/section_review.jpg) no-repeat 100% / auto;
+
+.reivew_info {
+    margin-right: 35px;
+
 }
+
+.reivew_info h3 {
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 1.3;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'GmarketSansMedium';
+}
+
+.mo_review_txt {
+    display: none;
+}
+
+.reivew_info p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.reviews {
+    display: flex;
+    width: 900px;
+    height: 800px;
+}
+
+.review_box {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.review_box .box_tit {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 45px;
+    position: relative;
+}
+
+.review_box .box_tit:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.review_box .box_tit span {
+    padding: 10px 0;
+    font-size: 18px;
+    color: rgb(36, 106, 172);
+}
+
+.review_box .box_tit em {
+    display: flex;
+    width: 100%;
+}
+
+.review_box a {
+    display: inline-block;
+    width: 100%;
+}
+
+.review_box a .r_img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 290px;
+}
+
+.review_box a .r_img img {
+    width: 100%;
+}
+
+.review_box a p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.review_box a span {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.review_box a>span {
+    margin-left: 15px;
+}
+
+
+.review_box a span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.review_box a:first-child span img {
+    opacity: 1;
+}
+
+.review_box a em {
+    width: 16px;
+    display: inline-block;
+}
+
+.star_box {
+    display: block;
+    padding: 5px 0 15px 0;
+}
+
+.newitem_photo_box {
+    display: flex;
+}
+
+.newitem_photo {
+    display: flex;
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.newitem_photo img {
+    width: 100%;
+}
+
+.reviews .slick-prev.slick-arrow,
+.reviews .slick-next.slick-arrow {
+    border: 3px solid rgba(0,0,0,0.3);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 75px;
+}
+
+.reviews .slick-prev.slick-arrow:after {
+    content: '';
+    color: #000;
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : url(imgs/review/prev_arrow.png) no-repeat center / auto 100%;
+}
+
+.reviews .slick-next.slick-arrow:after {
+    content: '';
+    color: #000;
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : url(imgs/review/next_arrow.png) no-repeat center / auto 100%;
+}
+
+
+.slick-next,
+.slick-prev {
+    position: absolute;
+    top: 262px !important;
+    left: -231px !important;
+    z-index: 50;
+    width: 45px;
+    height: 45px;
+}
+
+.reviews .slick-prev {
+    left: -292px !important;
+}
+
+.reviews .slick-slide {
+    margin: 0 5px;
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before {
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+}
+
+
 /************** 파트너사 영역 **************/
 
 #partner {
@@ -304,6 +645,19 @@ section:before {
 #partner:before {
     background: url(imgs/section_partner.jpg) no-repeat 100% / auto;
 }
+
+#partner .partner_img {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-25%)
+}
+
+
+
 /************** 광고 문의 신청하기 영역 **************/
 
 #contact {
