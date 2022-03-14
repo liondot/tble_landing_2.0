@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 :root {
-    --point-color: #fabe00; 
-    --defalt-dark-color: #333; 
+    --point-color: #fabe00;
+    --defalt-dark-color: #333;
 
     /* font notosans */
     --font-weight-thin: 100;
@@ -12,6 +12,10 @@
     --font-weight-bold: 700;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -19,11 +23,12 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 li {
     list-style: none;
@@ -39,7 +44,7 @@ em {
     margin-left: 15px;
 }
 
-section:before{
+section:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -51,7 +56,8 @@ section:before{
 
 /* font  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-.notosanskr * { 
+
+.notosanskr * {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -88,11 +94,12 @@ header {
     color: #000;
     transition: all .2s ease;
 }
+
 #nav.bright .main_menu li a:hover {
     color: var(--point-color);
 }
 
-#nav.bright .brand_logo  {
+#nav.bright .brand_logo {
     background: url(imgs/tble_logo_dark.svg) no-repeat;
 }
 
@@ -129,7 +136,6 @@ nav {
     transition: all .1s ease;
 }
 
-#nav.bright .main_menu ul li a:hover
 .main_menu ul li a:hover {
     color: var(--point-color);
 }
@@ -175,7 +181,7 @@ nav {
     display: block;
 }
 
-.visual_title span{
+.visual_title span {
     color: var(--point-color);
 }
 
@@ -218,13 +224,12 @@ nav {
     width: 100vw;
     height: 1180px;
     position: relative;
-    border: 1px solid red;
 }
 
 #promotion:before {
-    border: 2px solid green;
     background: url(imgs/section_promotion.jpg) no-repeat center / auto 100%;
 }
+
 /************** tble point 영역 **************/
 #point {
     width: 100%;
@@ -247,6 +252,7 @@ nav {
 #system:before {
     background: url(imgs/section_system.jpg) no-repeat center / auto 100%;
 }
+
 /************* 관리 영역 *************/
 #management {
     width: 100%;
@@ -257,6 +263,7 @@ nav {
 #management:before {
     background: url(imgs/section_management.jpg) no-repeat center / auto 100%;
 }
+
 /************** 함께성장해요 영역 **************/
 #growth {
     width: 100%;
@@ -384,7 +391,7 @@ nav {
 
 .campaign_cards .slick-slide {
     margin: 10px;
-    
+
 }
 
 .campaign_cards .slick-dots {
@@ -396,17 +403,6 @@ nav {
 }
 
 
-/************** 캠페인 수 영역 **************/
-
-#campaign_number {
-    width: 100%;
-    height:1320px;
-    position: relative;
-}
-
-#campaign_number:before {
-    background: url(imgs/section_campaign_number.jpg) no-repeat center / auto 100%;
-}
 /************** 마케팅 진행 순서 영역 **************/
 
 #mkt_order {
@@ -579,7 +575,7 @@ section#review {
 
 .reviews .slick-prev.slick-arrow,
 .reviews .slick-next.slick-arrow {
-    border: 3px solid rgba(0,0,0,0.3);
+    border: 3px solid rgba(0, 0, 0, 0.3);
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -595,7 +591,7 @@ section#review {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background : url(imgs/review/prev_arrow.png) no-repeat center / auto 100%;
+    background: url(imgs/review/prev_arrow.png) no-repeat center / auto 100%;
 }
 
 .reviews .slick-next.slick-arrow:after {
@@ -607,7 +603,7 @@ section#review {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background : url(imgs/review/next_arrow.png) no-repeat center / auto 100%;
+    background: url(imgs/review/next_arrow.png) no-repeat center / auto 100%;
 }
 
 
@@ -629,7 +625,8 @@ section#review {
     margin: 0 5px;
 }
 
-.slick-next:before, [dir=rtl] .slick-prev:before {
+.slick-next:before,
+[dir=rtl] .slick-prev:before {
     color: #000;
     width: 45px;
     height: 45px;
@@ -745,7 +742,6 @@ form input::placeholder {
     justify-content: center;
     margin-top: 50px;
     box-sizing: border-box;
-    cursor: pointer;
 }
 
 .contact_btn span {
@@ -760,6 +756,7 @@ form input::placeholder {
     text-align: center;
     line-height: 93px;
     align-items: center;
+    cursor: pointer;
 }
 
 .contact_btn img {
@@ -772,13 +769,13 @@ form input::placeholder {
 }
 
 
-.contact_btn:hover img {
+.contact_btn span:hover img {
     transform: translateX(15px);
 }
 
 /************** footer 영역 **************/
 
-#footer{
+#footer {
     width: 100%;
     height: 140px;
     position: relative;
@@ -809,4 +806,399 @@ form input::placeholder {
 
 .last_input span {
     cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    html {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /***** header 영영 *****/
+    header {
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+    }
+
+
+    nav {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    nav:after {
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 50px;
+        right: 0%;
+        background: url(imgs/mo/in.png) no-repeat center / auto 100%;
+        background-size: 100%;
+    }
+
+    nav .main_menu {
+        display: none;
+    }
+
+    .brand_logo {
+        width: 140px;
+        height: 30px;
+    }
+
+    /***** 메인 비주얼 영역 *****/
+    #main_visual {
+        height: 840px;
+        overflow: hidden;
+        background: url('imgs/main_visual.png') no-repeat 65% / auto 100%;
+    }
+
+    .visual_contents {
+        align-items: flex-start;
+        width: 100%;
+        justify-content: center;
+        height: 900px;
+        overflow: hidden;
+    }
+
+    .visual_title {
+        font-size: 11vw;
+        margin-top: 140px;
+        text-align: center;
+    }
+
+    .visual_title strong {
+        font-weight: normal;
+    }
+
+    .visual_title strong span {
+        font-weight: bold;
+    }
+
+    .visual_title p {
+        font-size: 3.5vw;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .visual_btn {
+        width: 250px;
+        height: 75px;
+        font-size: 30px;
+        line-height: 75px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .visual_btn img {
+        margin-left: 20px;
+    }
+
+    .visual_image {
+        right: 0;
+        width: 100%;
+        display: flex;
+        bottom: 55px;
+    }
+
+    .visual_image img {
+        width: 100%;
+    }
+
+    /***** 프로모션 영역 *****/
+    #promotion {
+        width: 100%;
+        height: 480px;
+    }
+
+    #promotion:before {
+        background: url(imgs/mo/mo_promotion.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** tble point 영역 *****/
+    #point {
+        width: 100%;
+        height: 500px;
+    }
+
+    #point:before {
+        background: url(imgs/mo/mo_point.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** 분석 시스템 영역 *****/
+
+    #system {
+        width: 100%;
+        height: 420px;
+    }
+
+    #system:before {
+        background: url(imgs/mo/mo_analy_system.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** 관리 영역 *****/
+    #management {
+        width: 100%;
+        height: 255px;
+    }
+
+    #management:before {
+        background: url(imgs/mo/mo_management.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** 함께성장해요 영역 *****/
+    #growth {
+        width: 100%;
+        height: 320px;
+    }
+
+    #growth:before {
+        background: url(imgs/mo/mo_growth.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** campaign 영역 *****/
+  
+
+    #campaign {
+        box-sizing: border-box;
+        width: 100%;
+        height: 788px;
+    }
+
+    .campaign_con {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .campaign_con h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        font-family: 'GmarketSansMedium';
+    }
+
+    .campaign_card img {
+        height: 270px;
+    }
+
+    .campaing_more {
+        width: 228px;
+    }
+
+    .campaign_cards .slick-dots {
+        bottom: -32px;
+    }
+
+    /***** 마케팅 진행 순서 영역 *****/
+
+    #mkt_order {
+        width: 100%;
+        height: 608px;
+        position: relative;
+    }
+
+    #mkt_order:before {
+        background: url(imgs/mo/mo_mkt_order.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** review 영역 *****/
+    section#review {
+        margin: 0;
+        height: 870px;
+        width:  100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0;
+    }
+
+
+    #review .slick-slide div {
+        width: 100%;
+        box-sizing: border-box;
+        height: 760px
+    }
+
+    .review_box {
+        margin-top: 245px;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-left: 10px;
+        width: 100%;
+        overflow: hidden;
+        height: 450px;
+    }
+
+
+    .review_box a .r_img img {
+        height: 400px;
+        object-fit: contain;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .review_con {
+        position: static;
+        flex-direction: column;
+    }
+
+    .reivew_info {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        margin-right: 0;
+        margin-top: 40px;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reivew_info h3 {
+        margin-bottom: 0;
+        font-family: 'GmarketSansMedium';
+        font-size: 45px;
+        box-sizing: border-box;
+    }
+
+    .pc_reivew_txt {
+        display: none;
+    }
+
+
+    .mo_review_txt {
+        display: block;
+        font-size: 20px;
+        font-family: 'GmarketSansMedium';
+    }
+
+
+    /***** 파트너사 영역 *****/
+    section#partner {
+        background: #eee;
+        height: 900px;
+    }
+    #partner {
+        height: auto;
+    }
+
+    #partner:before {
+        height: 150px;
+        z-index: 10;        
+        background: url(imgs/mo/mo_parter_txt.png) no-repeat center / auto;
+        background-size: 85%;
+        margin-top: 20px;
+    }
+
+    .partner_img:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 56px;
+        height: 300px;
+        background: url(imgs/mo/mo_pa1.png) no-repeat center / auto 100%;
+    }
+
+    .partner_img:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -260px;
+        width: 100%;
+        height: 300px;
+        background: url(imgs/mo/mo_pa2.png) no-repeat center / auto 100%;
+    }
+
+    .partner_img img{
+        display: none;
+    }
+
+    /***** 광고 문의 신청하기 영역 *****/
+
+    #contact {
+        width: 100%;
+        height: 700px;
+        position: relative;
+        background: url(imgs/mo/mo_contact.jpg) no-repeat center / auto 100%;
+        box-sizing: border-box;
+    }
+
+    #contact:before {
+        content: '';
+        background: url(imgs/mo/mo_contact_txt.png) no-repeat center;
+        position: absolute;
+        top:10px;
+        left: 0;
+        z-index: 10;
+        height: 150px;
+        background-size: 90%;
+    }
+
+    #contact .form {
+        width: 90%;
+    }
+
+    form input {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    form input[type=checkbox] {
+        height: 18px;
+        width: 18px;
+        font-size: 28px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box !important;
+    }
+
+    
+form input::placeholder {
+    font-size: 18px;
+    color: #000;
+}
+
+form em {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.contact_btn {
+    margin: 20px 0 10px;
+}
+
+.contact_btn span {
+    width: 220px;
+    height: 55px;
+    font-size: 25px;
+}
+
+.contact_btn img {
+    display: none;
+}
+
+    /***** footer 영역 *****/
+
+    #footer {
+        width: 100%;
+        height: 148px;
+        position: relative;
+    }
+
+    #footer:before {
+        background: url(imgs/mo/mo_footer.jpg) no-repeat center / auto 100%;
+    }
+
+    /***** floating_menu 영역 *****/
+    .floating_menu.active {
+        display: none;
+    }
 }
