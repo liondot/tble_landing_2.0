@@ -21,9 +21,9 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-  } */
+  }
 
 li {
     list-style: none;
