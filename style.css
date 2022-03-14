@@ -195,6 +195,7 @@ section:before {
     font-size: 40px;
     text-align: center;
     line-height: 93px;
+    cursor: pointer;
 }
 
 .visual_btn img {
@@ -384,6 +385,7 @@ form input::placeholder {
     justify-content: center;
     margin-top: 50px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .contact_btn span {
@@ -424,4 +426,23 @@ form input::placeholder {
 
 #footer:before {
     background: url(imgs/footer.jpg) no-repeat 100% / auto;
+}
+
+/****** floating_menu 영역 ******/
+.floating_menu {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    display: none;
+    right: 20px;
+    flex-direction: column;
+    transition: all .2s ease-in;
+}
+
+.floating_menu.active {
+    display: flex;
+}
+
+.floating_menu a {
+    margin-bottom: 20px;
 }
