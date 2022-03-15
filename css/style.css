@@ -1012,22 +1012,50 @@ form input::placeholder {
 
     /***** 메인 비주얼 영역 *****/
     #main_visual {
-        height: 840px;
+        height: 100vh;
         overflow: hidden;
         background: url('../imgs/main_visual.png') no-repeat 65% / auto 100%;
+        position: relative;
     }
+
+    #main_visual:before {
+        content: '';
+        background: url(../imgs/mo/mo_call.png) no-repeat center / auto 100%;
+        position: absolute;
+        width: 240px;
+        height: 50px;
+        top: 90%;
+        left: -75px;
+        z-index: 10;
+        display: flex;
+        cursor: pointer;
+    }
+
+    #main_visual:after {
+        content: '';
+        background: url(../imgs/mo/mo_kakao.png) no-repeat center / auto 100%;
+        position: absolute;
+        width: 261px;
+        height: 50px;
+        top: 90%;
+        right: -99px;
+        z-index: 10;
+        display: flex;
+        cursor: pointer;
+    }
+
 
     .visual_contents {
         align-items: flex-start;
         width: 100%;
         justify-content: center;
-        height: 900px;
+        height: 100vh;
         overflow: hidden;
+        position: relative;
     }
 
     .visual_title {
         font-size: 11vw;
-        margin-top: 140px;
         text-align: center;
     }
 
@@ -1045,12 +1073,12 @@ form input::placeholder {
     }
 
     .visual_btn {
-        width: 250px;
-        height: 75px;
-        font-size: 30px;
-        line-height: 75px;
+        width: 220px;
+        height: 55px;
+        font-size: 25px;
+        line-height: 55px;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .visual_btn img {
@@ -1061,11 +1089,18 @@ form input::placeholder {
         right: 0;
         width: 100%;
         display: flex;
-        bottom: 55px;
     }
 
     .visual_image img {
         width: 100%;
+    }
+
+    .visual_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding-top: 18vh;
     }
 
     /***** 프로모션 영역 *****/
@@ -1106,16 +1141,17 @@ form input::placeholder {
     }
 
     .pro_card {
-        height: 190px;
-        width: 100% !important;
+        height: 187px !important;
         flex-direction: column !important;
         overflow: hidden;
         position: relative;
     }
 
-    .pro_card img {
-        width: 100%;
+    .pro_card img{
+        max-width: 100%;
+        width: 185px;
     }
+
 
     .pro_card:first-child,
     .pro_card:nth-child(3) {
@@ -1480,15 +1516,17 @@ form em {
 }
 
 .contact_btn span {
-    width: 220px;
+    width: 190px;
     height: 55px;
     line-height: 55px;
     font-size: 25px;
-    padding-right: 0;
+    padding-right: 62px;
 }
 
 .contact_btn img {
-    display: none;
+    max-width: 100%;
+    width: 30px;
+    right: 60px;
 }
 
 .last_input span {
