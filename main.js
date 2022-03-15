@@ -98,3 +98,6 @@ $('.reviews').slick({
 
 });
 
+
+
+// mobile js 
