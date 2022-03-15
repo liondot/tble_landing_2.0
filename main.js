@@ -72,8 +72,8 @@ $('.campaign_cards').slick({
 $('.reviews').slick({
     slide: 'div', 
     infinite: true, 	 
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     speed: 600,
     arrows: true, 
     dots: true,
@@ -86,12 +86,11 @@ $('.reviews').slick({
     dotsClass: "slick-dots", 
     draggable: true, 
     responsive: [ 
-
         {
-            breakpoint: 480,
+            breakpoint: 500,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         },
     ]
