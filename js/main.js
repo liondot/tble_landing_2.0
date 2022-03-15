@@ -3,11 +3,16 @@ const navbarHight = navbar.getBoundingClientRect().height;
 const mainVisual = document.querySelector('#main_visual');
 const mainVisualHeight = mainVisual.getBoundingClientRect().height;
 
+const navIqr = document.querySelector('.iqr');
+
+
 document.addEventListener('scroll', () => {
     if(window.scrollY > navbarHight) {
         navbar.classList.add('bright');
+        navIqr.classList.add('active')
     }else {
         navbar.classList.remove('bright');
+        navIqr.classList.remove('active')
     }
 })
 
@@ -25,6 +30,8 @@ const iqrBtn = document.querySelector ('.iqr')
 iqrBtn.addEventListener('click', () => {
     const goto = document.querySelector('#contact')
     goto.scrollIntoView({behavior : 'smooth'})
+
+
 })
 
 
@@ -37,6 +44,13 @@ document.addEventListener('scroll', () => {
         ftMenu.classList.remove('active')
     }
 })
+
+
+// 모바일 버전 
+
+// 메인 카톡상담 전화상담 
+const mainVisualBf = document.querySelector('#main_visual:before');
+
 
 
 // // 광고주 대상 프로모션 section promotion 
@@ -252,3 +266,5 @@ $('.reviews').slick({
         }
     }
 })();
+
+

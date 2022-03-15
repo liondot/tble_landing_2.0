@@ -978,23 +978,44 @@ form input::placeholder {
 
     /***** header 영영 *****/
     header {
-        padding: 0 20px;
         box-sizing: border-box;
         width: 100%;
-        position: absolute;
+        height: 60px;
     }
 
+    #nav {
+        padding: 10px  20px;
+        height: 80px;
+
+    }
 
     nav {
         width: 100%;
-        padding: 40px 0;
+        height: 70px !important;
     }
 
     nav .iqr {
         display: block;
         width: 130px;
-        height: 50px;
+        height: 34px;
         cursor: pointer;
+    }
+
+    .iqr:after {
+        content: '';
+        width: 130px;
+        background: url(../imgs/mo/in_yellow.png) no-repeat center / auto 100%;
+        position: absolute;
+        top: 14px;
+        right: 0;
+        height: 40px;
+        z-index: 100;
+        display: none;
+        transition: all .2s ease-in;
+    }
+
+    .iqr.active:after {
+        display: block;
     }
 
     nav .iqr img {
@@ -1018,7 +1039,7 @@ form input::placeholder {
         position: relative;
     }
 
-    #main_visual:before {
+    /* #main_visual:before {
         content: '';
         background: url(../imgs/mo/mo_call.png) no-repeat center / auto 100%;
         position: absolute;
@@ -1042,7 +1063,7 @@ form input::placeholder {
         z-index: 10;
         display: flex;
         cursor: pointer;
-    }
+    } */
 
 
     .visual_contents {
@@ -1119,7 +1140,7 @@ form input::placeholder {
     }
 
     .promotion_title img {
-        width: 100%;
+        width: 90%;
         margin-top: 40px;
     }
 
