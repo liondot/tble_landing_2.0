@@ -239,11 +239,12 @@ section#promotion {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#promotion {
     position: relative;
     overflow: hidden;
+}
+
+.promotion_title {
+    margin-top: 50px;
 }
 
 .pro_logo {
@@ -366,7 +367,7 @@ section#promotion {
 }
 
 .pr-pagination.swiper-pagination {
-    top: 33px !important;
+    top: 48px !important;
 }
 
 /************** tble point 영역 **************/
