@@ -235,3 +235,20 @@ html.fp-enabled,
     white-space: nowrap;
     border: 0;
 }
+
+
+/* yoon edit  */
+
+
+#fp-nav ul li, .fp-slidesNav ul li {
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+
+
+@media (max-width: 500px) {
+    #fp-nav.fp-right {
+        right: 0;
+    }
+}

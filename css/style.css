@@ -372,15 +372,31 @@ section#promotion {
 
 /************** tble point 영역 **************/
 #point {
-    width: 100%;
+    max-width: 100%;
+    width: 1920px;
     height: 1240px;
     position: relative;
 }
 
 #point:before {
-    background: url(../imgs/section_tble_point.jpg) no-repeat center / auto 100%;
+    background: url(../imgs/section_tble_point.jpg) no-repeat center / auto;
 }
 
+.fp-section.fp-table, .fp-slide.fp-table {
+    border: 4px solid red;
+    width: 100%;
+    box-sizing: border-box;
+    height: 1100px !important;
+}
+
+.fp-section.fp-table, .fp-slide.fp-table img {
+    border: 4px solid yellow;
+    /* width: 100% !important; */
+    padding: 20px 0;
+    height: auto !important;
+}
+
+.fp-section.fp-table, .fp-slide.fp-table 
 
 /************* 분석 시스템 영역 *************/
 #system {
@@ -764,6 +780,7 @@ section#review {
     width: 100%;
     height: 1180px;
     position: relative;
+    background: #e5e5e5;
 }
 
 #partner:before {
