@@ -157,7 +157,7 @@ $('.reviews').slick({
 
         // add form-specific values into the data
         formData.formDataNameOrder = JSON.stringify(fields);
-        formData.formGoogleSheetName = form.dataset.sheet || "sheet2"; // default sheet name
+        formData.formGoogleSheetName = form.dataset.sheet || "sheet"; // default sheet name
         formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
         console.log(formData);
