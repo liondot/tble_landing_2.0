@@ -8,8 +8,11 @@
     <meta name="author" content="tble">
     <meta name="keywords" content="티블, 체험단, 블로그체험단, 인스타그램체험단, 페이스북체험단 체험단sns, 후기, tble, 유튜브 체험단">
     <title>tble ad</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+     <!-- swiper  -->
+     <link rel="stylesheet" href="css/swiper.css">
+     <script src="js/swiper/swiper.min.js"></script>
     <!-- slick slide  -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
@@ -61,6 +64,38 @@
     </section>
     <!-- 메인 비주얼 영역  -->
     <section id="promotion">
+        <div class="promotion_title"><img src="imgs/promotion_title.png" alt=""></div>
+        <div class="pr_swiper">
+            <div class="pro_card_con swiper-wrapper">
+                <div class="pro_cards swiper-slide">
+                    <div class="pro_card">
+                       <img src="imgs/pro_1_1.png" alt="">
+                    </div>
+                    <div class="or_txt">
+                        OR
+                    </div>
+                    <div class="pro_card card_second">
+                       <img src="imgs/pro_1_2.png" alt="">
+                    </div>
+                </div>
+                <div class="pro_cards swiper-slide">
+                    <div class="pro_card card_one">
+                        <img src="imgs/pro_2_1.png" alt="">
+                     </div>
+                     <div class="or_txt">
+                        OR
+                    </div>
+                     <div class="pro_card card_two">
+                        <img src="imgs/pro_2_2.png" alt="">
+                     </div>
+                </div>
+            </div>
+
+            <div class="pr-pagination swiper-pagination"></div>
+
+            <div class="pr-button swiper-button-prev"></div>
+            <div class="pr-button swiper-button-next"></div>
+        </div>
     </section>
     <!-- 프로모션 영역 -->
     <section id="point">

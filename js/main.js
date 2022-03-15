@@ -39,6 +39,41 @@ document.addEventListener('scroll', () => {
 })
 
 
+// // 광고주 대상 프로모션 section promotion 
+var swiperSt = ["방문형", "배송형"];
+const prSwiper = new Swiper(".pr_swiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".pr-pagination.swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (swiperSt[index]) + "</span>";
+        },
+    },
+    navigation: {
+        nextEl: "pr-button.swiper-button-next",
+        prevEl: "pr-button.swiper-button-prev",
+    },
+    breakpoints: {
+
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 1,
+        },
+    },
+
+
+});
+
+
+
+
+
 
 // campaign section slide 
 $('.campaign_cards').slick({
