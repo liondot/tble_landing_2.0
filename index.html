@@ -35,6 +35,7 @@
                         <li><a href="#partner">파트너사</a></li>
                     </ul>
                 </div>
+                <div class="iqr"><img src="imgs/mo/in.png" alt=""></div>
             </nav>
         </div>
     </header>
@@ -323,18 +324,26 @@
     <!-- 파트너사 영역  -->
     <section id="contact">
         <div class="form">
-            <form action="">
-                <input type="text" id="company" placeholder="회사명을 입력해주세요.">
-                <input type="text" id="area" placeholder="지역을 입력해주세요.">
-                <input type="text" id="name" placeholder="성함과 직책을 입력해주세요.">
-                <input type="number" id="numner" placeholder="연락처를 입력해주세요.">
-                <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. <span>&#91;보기&#93;</span></em>
-                </div>
-                <div class="contact_btn"><span>상담문의
-                        <img src="imgs/arrow_right.png" alt="">
-                    </span>
-                </div>
-            </form>
+            <div class="container">
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="yoon3315.5@gmail.com" action="https://script.google.com/macros/s/AKfycbwJiO5YMYqTyfwqBTnZT78H1tMUnhOpBU7CHJXqwSWLq_d-GkTx5-3nMJGRE6ZtRUk/exec">
+                    <div class="form-elements">
+                        <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요." required>
+                        <input type="text" name="area" id="area" placeholder="지역을 입력해주세요." required>
+                        <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요." required>
+                        <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)" required>
+                        <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. <span>&#91;보기&#93;</span></em>
+                        </div>
+                        <button class="contact_btn">
+                            <span>상담문의 </span>
+                            <img src="imgs/arrow_right.png" alt=""></button>
+                    </div>
+                    <!-- thankyou message  -->
+                    <div class="thankyou_message">
+                        <span>감사합니다!</span>
+                        <p>곧 티블 담당자가 연락드리겠습니다.</p>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <!-- 광고 문의 신청하기 영역  -->

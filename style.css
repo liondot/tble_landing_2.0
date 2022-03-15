@@ -114,6 +114,10 @@ nav {
     position: relative;
 }
 
+nav .iqr {
+    display: none;
+}
+
 
 .brand_logo {
     width: 196px;
@@ -717,15 +721,21 @@ form input::placeholder {
 }
 
 .contact_btn {
-    display: flex;
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 374px;
     justify-content: center;
     margin-top: 50px;
     box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
 }
 
 .contact_btn span {
-    display: flex;
+    display: block;
+    margin: 0 auto;
     justify-content: center;
     width: 374px;
     height: 93px;
@@ -735,22 +745,51 @@ form input::placeholder {
     color: var(--point-color);
     text-align: center;
     line-height: 93px;
-    align-items: center;
     cursor: pointer;
+    padding-right: 50px;
+
 }
 
 .contact_btn img {
     width: 53px;
     height: 17px;
-    display: flex;
-    align-items: center;
-    margin-left: 35px;
+    position: absolute;
+    right: 0;
+    transform: translate(-80%, -30%);
+    top: 50%;
     transition: all .3s ease-in-out;
 }
 
 
-.contact_btn span:hover img {
-    transform: translateX(15px);
+.contact_btn:hover img {
+    transform: translate(-50%, -30%);
+
+}
+
+
+
+/* thankyou_message  */
+.thankyou_message,
+.footer_thankyou_message {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    border-radius: 40px;
+    display: none;
+}
+
+.footer_thankyou_message span,
+.thankyou_message span {
+    font-size: 80px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer_thankyou_message p,
+.thankyou_message p {
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 /************** footer 영역 **************/
@@ -786,6 +825,8 @@ form input::placeholder {
 
 .last_input span {
     cursor: pointer;
+    color: blue;
+    font-size: 18px;
 }
 
 @media (max-width: 500px) {
@@ -813,14 +854,15 @@ form input::placeholder {
         padding: 40px 0;
     }
 
-    nav:after {
-        content: '';
-        position: absolute;
+    nav .iqr {
+        display: block;
         width: 130px;
         height: 50px;
-        right: 0%;
-        background: url(imgs/mo/in.png) no-repeat center / auto 100%;
-        background-size: 100%;
+        cursor: pointer;
+    }
+
+    nav .iqr img {
+        width: 100%;
     }
 
     nav .main_menu {
@@ -981,7 +1023,7 @@ form input::placeholder {
 
     #mkt_order {
         width: 100%;
-        height: 618px;
+        height: 640px;
         position: relative;
     }
 
@@ -1177,16 +1219,24 @@ form em {
 
 .contact_btn {
     margin: 20px 0 10px;
+    width: 100%;
 }
 
 .contact_btn span {
     width: 220px;
     height: 55px;
+    line-height: 55px;
     font-size: 25px;
+    padding-right: 0;
 }
 
 .contact_btn img {
     display: none;
+}
+
+.footer_thankyou_message span, 
+.thankyou_message span {
+    font-size: 40px;
 }
 
     /***** footer 영역 *****/
