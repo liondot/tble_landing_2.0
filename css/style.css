@@ -10,9 +10,13 @@
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+
+    /* font-family */
+    --font-familly-gmarket: 'GmarketSansMedium';
+    --font-familly-notosans: 'Noto Sans KR', sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -26,9 +30,10 @@ body {
     box-sizing: border-box;
 }
 
+/* 
 html {
     scroll-behavior: smooth;
-}
+} */
 
 li {
     list-style: none;
@@ -44,14 +49,11 @@ em {
     margin-left: 15px;
 }
 
-section:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    background: no-repeat center / auto 100%;
+.contents {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    align-items: center
 }
 
 /* font  */
@@ -68,6 +70,16 @@ section:before {
     font-style: normal;
 }
 
+section {
+    box-sizing: border-box;
+    padding: 40px 0;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+section.active {
+    padding: 0;
+}
 
 /************** header 영역 *************/
 header {
@@ -160,15 +172,15 @@ nav .iqr {
 
 
 /************** 메인 비주얼 영역 **************/
+
 #main_visual {
-    height: 1000px;
-    background: url('../imgs/main_visual.png') no-repeat center / auto 100%;
+    /* background: url('../imgs/main_visual.png') no-repeat center / auto 100%; */
+    background: green;
 }
 
 .visual_contents {
     display: flex;
     justify-content: space-between;
-    height: 1000px;
     align-items: center;
     position: relative;
 }
@@ -199,7 +211,7 @@ nav .iqr {
     position: absolute;
     object-fit: cover;
     right: -302px;
-    bottom: -5px;
+    bottom: -100px;
 }
 
 .visual_btn {
@@ -225,14 +237,10 @@ nav .iqr {
 
 
 /************** 프로모션 영역 **************/
-section#promotion {
-    height: 1050px;
-    padding: 0;
-    padding-bottom: 120px;
-}
 
 #promotion {
-    background: #f3f3f3;
+
+    /* background: #f3f3f3;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -240,11 +248,15 @@ section#promotion {
     align-items: center;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .promotion_title {
     margin-top: 50px;
+}
+
+.promotion_title img {
+    width: 60%;
 }
 
 .pro_logo {
@@ -256,50 +268,40 @@ section#promotion {
     transform: rotate(90deg);
 }
 
-#promotion:before {
-    content: '';
-    width: 100%;
-    height: auto;
-    background: url(../imgs/tble_logo.png) no-repeat;
-    z-index: 2;
-}
-
-#promotion h3 {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 3px;
-    margin-top: 55px;
-}
-
-#promotion h3 span {
-    color: var(--point-color);
-}
-
 .pro_cards {
     display: flex;
     flex-wrap: wrap;
-    width: 1280px;
     justify-content: space-between;
     align-items: flex-end;
-
+    margin-top: 50px;
 }
 
 .pro_cards:first-child .pro_card:first-child {
     margin-left: 110px;
+    margin-top: 130px;
 }
+
 .pro_cards:first-child .card_second {
     margin-right: 110px;
+    margin-top: 130px;
 }
+
 .pro_cards:nth-child(2) .card_one {
     margin-left: 110px;
-} 
+    margin-top: 130px;
+}
 
 .pro_cards:nth-child(2) .card_two {
     margin-right: 110px;
-} 
+    margin-top: 130px;
+}
 
-.pr_swiper .swiper-slide {
-    margin-top: 120px;
+#promotion .swiper-slide:after {
+    display: none !important;
+}
+
+#promotion .swiper-wrapper {
+    height: 100%;
 }
 
 .pro_card {
@@ -355,14 +357,15 @@ section#promotion {
 
 .pr_swiper {
     height: 650px !important;
+    display: none;
 }
 
 .pr_swiper .swiper-slide {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 .pr-pagination .swiper-pagination-bullet {
-    border-color : var(--point-color) !important;
+    border-color: var(--point-color) !important;
     color: var(--point-color) !important;
 }
 
@@ -372,67 +375,425 @@ section#promotion {
 
 /************** tble point 영역 **************/
 #point {
+    position: relative;
+    background: url(../imgs/point_bg.jpg);
+}
+
+.main_title {
+    text-align: center;
     max-width: 100%;
-    width: 1920px;
-    height: 1240px;
-    position: relative;
+    width: 600px;
+    margin: 0 auto;
 }
 
-#point:before {
-    background: url(../imgs/section_tble_point.jpg) no-repeat center / auto;
-}
-
-.fp-section.fp-table, .fp-slide.fp-table {
-    border: 4px solid red;
+.main_title img {
     width: 100%;
-    box-sizing: border-box;
-    height: 1100px !important;
 }
 
-.fp-section.fp-table, .fp-slide.fp-table img {
-    border: 4px solid yellow;
-    /* width: 100% !important; */
-    padding: 20px 0;
-    height: auto !important;
+.point_ics {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
 }
 
-.fp-section.fp-table, .fp-slide.fp-table 
+.point_des {
+    text-align: center;
 
-/************* 분석 시스템 영역 *************/
-#system {
-    width: 100%;
-    height: 1240px;
+}
+
+.point_des p {
+    color: #161616;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 1.6vw;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+}
+
+.point_des span {
+    padding: 10px 0;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.point_des em {
+    display: block;
+    margin-left: 0;
+    color: #fff;
+}
+
+
+/************* serport 영역 *************/
+#support {
+    background: url(../imgs/support_bg.jpg) no-repeat center / auto;
+    color: #fff;
+    padding-top: 70px;
     position: relative;
+    overflow: hidden;
 }
 
-#system:before {
-    background: url(../imgs/section_system.jpg) no-repeat center / auto 100%;
+.support_txt {
+    font-size: 32px;
+    text-align: center;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.4;
 }
+
+.line {
+    display: inline-block;
+    width: 1px;
+    height: 90px;
+    background: #fff;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.support_main_txt {
+    font-size: 2.5vw;
+    text-align: center;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: -2px;
+    font-family: var(--font-familly-gmarket);
+    font-weight: var(--font-weight-light);
+}
+
+.support_main_txt span {
+    color: var(--point-color);
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+}
+
+.support_img {
+
+    width: 900px;
+}
+
+
+.support_img img {
+    width: 100%;
+}
+
 
 /************* 관리 영역 *************/
 #management {
-    width: 100%;
-    height: 750px;
+    background: url(../imgs/manage_bg.jpg) no-repeat center / auto;
+    padding: 0;
+    position: relative;
+    z-index: -2;
+}
+
+
+.manage_icons {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
     position: relative;
 }
 
-#management:before {
-    background: url(../imgs/section_management.jpg) no-repeat center / auto 100%;
+.manage_icons div {
+    margin-top: 30px;
 }
 
-/************** 함께성장해요 영역 **************/
+.manage_icons .ma_and {
+    font-size: 10vw;
+    opacity: .1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    z-index: -1;
+    right: 60%;
+}
+
+.manage_icons .ma_and.red{
+    right: 280px;
+}
+
+.manage_ico img {
+    width: 120%;
+}
+
+.manage_des span {
+    font-size: 1.7vw;
+    color: var(--point-color);
+}
+
+.manage_des p {
+    font-size: 22px;
+    font-weight: var(--font-weight-light);
+}
+
+/************** growth 함께성장해요 영역 **************/
 #growth {
-    width: 100%;
-    height: 900px;
+ background: url(../imgs/growth_bg.jpg) no-repeat center / auto;
+ padding-top: 0;
+ position: relative;
+ z-index: -3;
+}
+
+#growth .contents {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 50px;
+} 
+.grows {
+    display: flex;
+
+}
+
+.grow_right {
     position: relative;
 }
 
-#growth:before {
-    background: url(../imgs/section_growth.jpg) no-repeat center / auto 100%;
+.grow_txt {
+    font-size: 30px;
+    font-weight: var(--font-weight-light);
+    margin-left: 50px;
 }
+
+.grow_txt p {
+    padding: 0;
+    margin: 0;
+}
+
+.grow_txt span {
+    font-size: 60px;
+    font-family: var(--font-familly-gmarket);
+    letter-spacing: -3px;
+}
+
+.grow_lines {
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    left: -100px;
+    z-index: -2;
+}
+
+.grow_line {
+    display: flex;
+    background: var(--point-color);
+    height: 88px;
+    margin-bottom: 20px;
+    padding-left: 150px;
+    align-items: center;
+    position: relative;
+}
+
+.grow_line em {
+    font-size: 50px;
+    letter-spacing: -2px;
+    font-family: var(--font-familly-gmarket);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+.grow_line p:before {
+    content: '';
+    position: absolute;
+    left: -87px;
+    border: 44px solid #fff;
+    border-left: 44px solid transparent;
+    border-top: 44px solid transparent;
+}
+
+
+.grow_line p {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    width: 220px;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-regular);
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.grow_line p:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: -87px;
+    border: 44px solid #fff;
+    border-right: 44px solid transparent;
+    border-top: 44px solid transparent;
+}
+
+
+/* promotion swiper  */
+.swiper-pagination-bullet-active {
+    background: var(--point-color) !important;
+    color: #fff;
+    position: relative;
+}
+
+.swiper-pagination-bullet-active:after {
+    content: '';
+    position: absolute;
+    /* background-color: var(--point-color); */
+    top: 100%;
+    right: 25px;
+    border: 25px solid var(--point-color);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(90deg);
+    border-radius: 10px;
+}
+
+.pr-pagination .swiper-pagination-bullet-active {
+    color: #fff !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    padding: 11px 85px !important;
+    border-radius: 50px !important;
+    margin: 10px;
+}
+
+.pr-pagination .swiper-pagination-bullet:first-child {
+    margin-right: 35px !important;
+}
+
 
 /* ****************** campaign ****************** */
+ 
+#campaign {
+    position: relative;
+    border: 2px solid red;
+    z-index: -3;
+}
 
+#campaign .contents {
+    height: 100vh;
+    margin-top: 110px;
+}
+
+#campaign:after {
+    content: '';
+    width: 100%;
+    background: url(../imgs/campaign_bg.jpg) no-repeat center / auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    height: 600px;
+    z-index: -2;
+}
+
+.round_con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    
+}
+
+.campaign_round {
+    position: relative;
+    border-radius: 50%;
+}
+
+.campaign_round img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+.campaign_round:after {
+    content: '';
+    width: 490px;
+    height: 490px;
+    position: absolute;
+    border: 20px solid var(--point-color);
+    border-radius: 50%;
+    left: 50%;
+    top: 49.5%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.round_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.campaign_number {
+    width: 500px;
+    font-size: 70px;
+    font-family: var(--font-family-gmarket);
+    position: relative;
+}
+
+.campaign_number:after {
+    content: '';
+    width: 70%;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.round_txt p {
+    font-size: 26px;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: -1px;
+}
+
+.campaign_sub {
+    margin-top: 70px;
+    margin-left: 150px;
+    height: 100%;
+}
+
+.campaign_sub p  {
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 1.5    ;
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-family-gmarket);
+    padding: 0;
+    margin: 0;
+}
+
+.campaign_sub p strong {
+    position: relative;
+    z-index: 2;
+}
+
+.campaign_sub p strong:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    background: var(--point-color);
+    left: 0;
+    z-index: -1;
+}
+
+
+/* ----------- */
 #campaign {
     display: flex;
     align-items: center;
@@ -562,19 +923,39 @@ section#promotion {
 /************** 마케팅 진행 순서 영역 **************/
 
 #mkt_order {
-    width: 100%;
-    height: 900px;
-    position: relative;
+    background: url('../imgs/mkt_order_bg.jpg');
+    padding-top: 0;
 }
 
-#mkt_order:before {
-    background: url(../imgs/section_mkt_order.jpg) no-repeat center / auto 100%;
+#mkt_order .contents {
+    height: 100vh;
+    border: 2px solid blue;
+
 }
+
+.mkt_title {
+    padding: 100px 0;
+}
+
+.mkt_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kt_icon p {
+    color: #fff;
+    font-size:28px;
+    font-family: var(--font-family-gmarket);
+    letter-spacing: -2px;
+    height: 100px;
+    text-align: center;
+}
+
 
 /* ****************** review ****************** */
 section#review {
     height: 502px;
-    margin: 100px 0;
 }
 
 #review {
@@ -775,26 +1156,14 @@ section#review {
 
 
 /************** 파트너사 영역 **************/
-
 #partner {
-    width: 100%;
-    height: 1180px;
-    position: relative;
-    background: #e5e5e5;
+    border: 1px solid red;
 }
 
-#partner:before {
-    background: url(../imgs/section_partner.jpg) no-repeat center / auto 100%;
-}
-
-#partner .partner_img {
-    position: absolute;
+.partner_img img{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    transform: translateY(-25%)
+    max-width: 100%;
+    margin-top: 100px;
 }
 
 
@@ -802,23 +1171,18 @@ section#review {
 /************** 광고 문의 신청하기 영역 **************/
 
 #contact {
-    width: 100%;
-    height: 1180px;
+   background: url(../imgs/contact_bg.jpg) no-repeat center / auto;
+}
+
+#contact .contents {
     position: relative;
 }
 
-#contact:before {
-    background: url(../imgs/section_contact.jpg) no-repeat center / auto;
-}
 
 .form {
-    position: absolute;
     z-index: 2;
-    width: 1000px;
+    margin: 50px 250px;
     background: #fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35%);
     padding: 45px;
 }
 
@@ -831,7 +1195,6 @@ section#review {
 
 form input {
     display: flex;
-    height: 96px;
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
@@ -840,8 +1203,8 @@ form input {
     border: none;
     outline: none;
     text-indent: 20px;
-    padding: 0;
-    font-size: 40px;
+    padding: 10px 0;
+    font-size: 30px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -869,7 +1232,7 @@ form em {
 }
 
 form input::placeholder {
-    font-size: 40px;
+    font-size: 30px;
     color: #000;
 }
 
@@ -890,14 +1253,14 @@ form input::placeholder {
     display: block;
     margin: 0 auto;
     justify-content: center;
-    width: 374px;
-    height: 93px;
+    width: 300px;
+    height: 80px;
     background: #fff;
     border: 2px solid var(--point-color);
     font-size: 40px;
     color: var(--point-color);
     text-align: center;
-    line-height: 93px;
+    line-height: 80px;
     cursor: pointer;
     padding-right: 50px;
 
@@ -908,17 +1271,16 @@ form input::placeholder {
     height: 17px;
     position: absolute;
     right: 0;
-    transform: translate(-80%, -30%);
+    transform: translate(-110%, -30%);
     top: 50%;
     transition: all .3s ease-in-out;
 }
 
 
 .contact_btn:hover img {
-    transform: translate(-50%, -30%);
+    transform: translate(-90%, -30%);
 
 }
-
 
 
 /* thankyou_message  */
@@ -948,14 +1310,48 @@ form input::placeholder {
 /************** footer 영역 **************/
 
 #footer {
-    width: 100%;
-    height: 140px;
-    position: relative;
+   background: url(../imgs/);
+   background: #333;
+   padding-top: 0;
 }
 
-#footer:before {
-    background: url(../imgs/footer.jpg) no-repeat center / auto 100%;
+#footer .contents {
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+    position: relative;
+    padding: 50px 0;
 }
+
+.keymessage {
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: var(--font-family-gmarket);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.keymessage span {
+    color: var(--point-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.footer_txt {
+    color: #fff;
+    font-weight: var(--font-weight-light);
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+.footer_logo {
+    width: 220px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
 
 /****** floating_menu 영역 ******/
 .floating_menu {
@@ -1001,7 +1397,7 @@ form input::placeholder {
     }
 
     #nav {
-        padding: 10px  20px;
+        padding: 10px 20px;
         height: 80px;
 
     }
@@ -1050,37 +1446,10 @@ form input::placeholder {
 
     /***** 메인 비주얼 영역 *****/
     #main_visual {
-        height: 100vh;
         overflow: hidden;
         background: url('../imgs/main_visual.png') no-repeat 65% / auto 100%;
         position: relative;
     }
-
-    /* #main_visual:before {
-        content: '';
-        background: url(../imgs/mo/mo_call.png) no-repeat center / auto 100%;
-        position: absolute;
-        width: 240px;
-        height: 50px;
-        top: 90%;
-        left: -75px;
-        z-index: 10;
-        display: flex;
-        cursor: pointer;
-    }
-
-    #main_visual:after {
-        content: '';
-        background: url(../imgs/mo/mo_kakao.png) no-repeat center / auto 100%;
-        position: absolute;
-        width: 261px;
-        height: 50px;
-        top: 90%;
-        right: -99px;
-        z-index: 10;
-        display: flex;
-        cursor: pointer;
-    } */
 
 
     .visual_contents {
@@ -1146,13 +1515,14 @@ form input::placeholder {
         height: 580px;
         padding-bottom: 0;
     }
+
     #promotion h3 {
         font-size: 30px;
         padding-bottom: 30px !important;
     }
 
     .promotion_title {
-        width: 100%;
+        width: 80%;
         padding: 0 10px;
     }
 
@@ -1185,7 +1555,7 @@ form input::placeholder {
         position: relative;
     }
 
-    .pro_card img{
+    .pro_card img {
         max-width: 100%;
         width: 185px;
     }
@@ -1199,17 +1569,19 @@ form input::placeholder {
     .pro_cards:first-child .pro_card:first-child {
         margin-left: 120px;
     }
+
     .pro_cards:first-child .card_second {
         margin-right: 120px;
     }
+
     .pro_cards:nth-child(2) .card_one {
         margin-left: 120px;
-    } 
-    
+    }
+
     .pro_cards:nth-child(2) .card_two {
         margin-right: 120px;
-    } 
-    
+    }
+
 
     .or_txt {
         font-size: 40px;
@@ -1274,322 +1646,316 @@ form input::placeholder {
 
 
     /***** tble point 영역 *****/
-    #point {
-        width: 100%;
-        height: 500px;
+    #point {}
+
+        /***** 분석 시스템 영역 *****/
+
+        #system {
+            width: 100%;
+            height: 430px;
+        }
+
+        #system:before {
+            background: url(../imgs/mo/mo_analy_system.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** 관리 영역 *****/
+        #management {
+            width: 100%;
+            height: 265px;
+        }
+
+        #management:before {
+            background: url(../imgs/mo/mo_management.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** 함께성장해요 영역 *****/
+        #growth {
+            width: 100%;
+            height: 320px;
+        }
+
+        #growth:before {
+            background: url(../imgs/mo/mo_growth.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** campaign 영역 *****/
+
+
+        #campaign {
+            box-sizing: border-box;
+            width: 100%;
+            height: 788px;
+        }
+
+        .campaign_con {
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .campaign_con h3 {
+            font-size: 25px;
+            line-height: 1.5;
+            font-family: 'GmarketSansMedium';
+        }
+
+        .campaign_con h3 strong {
+            font-size: 28px;
+        }
+
+        .campaign_card img {
+            height: 270px;
+        }
+
+        .campaing_more {
+            width: 228px;
+        }
+
+        .campaign_cards .slick-dots {
+            bottom: -32px;
+        }
+
+        /***** 마케팅 진행 순서 영역 *****/
+
+        #mkt_order {
+            width: 100%;
+            height: 640px;
+            position: relative;
+        }
+
+        #mkt_order:before {
+            background: url(../imgs/mo/mo_mkt_order.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** review 영역 *****/
+        section#review {
+            margin: 0;
+            height: 770px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin: 0;
+        }
+
+
+        .review_box {
+            margin-top: 290px;
+            box-sizing: border-box !important;
+            overflow: hidden;
+        }
+
+        .review_box a .r_img {
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+
+        .review_box a .r_img img {
+            object-fit: contain;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .review_con {
+            position: static;
+            flex-direction: column;
+        }
+
+        .reivew_info {
+            position: absolute;
+            width: 100%;
+            right: 0;
+            margin-right: 0;
+            margin-top: 40px;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reivew_info h3 {
+            margin-bottom: 0;
+            font-family: 'GmarketSansMedium';
+            font-size: 45px;
+            box-sizing: border-box;
+        }
+
+        .pc_reivew_txt {
+            display: none;
+        }
+
+        .mo_review_txt {
+            display: block;
+            font-size: 20px;
+            font-family: 'GmarketSansMedium';
+        }
+
+        .reviews {
+            width: 100%;
+            height: unset !important;
+        }
+
+        .reviews .slick-dots {
+            bottom: -85px;
+        }
+
+
+        .review_con {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #review .slick-list {
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        #review .slick-track {
+            box-sizing: border-box;
+        }
+
+
+        /***** 파트너사 영역 *****/
+        section#partner {
+            background: #eee;
+            height: 900px;
+        }
+
+        #partner {
+            height: auto;
+        }
+
+        #partner:before {
+            height: 150px;
+            z-index: 10;
+            background: url(../imgs/mo/mo_parter_txt.png) no-repeat center / auto;
+            background-size: 85%;
+            margin-top: 20px;
+        }
+
+        .partner_img:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 56px;
+            height: 300px;
+            background: url(../imgs/mo/mo_pa1.png) no-repeat center / auto 100%;
+        }
+
+        .partner_img:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -260px;
+            width: 100%;
+            height: 300px;
+            background: url(../imgs/mo/mo_pa2.png) no-repeat center / auto 100%;
+        }
+
+        .partner_img img {
+            display: none;
+        }
+
+        /***** 광고 문의 신청하기 영역 *****/
+
+        #contact {
+            width: 100%;
+            height: 700px;
+            position: relative;
+            background: url(../imgs/mo/mo_contact.jpg) no-repeat center / auto 100%;
+            box-sizing: border-box;
+        }
+
+        #contact:before {
+            content: '';
+            background: url(../imgs/mo/mo_contact_txt.png) no-repeat center;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: 10;
+            height: 150px;
+            background-size: 90%;
+        }
+
+        #contact .form {
+            width: 90%;
+            border-radius: 15px;
+        }
+
+        form input {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+
+        form input[type=checkbox] {
+            height: 18px;
+            width: 18px;
+            font-size: 28px;
+        }
+
+        .form {
+            width: 100%;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box !important;
+        }
+
+
+        form input::placeholder {
+            font-size: 18px;
+            color: #000;
+        }
+
+        form em {
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .contact_btn {
+            margin: 20px 0 10px;
+            width: 100%;
+        }
+
+        .contact_btn span {
+            width: 190px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 25px;
+            padding-right: 62px;
+        }
+
+        .contact_btn img {
+            max-width: 100%;
+            width: 30px;
+            right: 60px;
+        }
+
+        .last_input span {
+            font-size: 16px;
+        }
+
+        .footer_thankyou_message span,
+        .thankyou_message span {
+            font-size: 40px;
+        }
+
+        /***** footer 영역 *****/
+
+        #footer {
+            width: 100%;
+            height: 148px;
+            position: relative;
+        }
+
+        #footer:before {
+            background: url(../imgs/mo/mo_footer.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** floating_menu 영역 *****/
+        .floating_menu.active {
+            display: none;
+        }
     }
-
-    #point:before {
-        background: url(../imgs/mo/mo_point.jpg) no-repeat center / auto 100%;
-    }
-
-    /***** 분석 시스템 영역 *****/
-
-    #system {
-        width: 100%;
-        height: 430px;
-    }
-
-    #system:before {
-        background: url(../imgs/mo/mo_analy_system.jpg) no-repeat center / auto 100%;
-    }
-
-    /***** 관리 영역 *****/
-    #management {
-        width: 100%;
-        height: 265px;
-    }
-
-    #management:before {
-        background: url(../imgs/mo/mo_management.jpg) no-repeat center / auto 100%;
-    }
-
-    /***** 함께성장해요 영역 *****/
-    #growth {
-        width: 100%;
-        height: 320px;
-    }
-
-    #growth:before {
-        background: url(../imgs/mo/mo_growth.jpg) no-repeat center / auto 100%;
-    }
-
-    /***** campaign 영역 *****/
-  
-
-    #campaign {
-        box-sizing: border-box;
-        width: 100%;
-        height: 788px;
-    }
-
-    .campaign_con {
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .campaign_con h3 {
-        font-size: 25px;
-        line-height: 1.5;
-        font-family: 'GmarketSansMedium';
-    }
-
-    .campaign_con h3 strong {
-        font-size: 28px;
-    }
-
-    .campaign_card img {
-        height: 270px;
-    }
-
-    .campaing_more {
-        width: 228px;
-    }
-
-    .campaign_cards .slick-dots {
-        bottom: -32px;
-    }
-
-    /***** 마케팅 진행 순서 영역 *****/
-
-    #mkt_order {
-        width: 100%;
-        height: 640px;
-        position: relative;
-    }
-
-    #mkt_order:before {
-        background: url(../imgs/mo/mo_mkt_order.jpg) no-repeat center / auto 100%;
-    }
-
-    /***** review 영역 *****/
-    section#review {
-        margin: 0;
-        height: 770px;
-        width:  100%;
-        box-sizing: border-box;
-        overflow: hidden;
-        margin: 0;
-    }
-
-
-    .review_box {
-        margin-top: 290px;
-        box-sizing: border-box !important;
-        overflow: hidden;
-    }
-
-    .review_box a .r_img {
-        display: inline-block;
-        width: 100%;
-        height: 150px;
-        overflow: hidden;
-    }
-
-
-    .review_box a .r_img img {
-        object-fit: contain;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .review_con {
-        position: static;
-        flex-direction: column;
-    }
-
-    .reivew_info {
-        position: absolute;
-        width: 100%;
-        right: 0;
-        margin-right: 0;
-        margin-top: 40px;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .reivew_info h3 {
-        margin-bottom: 0;
-        font-family: 'GmarketSansMedium';
-        font-size: 45px;
-        box-sizing: border-box;
-    }
-
-    .pc_reivew_txt {
-        display: none;
-    }
-
-    .mo_review_txt {
-        display: block;
-        font-size: 20px;
-        font-family: 'GmarketSansMedium';
-    }
-
-    .reviews {
-        width: 100%;
-        height: unset !important;
-    }
-
-    .reviews .slick-dots {
-        bottom: -85px;
-    }
-
-
-    .review_con {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    #review .slick-list {
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    #review .slick-track {
-        box-sizing: border-box;
-    }
-
-
-    /***** 파트너사 영역 *****/
-    section#partner {
-        background: #eee;
-        height: 900px;
-    }
-    #partner {
-        height: auto;
-    }
-
-    #partner:before {
-        height: 150px;
-        z-index: 10;        
-        background: url(../imgs/mo/mo_parter_txt.png) no-repeat center / auto;
-        background-size: 85%;
-        margin-top: 20px;
-    }
-
-    .partner_img:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        top: 56px;
-        height: 300px;
-        background: url(../imgs/mo/mo_pa1.png) no-repeat center / auto 100%;
-    }
-
-    .partner_img:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -260px;
-        width: 100%;
-        height: 300px;
-        background: url(../imgs/mo/mo_pa2.png) no-repeat center / auto 100%;
-    }
-
-    .partner_img img{
-        display: none;
-    }
-
-    /***** 광고 문의 신청하기 영역 *****/
-
-    #contact {
-        width: 100%;
-        height: 700px;
-        position: relative;
-        background: url(../imgs/mo/mo_contact.jpg) no-repeat center / auto 100%;
-        box-sizing: border-box;
-    }
-
-    #contact:before {
-        content: '';
-        background: url(../imgs/mo/mo_contact_txt.png) no-repeat center;
-        position: absolute;
-        top:10px;
-        left: 0;
-        z-index: 10;
-        height: 150px;
-        background-size: 90%;
-    }
-
-    #contact .form {
-        width: 90%;
-        border-radius: 15px;
-    }
-
-    form input {
-        width: 100%;
-        height: 50px;
-        font-size: 18px;
-    }
-
-    form input[type=checkbox] {
-        height: 18px;
-        width: 18px;
-        font-size: 28px;
-    }
-
-    .form {
-        width: 100%;
-        padding: 10px;
-        width: 100%;
-        box-sizing: border-box !important;
-    }
-
-    
-form input::placeholder {
-    font-size: 18px;
-    color: #000;
-}
-
-form em {
-    font-size: 14px;
-    margin-left: 8px;
-}
-
-.contact_btn {
-    margin: 20px 0 10px;
-    width: 100%;
-}
-
-.contact_btn span {
-    width: 190px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 25px;
-    padding-right: 62px;
-}
-
-.contact_btn img {
-    max-width: 100%;
-    width: 30px;
-    right: 60px;
-}
-
-.last_input span {
-    font-size: 16px;
-}
-
-.footer_thankyou_message span, 
-.thankyou_message span {
-    font-size: 40px;
-}
-
-    /***** footer 영역 *****/
-
-    #footer {
-        width: 100%;
-        height: 148px;
-        position: relative;
-    }
-
-    #footer:before {
-        background: url(../imgs/mo/mo_footer.jpg) no-repeat center / auto 100%;
-    }
-
-    /***** floating_menu 영역 *****/
-    .floating_menu.active {
-        display: none;
-    }
-}
