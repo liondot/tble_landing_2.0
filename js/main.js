@@ -115,10 +115,10 @@ $('.campaign_cards').slick({
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 8,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     responsive: [{
             breakpoint: 1024,
             settings: {

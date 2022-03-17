@@ -140,12 +140,12 @@
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-    background-image: url("../img/arrow_before.png");
+    /* background-image: url("../img/arrow_before.png"); */
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-    background-image: url("../img/arrow_next.png");
+    /* background-image: url("../img/arrow_next.png"); */
     left: 48px;
 }
 

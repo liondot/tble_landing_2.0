@@ -194,6 +194,7 @@ nav .iqr {
 .contents {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 100px ;
 }
 
 
@@ -280,8 +281,7 @@ nav .iqr {
 /************** 프로모션 영역 **************/
 
 #promotion {
-
-    /* background: #f3f3f3;
+    background: #f3f3f3;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -289,15 +289,12 @@ nav .iqr {
     align-items: center;
     flex-direction: column;
     position: relative;
-    overflow: hidden; */
+    overflow: hidden;
+    padding-top: 100px;
 }
 
 .promotion_title {
     margin-top: 50px;
-}
-
-.promotion_title img {
-    width: 60%;
 }
 
 .pro_logo {
@@ -309,40 +306,42 @@ nav .iqr {
     transform: rotate(90deg);
 }
 
+
+#promotion h3 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 3px;
+    margin-top: 55px;
+}
+
+#promotion h3 span {
+    color: var(--point-color);
+}
+
 .pro_cards {
     display: flex;
-    flex-wrap: wrap;
+    width: 1280px;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 50px;
+
 }
 
 .pro_cards:first-child .pro_card:first-child {
     margin-left: 110px;
-    margin-top: 130px;
 }
-
 .pro_cards:first-child .card_second {
     margin-right: 110px;
-    margin-top: 130px;
 }
-
 .pro_cards:nth-child(2) .card_one {
     margin-left: 110px;
-    margin-top: 130px;
-}
+} 
 
 .pro_cards:nth-child(2) .card_two {
     margin-right: 110px;
-    margin-top: 130px;
-}
+} 
 
-#promotion .swiper-slide:after {
-    display: none !important;
-}
-
-#promotion .swiper-wrapper {
-    height: 100%;
+.pr_swiper .swiper-slide {
+    margin-top: 120px;
 }
 
 .pro_card {
@@ -396,23 +395,69 @@ nav .iqr {
     transform: translate(-50%, -50%);
 }
 
+
+
+/* promotion swiper  */
+
 .pr_swiper {
     height: 650px !important;
-    display: none;
 }
 
 .pr_swiper .swiper-slide {
-    margin-top: 0 !important;
+    margin-top: 0;
+    padding: 0 330px;
 }
 
 .pr-pagination .swiper-pagination-bullet {
-    border-color: var(--point-color) !important;
+    border-color : var(--point-color) !important;
     color: var(--point-color) !important;
 }
 
 .pr-pagination.swiper-pagination {
     top: 48px !important;
 }
+
+.swiper-pagination-bullet-active {
+    background: var(--point-color) !important;
+    color: #fff;
+    position: relative;
+    transition: all .3s ease;
+
+}
+
+.swiper-pagination-bullet-active:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 25px;
+    border: 25px solid var(--point-color);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.pr-pagination .swiper-pagination-bullet-active {
+    color: #fff !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    padding: 11px 85px !important;
+    border-radius: 50px !important;
+    margin: 10px;
+}
+
+.pr-pagination .swiper-pagination-bullet:first-child {
+    margin-right: 35px !important;
+}
+
+.pro_card_con.swiper_wrapper {
+    border: 1px solid red ;
+}
+
+
 
 /************** tble point 영역 **************/
 #point {
@@ -435,6 +480,11 @@ nav .iqr {
     display: flex;
     margin-top: 40px;
     justify-content: space-between;
+    text-align: center;
+}
+
+.point_ics img {
+    width:90%;
 }
 
 .point_des {
@@ -470,9 +520,12 @@ nav .iqr {
 #support {
     background: url(../imgs/support_bg.jpg) no-repeat center / auto;
     color: #fff;
-    padding-top: 70px;
     position: relative;
     overflow: hidden;
+}
+
+#support .contents {
+    height: 100vh;
 }
 
 .support_txt {
@@ -580,6 +633,7 @@ nav .iqr {
  padding-top: 0;
  position: relative;
  z-index: -3;
+
 }
 
 #growth .contents {
@@ -675,53 +729,16 @@ nav .iqr {
 }
 
 
-/* promotion swiper  */
-.swiper-pagination-bullet-active {
-    background: var(--point-color) !important;
-    color: #fff;
-    position: relative;
-}
-
-.swiper-pagination-bullet-active:after {
-    content: '';
-    position: absolute;
-    /* background-color: var(--point-color); */
-    top: 100%;
-    right: 25px;
-    border: 25px solid var(--point-color);
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid transparent;
-    transform: rotate(90deg);
-    border-radius: 10px;
-}
-
-.pr-pagination .swiper-pagination-bullet-active {
-    color: #fff !important;
-}
-
-.swiper-pagination-clickable .swiper-pagination-bullet {
-    padding: 11px 85px !important;
-    border-radius: 50px !important;
-    margin: 10px;
-}
-
-.pr-pagination .swiper-pagination-bullet:first-child {
-    margin-right: 35px !important;
-}
-
-
 /* ****************** campaign ****************** */
  
 #campaign {
     position: relative;
-    border: 2px solid red;
     z-index: -3;
 }
 
 #campaign .contents {
-    height: 100vh;
-    margin-top: 110px;
+    width: unset !important;
+    margin-top: 16px;
 }
 
 #campaign:after {
@@ -751,15 +768,15 @@ nav .iqr {
 }
 
 .campaign_round img {
-    width: 500px;
+    width: 380px;
     max-width: 100%;
 }
 
 
 .campaign_round:after {
     content: '';
-    width: 490px;
-    height: 490px;
+    width: 380px;
+    height: 380px;
     position: absolute;
     border: 20px solid var(--point-color);
     border-radius: 50%;
@@ -802,8 +819,7 @@ nav .iqr {
 }
 
 .campaign_sub {
-    margin-top: 70px;
-    margin-left: 150px;
+    margin-left: 200px;
     height: 100%;
 }
 
@@ -838,13 +854,12 @@ nav .iqr {
 #campaign {
     display: flex;
     align-items: center;
-    height: 1000px;
 }
 
 .campaign_con {
-    width: 1200px;
     margin: 0 auto;
     line-height: 1.3;
+    padding-top: 10px;
 }
 
 .campaign_con h3 {
@@ -872,8 +887,9 @@ nav .iqr {
 
 .more_btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     cursor: pointer;
+    margin-left: 400px;
 }
 
 .campaing_more {
@@ -892,7 +908,6 @@ nav .iqr {
 }
 
 .campaign_cards {
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -903,7 +918,7 @@ nav .iqr {
 
 .campaign_card img {
     width: 100%;
-    height: 285px;
+    height: 185px;
 }
 
 .campaign_card strong {
@@ -970,8 +985,6 @@ nav .iqr {
 
 #mkt_order .contents {
     height: 100vh;
-    border: 2px solid blue;
-
 }
 
 .mkt_title {
@@ -1367,7 +1380,7 @@ form input::placeholder {
 
 .keymessage {
     position: absolute;
-    top: 50px;
+    top: 100px;
     color: #fff;
     font-size: 3.5vw;
     font-family: var(--font-family-gmarket);
@@ -1390,7 +1403,7 @@ form input::placeholder {
 .footer_logo {
     width: 220px;
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: 0;
 }
 
@@ -1401,7 +1414,7 @@ form input::placeholder {
     z-index: 50;
     display: flex;
     bottom: 0;
-    right: 20px;
+    left: 20px;
     flex-direction: column;
     transition: all .2s ease-in;
 }
@@ -1412,6 +1425,12 @@ form input::placeholder {
 
 .floating_menu a {
     margin-bottom: 20px;
+    width: 100px;
+}
+
+.floating_menu a img {
+    width: 100%;
+    max-width: 100%;
 }
 
 .last_input span {
