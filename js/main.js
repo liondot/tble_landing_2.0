@@ -1,3 +1,5 @@
+'use strick';
+
 const navbar = document.querySelector('#nav');
 const navbarHight = navbar.getBoundingClientRect().height;
 const mainVisual = document.querySelector('#main_visual');
@@ -30,8 +32,6 @@ const iqrBtn = document.querySelector ('.iqr')
 iqrBtn.addEventListener('click', () => {
     const goto = document.querySelector('#contact')
     goto.scrollIntoView({behavior : 'smooth'})
-
-
 })
 
 
@@ -45,6 +45,27 @@ document.addEventListener('scroll', () => {
     }
 })
 
+
+// scrollintoview 
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: 'smooth'})
+}
+
+
+// navar scroll intoview 
+// const navPm = document.querySelector('.nav_btn:first-child')
+// const navPt = document.querySelector('.nav_btn:nth-child(2)')
+// const navCn = document.querySelector('.nav_btn:nth-child(3)')
+// const navOd= document.querySelector('.nav_btn:nth-child(4)')
+// const navRv = document.querySelector('.nav_btn:nth-child(5)')
+// const navPn = document.querySelector('.nav_btn:last-child')
+
+
+// navPm.addEventListener('click', () => {
+//     const gotoUp = document.querySelector('#promotion');
+//     gotoUp.scrollIntoView({behavior: 'smooth'})
+// });
 
 // 모바일 버전 
 

@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -30,10 +34,6 @@ body {
     box-sizing: border-box;
 }
 
-/* 
-html {
-    scroll-behavior: smooth;
-} */
 
 li {
     list-style: none;
@@ -65,6 +65,8 @@ em {
     text-indent: -9999px;
 }
 
+
+
 /* font  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
@@ -79,17 +81,18 @@ em {
     font-style: normal;
 }
 
+
 section {
     box-sizing: border-box;
-    padding: 100px 0;
     overflow: hidden;
-    height: 100vh;
     box-sizing: border-box;
 }
 
 section.active {
     padding: 0;
 }
+
+
 
 /************** header 영역 *************/
 header {
@@ -154,6 +157,19 @@ nav .iqr {
 .main_menu ul {
     display: flex;
     margin: 0;
+}
+
+.main_menu ul li {
+    /* display: none; */
+}
+
+.main_menu ul li:nth-child(2),
+.main_menu ul li:nth-child(3), 
+.main_menu ul li:nth-child(6),
+.main_menu ul li:nth-child(8),
+.main_menu ul li:nth-child(9),
+.main_menu ul li:nth-child(10) {
+    display: flex;
 }
 
 .main_menu ul li a {
@@ -1381,10 +1397,10 @@ form input::placeholder {
 
 /****** floating_menu 영역 ******/
 .floating_menu {
-    position: fixed;
+    position: absolute;
     z-index: 50;
-    top: 50%;
-    display: none;
+    display: flex;
+    bottom: 0;
     right: 20px;
     flex-direction: column;
     transition: all .2s ease-in;
@@ -1983,3 +1999,28 @@ form input::placeholder {
             display: none;
         }
     }
+
+ /* fullpage css  */
+
+ #fp-nav ul li a span, .fp-slidesNav ul li a span {
+     background: var(--point-color) !important;
+     border: 5px solid #fff !important;
+ }
+
+ #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+     width: 25px !important;
+     height: 25px !important;
+ }
+
+ #fp-nav ul li .fp-tooltip.right {
+     font-size: 20px ;
+     color: #eee;
+ }
+
+ #fp-nav ul li, .fp-slidesNav ul li {
+     margin: 25px !important;
+ }
+
+ #fp-nav {
+     transform: translateY(-50%);
+ }
