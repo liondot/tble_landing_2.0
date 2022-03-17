@@ -72,9 +72,9 @@ em {
 
 section {
     box-sizing: border-box;
-    padding: 40px 0;
+    padding: 100px 0;
     overflow: hidden;
-    border: 1px solid red;
+    /* height: 100vh; */
 }
 
 section.active {
@@ -174,8 +174,15 @@ nav .iqr {
 /************** 메인 비주얼 영역 **************/
 
 #main_visual {
-    /* background: url('../imgs/main_visual.png') no-repeat center / auto 100%; */
-    background: green;
+    background: url('../imgs/main_visual.png') no-repeat center / auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+#main_visual .contents {
+    height: 100vh;
+    display: flex;
 }
 
 .visual_contents {
@@ -210,8 +217,8 @@ nav .iqr {
 .visual_image {
     position: absolute;
     object-fit: cover;
-    right: -302px;
-    bottom: -100px;
+    right: 150px;
+    bottom: -10px;
 }
 
 .visual_btn {
@@ -1162,8 +1169,9 @@ section#review {
 
 .partner_img img{
     width: 100%;
+    width: 1200px;
     max-width: 100%;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 
@@ -1199,7 +1207,7 @@ form input {
     width: 100%;
     box-sizing: border-box;
     background: #f2f2f2;
-    margin: 20px 0;
+    margin: 10px 0;
     border: none;
     outline: none;
     text-indent: 20px;
@@ -1447,7 +1455,6 @@ form input::placeholder {
     /***** 메인 비주얼 영역 *****/
     #main_visual {
         overflow: hidden;
-        background: url('../imgs/main_visual.png') no-repeat 65% / auto 100%;
         position: relative;
     }
 
