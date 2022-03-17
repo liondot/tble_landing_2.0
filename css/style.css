@@ -1,0 +1,2093 @@
+@charset "utf-8";
+
+:root {
+    --point-color: #fabe00;
+    --defalt-dark-color: #333;
+
+    /* font notosans */
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* font-family */
+    --font-familly-gmarket: 'GmarketSansMedium';
+    --font-familly-notosans: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+em {
+    font-style: normal;
+    margin-left: 15px;
+}
+
+.contents {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+
+
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+section {
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+section.active {
+    padding: 0;
+}
+
+
+
+/************** header 영역 *************/
+header {
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#nav {
+    width: 100%;
+    height: inherit;
+    display: none;
+}
+
+#nav.bright {
+    background: #fff;
+    color: #000;
+    box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
+    transition: all .2s ease-in-out;
+    height: 80px;
+}
+
+#nav.bright .main_menu li a {
+    color: #000;
+    transition: all .2s ease;
+}
+
+#nav.bright .main_menu li a:hover {
+    color: var(--point-color);
+}
+
+#nav.bright .brand_logo {
+    background: url(../imgs/tble_logo_dark.svg) no-repeat center;
+    background-size: 80%;
+}
+
+nav {
+    width: 1200px;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .iqr {
+    display: none;
+}
+
+
+.brand_logo {
+    width: 196px;
+    height: 52px;
+    background: url(../imgs/tble_logo.svg) no-repeat center;
+    background-size: 80%;
+}
+
+.main_menu ul {
+    display: flex;
+    margin: 0;
+}
+
+.main_menu ul li {
+    /* display: none; */
+}
+
+.main_menu ul li:nth-child(2),
+.main_menu ul li:nth-child(3), 
+.main_menu ul li:nth-child(6),
+.main_menu ul li:nth-child(8),
+.main_menu ul li:nth-child(9),
+.main_menu ul li:nth-child(10) {
+    display: flex;
+}
+
+.main_menu ul li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    margin: 4px;
+    display: flex;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.main_menu ul li a:hover {
+    color: var(--point-color);
+}
+
+.main_menu ul li:last-child a {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.contents {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/************** 메인 비주얼 영역 **************/
+
+#main_visual {
+    background: url('../imgs/main_visual.png') no-repeat center / auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+#main_visual .contents {
+    height: 100vh;
+    display: flex;
+}
+
+.visual_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.visual_title {
+    color: #fff;
+    font-size: 80px;
+    font-size: 4.8vw;
+    font-family: 'GmarketSansMedium';
+    line-height: 1.3;
+    text-shadow: 5px 5px 5px rgb(0 0 0 / 60%);
+}
+
+.visual_title strong {
+    display: block;
+}
+
+.visual_title span {
+    color: var(--point-color);
+}
+
+.visual_title p {
+    font-size: 1.5vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.visual_image {
+    position: absolute;
+    object-fit: cover;
+    right: 80px;
+    bottom: -10px;
+}
+
+.visual_image img {
+    max-width: 100%;
+    width: 90%;
+}
+
+.visual_btn {
+    width: 55%;
+    height: 80px;
+    border: 2px solid var(--point-color);
+    color: var(--point-color);
+    font-size: 2vw;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    margin-top: 45px;
+    font-weight: bold;
+}
+
+.visual_btn img {
+    margin-left: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.visual_btn:hover img {
+    transform: translateX(10px);
+}
+
+
+/************** 프로모션 영역 **************/
+
+#promotion {
+    background: #f3f3f3;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+#promotion .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column ;
+    position: relative;
+}
+
+
+
+.pro_logo {
+    position: absolute;
+    width: 800px;
+    opacity: 0.1;
+    right: -300px;
+    bottom: 282px;
+    transform: rotate(90deg);
+}
+
+
+#promotion h3 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 3px;
+    margin-top: 55px;
+}
+
+#promotion h3 span {
+    color: var(--point-color);
+}
+
+.pro_cards {
+    display: flex;
+    width: 1280px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.pro_cards:first-child .pro_card:first-child {
+    margin-left:10%
+}
+.pro_cards:first-child .card_second {
+    margin-right: 10%
+}
+.pro_cards:nth-child(2) .card_one {
+    margin-left: 10%
+} 
+
+.pro_cards:nth-child(2) .card_two {
+    margin-right: 10%
+} 
+
+/* .pr_swiper .swiper-slide {
+    margin-top: 150px;
+} */
+
+.pro_card img {
+    width: 100%;
+}
+
+.pro_txt {
+    color: #fff;
+    text-align: left;
+}
+
+.pro_title {
+    background: #f3c136;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.pro_txt span {
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: var(--font-weight-light);
+}
+
+.pro_txt p {
+    font-size: 24px;
+    margin: 8px 0 50px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.or_txt {
+    font-size: 7vw;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium';
+    color: #bcbcbc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+}
+
+
+
+/* promotion swiper  */
+
+.pr_swiper {
+    height: 650px !important;
+}
+
+.pr_swiper .swiper-slide {
+    margin-top: 0;
+}
+
+.pr-pagination .swiper-pagination-bullet {
+    border-color : var(--point-color) !important;
+    color: var(--point-color) !important;
+}
+
+.pr-pagination.swiper-pagination {
+    top: 48px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--point-color) !important;
+    color: #fff;
+    position: relative;
+
+}
+
+.swiper-pagination-bullet-active:after {
+    content: '';
+    position: absolute;
+    top: 102%;
+    right: 25px;
+    border: 25px solid var(--point-color);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(90deg);
+    transition: all 1s ease-in-out !important;
+}
+
+.pr-pagination .swiper-pagination-bullet-active {
+    color: #fff !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    padding: 11px 85px !important;
+    border-radius: 50px !important;
+    margin: 10px;
+}
+
+.pr-pagination .swiper-pagination-bullet:first-child {
+    margin-right: 35px !important;
+}
+
+
+
+/************** tble point 영역 **************/
+#point {
+    position: relative;
+    background: url(../imgs/point_bg.jpg);
+}
+
+.main_title {
+    text-align: center;
+    max-width: 100%;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.main_title img {
+    width: 100%;
+}
+
+.point_ics {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.point_ics img {
+    width:90%;
+}
+
+.point_des {
+    text-align: center;
+
+}
+
+.point_des p {
+    color: #161616;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 1.6vw;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+}
+
+.point_des span {
+    padding: 10px 0;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.point_des em {
+    display: block;
+    margin-left: 0;
+    color: #fff;
+}
+
+
+/************* serport 영역 *************/
+#support {
+    background: url(../imgs/support_bg.jpg) no-repeat center / auto;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#support .contents {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.support_txt {
+    margin-top: 6vh;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.4;
+    letter-spacing: -3px;
+}
+
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 6%;
+  background: #fff;
+
+}
+
+.support_main_txt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.support_main_txt p {
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: -2;
+    font-family: var(--font-familly-gmarket);
+    font-weight: var(--font-weight-light);
+    margin: 0 0 10px;
+}
+
+.support_main_txt span {
+    color: var(--point-color);
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+}
+
+.support_img {
+    max-width: 60%;
+    line-height: 0;
+}
+
+.support_img img {
+    width: 100%;
+}
+
+
+/************* management 관리 영역 *************/
+#management {
+    background: url(../imgs/manage_bg.jpg) no-repeat center / auto;
+    padding: 0;
+    position: relative;
+    z-index: -2;
+}
+
+#management .contents {
+    padding: 0 60px;
+}
+
+.manage_icons {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.manage_icons div {
+    margin-top: 30px;
+}
+
+.manage_icons .ma_and {
+    font-size: 13vw;
+    opacity: .1;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-85%);
+    z-index: -1;
+    right: 60%;
+}
+
+.manage_icons .ma_and.and_se{
+    right: 280px;
+}
+
+.manage_ico img {
+    width: 100%;
+}
+
+.manage_des span {
+    font-size: 1.7vw;
+    color: var(--point-color);
+}
+
+.manage_des p {
+    font-size: 22px;
+    font-weight: var(--font-weight-light);
+}
+
+/************** growth 함께성장해요 영역 **************/
+#growth {
+ background: url(../imgs/growth_bg.jpg) no-repeat center / auto;
+ padding-top: 0;
+ position: relative;
+ z-index: -3;
+
+}
+
+#growth .contents {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 50px;
+} 
+.grows {
+    display: flex;
+
+}
+
+.grow_right {
+    position: relative;
+}
+
+.grow_txt {
+    font-size: 30px;
+    font-weight: var(--font-weight-light);
+    margin-left: 50px;
+}
+
+.grow_txt p {
+    padding: 0;
+    margin: 0;
+}
+
+.grow_txt span {
+    font-size: 60px;
+    font-family: var(--font-familly-gmarket);
+    letter-spacing: -3px;
+}
+
+.grow_lines {
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    left: -100px;
+    z-index: -2;
+}
+
+.grow_line {
+    display: flex;
+    background: var(--point-color);
+    height: 88px;
+    margin-bottom: 20px;
+    padding-left: 150px;
+    align-items: center;
+    position: relative;
+}
+
+.grow_line em {
+    font-size: 50px;
+    letter-spacing: -2px;
+    font-family: var(--font-familly-gmarket);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+.grow_line p:before {
+    content: '';
+    position: absolute;
+    left: -87px;
+    border: 44px solid #fff;
+    border-left: 44px solid transparent;
+    border-top: 44px solid transparent;
+}
+
+
+.grow_line p {
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    width: 220px;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-regular);
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.grow_line p:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: -87px;
+    border: 44px solid #fff;
+    border-right: 44px solid transparent;
+    border-top: 44px solid transparent;
+}
+
+
+/* ****************** campaign ****************** */
+ 
+#campaign {
+    position: relative;
+    z-index: -3;
+}
+
+#campaign .contents {
+    width: unset !important;
+    margin-top: 16px;
+}
+
+#campaign:after {
+    content: '';
+    width: 100%;
+    background: url(../imgs/campaign_bg.jpg) no-repeat center / auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    height: 600px;
+    z-index: -2;
+}
+
+.round_con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    
+}
+
+.campaign_round {
+    border-radius: 50%;
+    position: relative;
+}
+
+.campaign_round img {
+    position: relative;
+    display: inline-block;
+    width: 66%;
+}
+
+.campaign_round img:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--point-color);
+}
+
+
+.campaign_round img:before {
+    content: '';
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    border: 20px solid var(--point-color);
+    border-radius: 50%;
+    left: 50%;
+    top: 49.5%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    display: inline-block;
+}
+
+.round_txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.campaign_number {
+    width: 22vw;
+    font-size: 4vw;
+    font-family: var(--font-family-gmarket);
+    position: relative;
+    letter-spacing: -2px;
+}
+
+.campaign_number:after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    background: #e5e5e5;
+    display: inline-block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50% );
+    
+}
+
+.round_txt p {
+    font-size: 1.5vw;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: -2px;
+}
+
+.campaign_sub {
+    height: 100%;
+}
+
+.campaign_sub p  {
+    font-size: 2.5vw;
+    letter-spacing: -4px;
+    line-height: 1.5    ;
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-family-gmarket);
+    padding: 0;
+    margin: 0;
+}
+
+.campaign_sub p strong {
+    position: relative;
+    z-index: 2;
+}
+
+.campaign_sub p strong:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    background: var(--point-color);
+    left: 0;
+    z-index: -1;
+}
+
+
+/* ----------- */
+#campaign {
+    display: flex;
+    align-items: center;
+}
+
+.campaign_con {
+    margin: 0 auto;
+    line-height: 1.3;
+    padding-top: 10px;
+    background: #fff;
+}
+
+.campaign_con h3 {
+    font-size: 45px;
+    font-weight: lighter;
+    letter-spacing: -1px;
+    color: #3b3b3b;
+    margin-bottom: 30px;
+}
+
+.campaign_con h3 strong:first-child {
+    color: #fabe00;
+}
+
+.campaign_con h3 strong {
+    color: #000;
+}
+
+.campaign_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid gree;
+}
+
+.more_btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.more_btn:hover {
+    border: 2px solid var(--point-color);
+    color: var(--point-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.campaing_more {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.campaing_more i {
+    margin-left: 10px;
+}
+
+.campaign_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaign_card {
+    width: 285px;
+}
+
+.campaign_card img {
+    width: 100%;
+    height: 185px;
+}
+
+.campaign_card strong {
+    /* margin-bottom: 8px; */
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1vw;
+    left: -2px;
+    font-weight: 500;
+}
+
+.campaign_card span {
+    border: 1px solid gray;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin: 10px 0 25px;
+    display: inline-block;
+}
+
+.campaign_card em {
+    font-size: 13px;
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+
+
+.cam_sub_tit {
+    color: gray;
+}
+
+.cam_sub_tit strong {
+    position: relative;
+    color: #000;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.cam_sub_tit .cam_st {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 5px;
+ }
+
+.cam_sub_tit .fir {
+    color: gray;
+}
+
+.campaign_card em b {
+    color: #fabe00;
+}
+
+.campaign_cards .slick-slide {
+    margin: 10px;
+
+}
+
+.campaign_cards .slick-dots {
+    bottom: -66px;
+}
+
+.campaign_cards .slick-dots li {
+    margin: 0;
+}
+
+
+/**************#mkt_order (process) 마케팅 진행 순서 영역 **************/
+
+#mkt_order {
+    background: url('../imgs/mkt_order_bg.jpg');
+    padding-top: 0;
+}
+
+#mkt_order .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mkt_title {
+    padding: 0 0 100px
+}
+
+.mkt_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kt_icon p {
+    color: #fff;
+    font-size:28px;
+    font-family: var(--font-family-gmarket);
+    letter-spacing: -3px;
+    height: 100px;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+}
+
+
+/* ****************** review ****************** */
+section#review {
+    height: 502px;
+}
+
+#review {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.review_con {
+    display: flex;
+    position: relative;
+}
+
+
+.reivew_info {
+    margin-right: 35px;
+}
+
+.reivew_info h3 {
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 1.3;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'GmarketSansMedium';
+}
+
+.mo_review_txt {
+    display: none;
+}
+
+.reivew_info p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.reviews {
+    display: flex;
+    width: 900px;
+    height: 800px;
+}
+
+.review_box {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.review_box .box_tit {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 45px;
+    position: relative;
+}
+
+.review_box .box_tit:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.review_box .box_tit span {
+    padding: 10px 0;
+    font-size: 18px;
+    color: rgb(36, 106, 172);
+}
+
+.review_box .box_tit em {
+    display: flex;
+    width: 100%;
+}
+
+.review_box a {
+    display: inline-block;
+    width: 100%;
+}
+
+.review_box a .r_img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 290px;
+}
+
+.review_box a .r_img img {
+    width: 100%;
+}
+
+.review_box a p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.review_box a span {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.review_box a>span {
+    margin-left: 15px;
+}
+
+
+.review_box a span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.review_box a:first-child span img {
+    opacity: 1;
+}
+
+.review_box a em {
+    width: 16px;
+    display: inline-block;
+    margin-left: 0;
+    height: 40px;
+}
+
+
+.reviews .slick-prev.slick-arrow,
+.reviews .slick-next.slick-arrow {
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 75px;
+}
+
+.reviews .slick-prev.slick-arrow:after {
+    content: '';
+    color: #000;
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../imgs/review/prev_arrow.png) no-repeat center / auto 100%;
+}
+
+.reviews .slick-next.slick-arrow:after {
+    content: '';
+    color: #000;
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../imgs/review/next_arrow.png) no-repeat center / auto 100%;
+}
+
+
+.slick-next,
+.slick-prev {
+    position: absolute;
+    top: 262px !important;
+    left: -231px !important;
+    z-index: 50;
+    width: 45px;
+    height: 45px;
+}
+
+.reviews .slick-prev {
+    left: -292px !important;
+}
+
+.reviews .slick-slide {
+    margin: 0 5px;
+}
+
+.slick-next:before,
+[dir=rtl] .slick-prev:before {
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+}
+
+
+/************** 파트너사 영역 **************/
+
+
+#partner .contents {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.partner_img img{
+    width: 100%;
+    width: 1200px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+
+
+/************** 광고 문의 신청하기 영역 **************/
+
+#contact {
+   background: url(../imgs/contact_bg.jpg) no-repeat center / auto;
+}
+
+#contact .contents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form {
+    z-index: 2;
+    background: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.form form {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+form input {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    text-indent: 20px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.last_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type=checkbox] {
+    height: 25px;
+    width: 25px;
+    font-size: 28px;
+}
+
+form input#numner {
+    margin-bottom: 30px;
+}
+
+form em {
+    font-size: 20px;
+}
+
+form input::placeholder {
+    font-size: 20px;
+    color: #000;
+}
+
+.contact_btn {
+    display: block;
+    margin: 0 auto;
+    width: 268px;
+    justify-content: center;
+    margin-top: 22px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.contact_btn span {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    width: 250px;
+    height: 65px;
+    background: #fff;
+    border: 2px solid var(--point-color);
+    font-size: 30px;
+    color: var(--point-color);
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.contact_btn img {
+    width: 41px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    transform: translate(-110%, -30%);
+    top: 50%;
+    transition: all .3s ease-in-out;
+}
+
+
+.contact_btn:hover img {
+    transform: translate(-90%, -30%);
+
+}
+
+
+/* thankyou_message  */
+.thankyou_message,
+.footer_thankyou_message {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    border-radius: 40px;
+    display: none;
+}
+
+.footer_thankyou_message span,
+.thankyou_message span {
+    font-size: 80px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer_thankyou_message p,
+.thankyou_message p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/************** footer 영역 **************/
+
+#footer {
+   background: url(../imgs/);
+   background: #333;
+   padding-top: 0;
+}
+
+#footer .contents {
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+    position: relative;
+    padding: 50px 0;
+}
+
+.keymessage {
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: var(--font-family-gmarket);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.keymessage span {
+    color: var(--point-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.footer_txt {
+    color: #fff;
+    font-weight: var(--font-weight-light);
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+.footer_logo {
+    width: 220px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+
+/****** floating_menu 영역 ******/
+.floating_menu {
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    bottom: 0;
+    left: 20px;
+    flex-direction: column;
+    transition: all .2s ease-in;
+}
+
+.floating_menu.active {
+    display: flex;
+}
+
+.floating_menu a {
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.floating_menu a img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.last_input span {
+    cursor: pointer;
+    color: blue;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    html {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /***** header 영영 *****/
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 60px;
+    }
+
+    #nav {
+        padding: 10px 20px;
+        height: 80px;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 70px !important;
+    }
+
+    nav .iqr {
+        display: block;
+        width: 130px;
+        height: 34px;
+        cursor: pointer;
+    }
+
+    .iqr:after {
+        content: '';
+        width: 130px;
+        background: url(../imgs/mo/in_yellow.png) no-repeat center / auto 100%;
+        position: absolute;
+        top: 14px;
+        right: 0;
+        height: 40px;
+        z-index: 100;
+        display: none;
+        transition: all .2s ease-in;
+    }
+
+    .iqr.active:after {
+        display: block;
+    }
+
+    nav .iqr img {
+        width: 100%;
+    }
+
+    nav .main_menu {
+        display: none;
+    }
+
+    .brand_logo {
+        width: 140px;
+        height: 30px;
+    }
+
+    /***** 메인 비주얼 영역 *****/
+    #main_visual {
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .visual_contents {
+        align-items: flex-start;
+        width: 100%;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .visual_title {
+        font-size: 11vw;
+        text-align: center;
+    }
+
+    .visual_title strong {
+        font-weight: normal;
+    }
+
+    .visual_title strong span {
+        font-weight: bold;
+    }
+
+    .visual_title p {
+        font-size: 3.5vw;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .visual_btn {
+        width: 220px;
+        height: 55px;
+        font-size: 25px;
+        line-height: 55px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .visual_btn img {
+        margin-left: 20px;
+    }
+
+    .visual_image {
+        right: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .visual_image img {
+        width: 100%;
+    }
+
+    .visual_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /***** 프로모션 영역 *****/
+    section#promotion {
+        height: 580px;
+        padding-bottom: 0;
+    }
+
+    #promotion h3 {
+        font-size: 30px;
+        padding-bottom: 30px !important;
+    }
+
+    .promotion_title {
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    .promotion_title img {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    #promotion .swiper-pagination-clickable .swiper-pagination-bullet {
+        padding: 8px 20px !important;
+        margin-right: 10px !important;
+    }
+
+    .pr_swiper .swiper-slide {
+        margin-top: 60px;
+    }
+
+
+    .pro_cards {
+        height: 530px !important;
+        justify-self: unset;
+        align-items: unset !important;
+        flex-wrap: nowrap;
+    }
+
+    .pro_card {
+        height: 187px !important;
+        flex-direction: column !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .pro_card img {
+        max-width: 100%;
+        width: 185px;
+    }
+
+
+    .pro_card:first-child,
+    .pro_card:nth-child(3) {
+        margin-top: 60px;
+    }
+
+    .pro_cards:first-child .pro_card:first-child {
+        margin-left: 120px;
+    }
+
+    .pro_cards:first-child .card_second {
+        margin-right: 120px;
+    }
+
+    .pro_cards:nth-child(2) .card_one {
+        margin-left: 120px;
+    }
+
+    .pro_cards:nth-child(2) .card_two {
+        margin-right: 120px;
+    }
+
+
+    .or_txt {
+        font-size: 40px;
+        top: 30%;
+        z-index: 20;
+    }
+
+
+    .pro_title {
+        width: 95px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .pro_title span {
+        font-size: 18px;
+    }
+
+    .pro_txt {
+        width: 60%;
+        padding: 0 10px;
+    }
+
+    .pro_txt p {
+        margin: 8px 0 20px;
+        font-size: 18px;
+    }
+
+    .pro_img {
+        width: 20%;
+        margin-top: 15px;
+        top: 0;
+        left: 60%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .pro_img img {
+        width: 50px;
+    }
+
+    .pro_logo {
+        z-index: -1;
+    }
+
+    .pr-pagination.swiper-pagination {
+        top: 36px !important;
+    }
+
+    .new-pagination.swiper-pagination-bullet {
+        border: 2px solid ghostwhite;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .pr_swiper {
+        height: unset !important;
+    }
+
+
+
+
+    /***** tble point 영역 *****/
+    #point {}
+
+        /***** 분석 시스템 영역 *****/
+
+        #system {
+            width: 100%;
+            height: 430px;
+        }
+
+        #system:before {
+            background: url(../imgs/mo/mo_analy_system.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** 관리 영역 *****/
+        #management {
+            width: 100%;
+            height: 265px;
+        }
+
+        #management:before {
+            background: url(../imgs/mo/mo_management.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** 함께성장해요 영역 *****/
+        #growth {
+            width: 100%;
+            height: 320px;
+        }
+
+        #growth:before {
+            background: url(../imgs/mo/mo_growth.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** campaign 영역 *****/
+
+
+        #campaign {
+            box-sizing: border-box;
+            width: 100%;
+            height: 788px;
+        }
+
+        .campaign_con {
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .campaign_con h3 {
+            font-size: 25px;
+            line-height: 1.5;
+            font-family: 'GmarketSansMedium';
+        }
+
+        .campaign_con h3 strong {
+            font-size: 28px;
+        }
+
+        .campaign_card img {
+            height: 270px;
+        }
+
+        .campaing_more {
+            width: 228px;
+        }
+
+        .campaign_cards .slick-dots {
+            bottom: -32px;
+        }
+
+        /***** 마케팅 진행 순서 영역 *****/
+
+        #mkt_order {
+            width: 100%;
+            height: 640px;
+            position: relative;
+        }
+
+        #mkt_order:before {
+            background: url(../imgs/mo/mo_mkt_order.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** review 영역 *****/
+        section#review {
+            margin: 0;
+            height: 770px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin: 0;
+        }
+
+
+        .review_box {
+            margin-top: 290px;
+            box-sizing: border-box !important;
+            overflow: hidden;
+        }
+
+        .review_box a .r_img {
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+
+        .review_box a .r_img img {
+            object-fit: contain;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .review_con {
+            position: static;
+            flex-direction: column;
+        }
+
+        .reivew_info {
+            position: absolute;
+            width: 100%;
+            right: 0;
+            margin-right: 0;
+            margin-top: 40px;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reivew_info h3 {
+            margin-bottom: 0;
+            font-family: 'GmarketSansMedium';
+            font-size: 45px;
+            box-sizing: border-box;
+        }
+
+        .pc_reivew_txt {
+            display: none;
+        }
+
+        .mo_review_txt {
+            display: block;
+            font-size: 20px;
+            font-family: 'GmarketSansMedium';
+        }
+
+        .reviews {
+            width: 100%;
+            height: unset !important;
+        }
+
+        .reviews .slick-dots {
+            bottom: -85px;
+        }
+
+
+        .review_con {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #review .slick-list {
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        #review .slick-track {
+            box-sizing: border-box;
+        }
+
+
+        /***** 파트너사 영역 *****/
+        section#partner {
+            background: #eee;
+            height: 900px;
+        }
+
+        #partner {
+            height: auto;
+        }
+
+        #partner:before {
+            height: 150px;
+            z-index: 10;
+            background: url(../imgs/mo/mo_parter_txt.png) no-repeat center / auto;
+            background-size: 85%;
+            margin-top: 20px;
+        }
+
+        .partner_img:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 56px;
+            height: 300px;
+            background: url(../imgs/mo/mo_pa1.png) no-repeat center / auto 100%;
+        }
+
+        .partner_img:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -260px;
+            width: 100%;
+            height: 300px;
+            background: url(../imgs/mo/mo_pa2.png) no-repeat center / auto 100%;
+        }
+
+        .partner_img img {
+            display: none;
+        }
+
+        /***** 광고 문의 신청하기 영역 *****/
+
+        #contact {
+            width: 100%;
+            height: 700px;
+            position: relative;
+            background: url(../imgs/mo/mo_contact.jpg) no-repeat center / auto 100%;
+            box-sizing: border-box;
+        }
+
+        #contact:before {
+            content: '';
+            background: url(../imgs/mo/mo_contact_txt.png) no-repeat center;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: 10;
+            height: 150px;
+            background-size: 90%;
+        }
+
+        #contact .form {
+            width: 90%;
+            border-radius: 15px;
+        }
+
+        form input {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+
+        form input[type=checkbox] {
+            height: 18px;
+            width: 18px;
+            font-size: 28px;
+        }
+
+        .form {
+            width: 100%;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box !important;
+        }
+
+
+        form input::placeholder {
+            font-size: 18px;
+            color: #000;
+        }
+
+        form em {
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .contact_btn {
+            margin: 20px 0 10px;
+            width: 100%;
+        }
+
+        .contact_btn span {
+            width: 190px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 25px;
+            padding-right: 62px;
+        }
+
+        .contact_btn img {
+            max-width: 100%;
+            width: 30px;
+            right: 60px;
+        }
+
+        .last_input span {
+            font-size: 16px;
+        }
+
+        .footer_thankyou_message span,
+        .thankyou_message span {
+            font-size: 40px;
+        }
+
+        /***** footer 영역 *****/
+
+        #footer {
+            width: 100%;
+            height: 148px;
+            position: relative;
+        }
+
+        #footer:before {
+            background: url(../imgs/mo/mo_footer.jpg) no-repeat center / auto 100%;
+        }
+
+        /***** floating_menu 영역 *****/
+        .floating_menu.active {
+            display: none;
+        }
+    }
+
+ /* fullpage css  */
+
+ #fp-nav ul li a span, .fp-slidesNav ul li a span {
+     background: var(--point-color) !important;
+     border: 5px solid #fff !important;
+ }
+
+ #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+     width: 25px !important;
+     height: 25px !important;
+ }
+
+ #fp-nav ul li .fp-tooltip.right {
+     font-size: 20px ;
+     color: #eee;
+ }
+
+ #fp-nav ul li, .fp-slidesNav ul li {
+     margin: 25px !important;
+ }
+
+ #fp-nav {
+     transform: translateY(-50%);
+ }
