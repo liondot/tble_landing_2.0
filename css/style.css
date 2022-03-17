@@ -213,6 +213,8 @@ nav .iqr {
 #main_visual .contents {
     height: 100vh;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .visual_contents {
@@ -247,7 +249,7 @@ nav .iqr {
 .visual_image {
     position: absolute;
     object-fit: cover;
-    right: 80px;
+    right: 0;
     bottom: -10px;
 }
 
