@@ -230,8 +230,13 @@ nav .iqr {
 .visual_image {
     position: absolute;
     object-fit: cover;
-    right: 150px;
+    right: 80px;
     bottom: -10px;
+}
+
+.visual_image img {
+    max-width: 100%;
+    width: 90%;
 }
 
 .visual_btn {
