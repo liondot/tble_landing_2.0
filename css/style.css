@@ -57,6 +57,8 @@ em {
     height: 100vh;
 }
 
+
+
 .hide {
     overflow: hidden;
     position: absolute;
@@ -192,11 +194,6 @@ nav .iqr {
     margin-right: 0;
 }
 
-.contents {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 
 
 
@@ -297,10 +294,12 @@ nav .iqr {
 
 #promotion .contents {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column ;
     position: relative;
+    border: 2px solid green;
+
 }
 
 
@@ -460,6 +459,14 @@ nav .iqr {
 #point {
     position: relative;
     background: url(../imgs/point_bg.jpg);
+}
+
+#point .contents {
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main_title {
@@ -762,56 +769,60 @@ nav .iqr {
 .round_con {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 12vw;
 }
+
 
 .campaign_round {
+    position: relative;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
-    position: relative;
+    max-width: 100%;
+    border: 3px solid #e5e5e5;
+    background: #fff;
 }
 
-.campaign_round img {
-    position: relative;
-    display: inline-block;
-    width: 66%;
-}
 
-.campaign_round img:after {
-    position: absolute;
+.campaign_round:after {
     content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--point-color);
+    border-radius: 50%;
+    left: -18px;
+    top: -11px;
+    border: 15px solid var(--point-color);
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
 }
 
-
-.campaign_round img:before {
-    content: '';
-    width: 60%;
-    height: 60%;
-    position: absolute;
-    border: 20px solid var(--point-color);
-    border-radius: 50%;
-    left: 50%;
-    top: 49.5%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.round_bg {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    background: #333;
+    border-radius: 50% ;
     display: inline-block;
 }
+
 
 .round_txt {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .campaign_number {
-    width: 22vw;
-    font-size: 4vw;
+    width: 29vw;
+    font-size: 60px;
     font-family: var(--font-family-gmarket);
     position: relative;
     letter-spacing: -2px;
@@ -819,7 +830,7 @@ nav .iqr {
 
 .campaign_number:after {
     content: '';
-    width: 80%;
+    width: 50%;
     height: 1px;
     background: #e5e5e5;
     display: inline-block;
@@ -831,9 +842,8 @@ nav .iqr {
 }
 
 .round_txt p {
-    font-size: 1.5vw;
+    font-size: 19px;
     font-weight: var(--font-weight-regular);
-    letter-spacing: -2px;
 }
 
 .campaign_sub {
@@ -910,11 +920,11 @@ nav .iqr {
     cursor: pointer;
     border: 1px solid gray;
     border-radius: 50px;
-    padding: 5px;
+    padding: 3px;
 }
 
 .more_btn:hover {
-    border: 2px solid var(--point-color);
+    border: 1px solid var(--point-color);
     color: var(--point-color);
     font-weight: var(--font-weight-bold);
 }
@@ -943,13 +953,29 @@ nav .iqr {
     width: 285px;
 }
 
-.campaign_card img {
+.campaign_card a {
+    display: inline-block;
     width: 100%;
-    height: 185px;
+    height: 100%;
+    padding: 0 6px;
+}
+
+.campaign_card img {
+    max-width: 100%;
+}
+
+.campaign_img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.campaign_img img {
+    object-fit: cover;
+    width: 100%;
+    object-position: 80%;
 }
 
 .campaign_card strong {
-    /* margin-bottom: 8px; */
     display: inline-block;
     font-size: 18px;
     font-size: 1vw;
@@ -996,10 +1022,8 @@ nav .iqr {
 .campaign_card em b {
     color: #fabe00;
 }
-
 .campaign_cards .slick-slide {
     margin: 10px;
-
 }
 
 .campaign_cards .slick-dots {
@@ -1008,6 +1032,10 @@ nav .iqr {
 
 .campaign_cards .slick-dots li {
     margin: 0;
+}
+
+.campaign_cards .slick-list {
+    margin-top: 12px;
 }
 
 
@@ -1625,6 +1653,7 @@ form input::placeholder {
         padding-bottom: 0;
     }
 
+
     #promotion h3 {
         font-size: 30px;
         padding-bottom: 30px !important;
@@ -2073,7 +2102,7 @@ form input::placeholder {
 
  #fp-nav ul li a span, .fp-slidesNav ul li a span {
      background: var(--point-color) !important;
-     border: 5px solid #fff !important;
+     /* border: 5px solid #333 !important; */
  }
 
  #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
@@ -2083,7 +2112,7 @@ form input::placeholder {
 
  #fp-nav ul li .fp-tooltip.right {
      font-size: 20px ;
-     color: #eee;
+     color: #999;
  }
 
  #fp-nav ul li, .fp-slidesNav ul li {
