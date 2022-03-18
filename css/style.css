@@ -1086,194 +1086,9 @@ section#review {
     overflow: hidden;
 }
 
-.review_con {
-    display: flex;
-    position: relative;
-}
 
 
-.reivew_info {
-    margin-right: 35px;
-}
 
-.reivew_info h3 {
-    font-size: 50px;
-    font-weight: lighter;
-    line-height: 1.3;
-    margin: 0;
-    margin-bottom: 15px;
-    font-family: 'GmarketSansMedium';
-}
-
-.mo_review_txt {
-    display: none;
-}
-
-.reivew_info p {
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.reviews {
-    display: flex;
-    width: 900px;
-    height: 800px;
-}
-
-.review_box {
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-
-.review_box .box_tit {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 15px 45px;
-    position: relative;
-}
-
-.review_box .box_tit:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 92%;
-    height: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.review_box .box_tit span {
-    padding: 10px 0;
-    font-size: 18px;
-    color: rgb(36, 106, 172);
-}
-
-.review_box .box_tit em {
-    display: flex;
-    width: 100%;
-}
-
-.review_box a {
-    display: inline-block;
-    width: 100%;
-}
-
-.review_box a .r_img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: 290px;
-}
-
-.review_box a .r_img img {
-    width: 100%;
-}
-
-.review_box a p {
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 15px 0;
-}
-
-.review_box a span {
-    font-size: 17px;
-    font-weight: bold;
-    display: flex;
-    line-height: 40px;
-    margin-top: 10px;
-}
-
-.review_box a>span {
-    margin-left: 15px;
-}
-
-
-.review_box a span img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-}
-
-.review_box a:first-child span img {
-    opacity: 1;
-}
-
-.review_box a em {
-    width: 16px;
-    display: inline-block;
-    margin-left: 0;
-    height: 40px;
-}
-
-
-.reviews .slick-prev.slick-arrow,
-.reviews .slick-next.slick-arrow {
-    border: 3px solid rgba(0, 0, 0, 0.3);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-top: 75px;
-}
-
-.reviews .slick-prev.slick-arrow:after {
-    content: '';
-    color: #000;
-    width: 25px;
-    height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../imgs/review/prev_arrow.png) no-repeat center / auto 100%;
-}
-
-.reviews .slick-next.slick-arrow:after {
-    content: '';
-    color: #000;
-    width: 25px;
-    height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../imgs/review/next_arrow.png) no-repeat center / auto 100%;
-}
-
-
-.slick-next,
-.slick-prev {
-    position: absolute;
-    top: 262px !important;
-    left: -231px !important;
-    z-index: 50;
-    width: 45px;
-    height: 45px;
-}
-
-.reviews .slick-prev {
-    left: -292px !important;
-}
-
-.reviews .slick-slide {
-    margin: 0 5px;
-}
-
-.slick-next:before,
-[dir=rtl] .slick-prev:before {
-    color: #000;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 0;
-}
 
 
 /************** 파트너사 영역 **************/
@@ -2096,18 +1911,45 @@ form input::placeholder {
         .floating_menu.active {
             display: none;
         }
+
+        /* fullpage custom */
+        #fp-nav.right {
+            right: -5px !important;
+        }
+
+
+        #fp-nav ul li a span, .fp-slidesNav ul li a span {
+            transform: translate(-30%, 6%) !important;
+            border: 1px solid #fff !important;
+        }
+
+        #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+            opacity: 0 !important;
+        }
+
+        #fp-nav ul li, .fp-slidesNav ul li {
+            margin: 15px !important;
+        }
+       
+
+
     }
 
  /* fullpage css  */
 
  #fp-nav ul li a span, .fp-slidesNav ul li a span {
      background: var(--point-color) !important;
-     /* border: 5px solid #333 !important; */
  }
 
+ #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    transform: translate(-30%, 6%) !important;
+    border: 1px solid #fff !important;
+}
+
  #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
-     width: 25px !important;
-     height: 25px !important;
+     width: 20px !important;
+     height: 20px !important;
+     border: 1px solid #fff;
  }
 
  #fp-nav ul li .fp-tooltip.right {
@@ -2122,3 +1964,6 @@ form input::placeholder {
  #fp-nav {
      transform: translateY(-50%);
  }
+
+
+ 
