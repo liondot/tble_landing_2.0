@@ -138,15 +138,47 @@ $('.campaign_cards').slick({
         {
             breakpoint: 500,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         }
     ]
 });
 
 
-// 리뷰 라이브러리 comtom 
+
+
+// review section slide
+$('.reviews').slick({
+    slide: 'div', 
+    infinite: true, 	 
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    speed: 600,
+    arrows: true, 
+    dots: true,
+    autoplay: true, 
+    autoplaySpeed: 10000, 
+    pauseOnHover: true, 
+    vertical: false, 
+    prevArrow: "<button type='button' class='slick-prev'>Previous</button>", 
+    nextArrow: "<button type='button' class='slick-next'>Next</button>", 
+    dotsClass: "slick-dots", 
+    draggable: true, 
+    responsive: [ 
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+    ]
+
+});
+
+
+// 리뷰 슬릭 슬라이드 
 console.clear();
 
 // animation on scroll
@@ -201,38 +233,6 @@ $('.v-story-slider').slick({
         });
     }
 }); // 이 코드는 slick infinite 가 맨끝에서 다시 처음으로 돌아가거나 할때도 트랜지션이 적용되기 위한 코드입니다.
-
-
-// review section slide
-$('.reviews').slick({
-    slide: 'div', 
-    infinite: true, 	 
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    speed: 600,
-    arrows: true, 
-    dots: true,
-    autoplay: true, 
-    autoplaySpeed: 10000, 
-    pauseOnHover: true, 
-    vertical: false, 
-    prevArrow: "<button type='button' class='slick-prev'>Previous</button>", 
-    nextArrow: "<button type='button' class='slick-next'>Next</button>", 
-    dotsClass: "slick-dots", 
-    draggable: true, 
-    responsive: [ 
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-    ]
-
-});
-
-
 
 
 //  고객 데이터 폼 영역 

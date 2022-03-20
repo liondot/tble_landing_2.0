@@ -9,20 +9,30 @@
     <meta name="keywords" content="티블, 체험단, 블로그체험단, 인스타그램체험단, 페이스북체험단 체험단sns, 후기, tble, 유튜브 체험단">
     <title>tble ad</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/review.js" defer></script>
     <script src="js/main.js" defer></script>
+
     <!-- swiper  -->
     <link rel="stylesheet" href="css/swiper.css">
     <script src="js/swiper/swiper.min.js"></script>
+
     <!-- slick slide  -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!-- fullpage scroll  -->
     <script src="js/fullpage/jquery.fullPage.js" defer></script>
     <link rel="stylesheet" href="js/fullpage/jquery.fullPage.css">
+
+    <!-- AOS 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -104,9 +114,9 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="pr-pagination swiper-pagination"></div>
-    
+
                     <div class="pr-button swiper-button-prev"></div>
                     <div class="pr-button swiper-button-next"></div>
                 </div>
@@ -151,6 +161,7 @@
                 </div>
             </div>
         </section>
+
         <!-- tble point 영역  -->
         <section id="support" class="section" data-anchor="anchor4">
             <h2 class="hide">서포트 영역</h2>
@@ -177,7 +188,7 @@
             <div class="contents">
                 <div class="manage_icons">
                     <div class="manage_ico">
-                            <img src="imgs/mana_ic1.png" alt="">
+                        <img src="imgs/mana_ic1.png" alt="">
                         <div class="manage_des">
                             <span>
                                 데이터 기반의 <br>
@@ -233,8 +244,10 @@
                     </div>
                     <div class="grow_right">
                         <div class="grow_txt">
-                            <p>티블 체험단과 함께 성장하세요!</p>
-                            <span>효과있는 마케팅 <strong>티블</strong>은?</span>
+                            <p class="pc_grow_sub_txt">티블 체험단과 함께 성장하세요!</p>
+                            <p class="mo_grow_sub_txt">티블 체험단과 함께 <br> 성장하세요!</p>
+                            <span class="pc_grow_txt">효과있는 마케팅 <strong>티블</strong>은?</span>
+                            <span class="mo_grow_txt">효과있는 마케팅 <strong> <br> 티블</strong>은?</span>
                         </div>
                         <div class="grow_lines">
                             <div class="grow_line">
@@ -293,9 +306,9 @@
                             총 <strong>123,456건</strong>의 <br>
                             <strong>체험단 캠페인</strong>을 <br>
                             진행했습니다.</p>
-                            <div class="more_btn">
-                                더 많은 캠페인 보러가기
-                            </div>
+                        <div class="more_btn">
+                            캠페인 보러가기
+                        </div>
                     </div>
                 </div>
                 <div class="campaign_con">
@@ -483,86 +496,110 @@
             </div>
         </section>
         <!-- 마케팅 진행 순서 영역-->
-        <section id="review" class="section" data-anchor="anchor9">
+        <section id="reviews" class="section" data-anchor="anchor9">
             <h2 class="hide">리뷰영역</h2>
-            <!-- <div class="review_con">
-                <div class="reivew_info">
-                    <h3 class="pc_reivew_txt">티블 <br>
-                        인플루언서의 <br>
-                        진짜 후기
-                    </h3>
-                    <h3 class="mo_review_txt">티블 인플루언서의 진짜 후기
-                    </h3>
-                    <p>꼼꼼하고 리얼한 후기로 많은 분들에게 <br>
-                        정보를 공유하며 브랜딩을 만들어냅니다.</p>
+            <div class="container contents">
+                <div class="main_title review_title">
+                    <img src="" alt="">
                 </div>
-                <div class="reviews">
-                    <div class="review_box">
-                        <a href="https://blog.naver.com/upeyesup/222649163555">
-                            <div class="r_img"><img src="imgs/review/r1.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[배송] 탐난다</em>
+                <!-- 중앙 컨텐츠 3차 visual story -->
+                <div class="v-story-wrap con">
+                    <h2 class="v-story-tt" data-aos="fade-up">Explore #DoWhatYouCant</h2>
+                    <div class="v-story-slider" data-aos="fade-up">
+                        <div class="slider-item">
+                            <a href="#" class="block">
+                                <div class="img-box block">
+                                    <img src="https://source.unsplash.com/random/690x386" alt="">
+                                </div>
+                                <div class="discover">
+                                    <span class="discover-btn block"></span>
+                                    <span class="discover-txt block">EXPLORE</span>
+                                </div>
+                            </a>
+                            <div class="v-story-desc-list">
+                                <p class="v-story-desc-tt">전시 / 행사</p>
+                                <p class="v-story-desc">CES 2020</p>
                             </div>
-                            <span><img src="imgs/review/rv1.png" alt="">쿵맘</span>
-                        </a>
-                    </div>
-                    <div class="review_box">
-                        <a href="https://blog.naver.com/gowlsl2222/222649143483">
-                            <div class="r_img"><img src="imgs/review/r2.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[배송] 뜨락영농조합</em>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="block">
+                                <div class="img-box">
+                                    <img src="https://source.unsplash.com/random/690x386" alt="">
+                                </div>
+                                <div class="discover">
+                                    <span class="discover-btn block"></span>
+                                    <span class="discover-txt block">EXPLORE</span>
+                                </div>
+                            </a>
+                            <div class="v-story-desc-list">
+                                <p class="v-story-desc-tt">SAMSUNG WITHIN</p>
+                                <p class="v-story-desc">밀리 바비 브라운과 함께하는<br>
+                                    #SpreadTheLove</p>
                             </div>
-                            <span><img src="imgs/review/profile.png" alt="">지니주노</span>
-                        </a>
-                    </div>
-                    <div class="review_box">
-                        <a href="https://blog.naver.com/ewewoo/222648712378">
-                            <div class="r_img"><img src="imgs/review/r3.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[마포] 다이안</em>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="block">
+                                <div class="img-box">
+                                    <img src="https://source.unsplash.com/random/690x386" alt="">
+                                </div>
+                                <div class="discover">
+                                    <span class="discover-btn block"></span>
+                                    <span class="discover-txt block">EXPLORE</span>
+                                </div>
+                            </a>
+                            <div class="v-story-desc-list">
+                                <p class="v-story-desc-tt">SAMSUNG WITHIN</p>
+                                <p class="v-story-desc">초고화질 시대를 향한 거대한 도약</p>
                             </div>
-                            <span><img src="imgs/review/profile.png" alt="">하이하잉</span>
-                        </a>
-                    </div>
-                    <div class="review_box">
-                        <a href="https://blog.naver.com/yes3221/222654205991">
-                            <div class="r_img"><img src="imgs/review/r6.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>인스타</span>
-                                <em>[인스타기자단] 피부관리닥터수전주점</em>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="block">
+                                <div class="img-box">
+                                    <img src="https://source.unsplash.com/random/690x386" alt="">
+                                </div>
+                                <div class="discover">
+                                    <span class="discover-btn block"></span>
+                                    <span class="discover-txt block">EXPLORE</span>
+                                </div>
+                            </a>
+                            <div class="v-story-desc-list">
+                                <p class="v-story-desc-tt">다양한 활용</p>
+                                <p class="v-story-desc">젊은 기업가들에게 배우는 성공의 자세</p>
                             </div>
-                            <span><img src="imgs/review/rv2.png" alt="">용용이9</span>
-                        </a>
-                    </div>
-                    <div class="review_box">
-                        <a href="https://blog.naver.com/lemong_s/222651860325">
-                            <div class="r_img"><img src="imgs/review/r7.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[경기 파주] 어반그로브</em>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="block">
+                                <div class="img-box">
+                                    <img src="https://source.unsplash.com/random/690x386" alt="">
+                                </div>
+                                <div class="discover">
+                                    <span class="discover-btn block"></span>
+                                    <span class="discover-txt block">EXPLORE</span>
+                                </div>
+                            </a>
+                            <div class="v-story-desc-list">
+                                <p class="v-story-desc-tt">SAMSUNG WITHIN</p>
+                                <p class="v-story-desc">5G의 오늘과 내일</p>
                             </div>
-<<<<<<< HEAD
-                            <em><b>신청 132</b> / 2명</em>
-=======
-                            <span><img src="imgs/review/rv7.png" alt="">시소소</span>
->>>>>>> ae0c45afbd67f059ab8ae03f442dd4e22199f145
-                        </a>
-                    </div>
-                    <div class="review_box">
-                        <a href="https://blog.naver.com/kym9576/222654088965">
-                            <div class="r_img"><img src="imgs/review/r9.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[배송] 소유라이프-케이지</em>
+                        </div>
+                        <div class="slider-item">
+                            <a href="#" class="block">
+                                <div class="img-box">
+                                    <img src="https://source.unsplash.com/random/690x386" alt="">
+                                </div>
+                                <div class="discover">
+                                    <span class="discover-btn block"></span>
+                                    <span class="discover-txt block">EXPLORE</span>
+                                </div>
+                            </a>
+                            <div class="v-story-desc-list">
+                                <p class="v-story-desc-tt">건강</p>
+                                <p class="v-story-desc">나쁜 스마트폰 사용 습관 버리는 방법</p>
                             </div>
-                            <span><img src="imgs/review/rv9.png" alt="">Liydah</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </section>
         <!-- 리뷰  -->
         <section id="partner" class="section" data-anchor="anchor10">
@@ -641,7 +678,7 @@
         </div>
     </div>
 
-   
+
     <!-- floating_menu  -->
 
 
@@ -653,35 +690,35 @@
 
     <!-- fullpage  -->
     <script>
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true,
-        lockAnchors: true,
-        menu: '#myMenu',
-        navigation: true,
-		navigationPosition: 'right',
-        navigationTooltips: ['MAIN', 'PROMOTION', 'POINT', 'SUPPORT', 'MANAGEMENT', 'GROWTH', 'CAMPAGIGN', 'PROCESS', 'REVIEW', 'PARTNER', 'CONTACT', 'INFO'],
-        showActiveTooltip: true, 
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //options here
+                autoScrolling: true,
+                scrollHorizontally: true,
+                lockAnchors: true,
+                menu: '#myMenu',
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['MAIN', 'PROMOTION', 'POINT', 'SUPPORT', 'MANAGEMENT', 'GROWTH',
+                    'CAMPAGIGN', 'PROCESS', 'REVIEW', 'PARTNER', 'CONTACT', 'INFO'
+                ],
+                showActiveTooltip: true,
 
-        // scrollBar: true,
-
-
-        // 스크롤 
-        // scrollingSpeed: 500,
-        easing: 'easeInOutCubic',
-	});
-
-	//methods
-	$.fn.fullpage.setAllowScrolling(true);
-
-    
-});
+                // scrollBar: true,
 
 
+                // 스크롤 
+                // scrollingSpeed: 500,
+                easing: 'easeInOutCubic',
+            });
+
+            //methods
+            $.fn.fullpage.setAllowScrolling(true);
+
+
+        });
     </script>
-    
+
 
 </body>
 

@@ -173,9 +173,9 @@
     width: 100%;
 }
 
-.review .new-pagination {
+/* .review .new-pagination {
     display: none !important;
-}
+} */
 
 /* Bullets */
 .swiper-pagination-bullets-dynamic {
@@ -240,18 +240,18 @@ button.swiper-pagination-bullet {
 }
 
 /* yoon edit start*/
-#only .swiper-container-horizontal>.swiper-pagination-bullets {
+/* #only .swiper-container-horizontal>.swiper-pagination-bullets {
     position: absolute;
     top: 45%;
     transform: translateY(-1055%);
     left: 0;
-}
+} */
 
 /* yoon edit end  */
 
-#review .swiper-pagination-bullets {
+/* #review .swiper-pagination-bullets {
     display: none;
-}
+} */
 
 /* visual swiper  */
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -314,7 +314,7 @@ button.swiper-pagination-bullet {
 
 
 /* reviews slider  */
-.reviews .slick-slide {
+/* .reviews .slick-slide {
     margin: 5px;
 }
 
@@ -328,13 +328,14 @@ button.swiper-pagination-bullet {
     left: -299px;
     top: 249px;
     width: 7%;
-}
+} */
 
 
 /* 광고주대상 프로모션  */
 
 .pr_swiper {
     position: relative;
+    overflow: hidden;
 }
 
 
