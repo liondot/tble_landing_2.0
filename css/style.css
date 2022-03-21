@@ -201,7 +201,7 @@ nav .iqr {
 /************** 메인 비주얼 영역 **************/
 
 #main_visual {
-    background: url('../imgs/main_visual.png') no-repeat center / auto 100%;
+    background: url('../imgs/main_visual.png') no-repeat center / auto 105%;
     position: relative;
     overflow: hidden;
     padding-top: 0;
@@ -1948,6 +1948,10 @@ form input::placeholder {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+    }
+
+    .grow_left {
+        margin-top: 3vh;
     }
 
     .grow_left img {
