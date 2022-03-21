@@ -167,7 +167,7 @@ nav .iqr {
 }
 
 .main_menu ul li:nth-child(2),
-.main_menu ul li:nth-child(3), 
+.main_menu ul li:nth-child(3),
 .main_menu ul li:nth-child(6),
 .main_menu ul li:nth-child(8),
 .main_menu ul li:nth-child(9),
@@ -296,7 +296,7 @@ nav .iqr {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column ;
+    flex-direction: column;
     position: relative;
 
 }
@@ -334,18 +334,20 @@ nav .iqr {
 }
 
 .pro_cards:first-child .pro_card:first-child {
-    margin-left:10%
+    margin-left: 10%
 }
+
 .pro_cards:first-child .card_second {
     margin-right: 10%
 }
+
 .pro_cards:nth-child(2) .card_one {
     margin-left: 10%
-} 
+}
 
 .pro_cards:nth-child(2) .card_two {
     margin-right: 10%
-} 
+}
 
 /* .pr_swiper .swiper-slide {
     margin-top: 150px;
@@ -410,7 +412,7 @@ nav .iqr {
 }
 
 .pr-pagination .swiper-pagination-bullet {
-    border-color : var(--point-color) !important;
+    border-color: var(--point-color) !important;
     color: var(--point-color) !important;
 }
 
@@ -486,7 +488,7 @@ nav .iqr {
 }
 
 .point_ics img {
-    width:90%;
+    width: 90%;
 }
 
 .point_des {
@@ -545,10 +547,10 @@ nav .iqr {
 }
 
 .line {
-  display: inline-block;
-  width: 1px;
-  height: 6%;
-  background: #fff;
+    display: inline-block;
+    width: 1px;
+    height: 6%;
+    background: #fff;
 
 }
 
@@ -621,7 +623,7 @@ nav .iqr {
     right: 60%;
 }
 
-.manage_icons .ma_and.and_se{
+.manage_icons .ma_and.and_se {
     right: 280px;
 }
 
@@ -643,10 +645,10 @@ nav .iqr {
 
 /************** growth 함께성장해요 영역 **************/
 #growth {
- background: url(../imgs/growth_bg.jpg) no-repeat center / auto;
- padding-top: 0;
- position: relative;
- z-index: -3;
+    background: url(../imgs/growth_bg.jpg) no-repeat center / auto;
+    padding-top: 0;
+    position: relative;
+    z-index: -3;
 
 }
 
@@ -655,9 +657,9 @@ nav .iqr {
     height: 100vh;
     align-items: center;
     padding: 0 50px;
-} 
+}
 
-.mo_grow_sub, 
+.mo_grow_sub,
 .mo_grow_main {
     display: none;
 }
@@ -750,7 +752,7 @@ nav .iqr {
 
 
 /* ****************** campaign ****************** */
- 
+
 #campaign {
     position: relative;
     z-index: -3;
@@ -780,7 +782,7 @@ nav .iqr {
     align-items: center;
     position: relative;
     margin: 0 auto;
-    height: 44vh;
+    height: 40vh;
 }
 
 
@@ -814,7 +816,7 @@ nav .iqr {
     max-width: 500px;
     max-height: 500px;
     background: #333;
-    border-radius: 50% ;
+    border-radius: 50%;
     display: inline-block;
 }
 
@@ -844,8 +846,8 @@ nav .iqr {
     position: absolute;
     bottom: -5px;
     left: 50%;
-    transform: translateX(-50% );
-    
+    transform: translateX(-50%);
+
 }
 
 .round_txt p {
@@ -858,10 +860,10 @@ nav .iqr {
     position: relative;
 }
 
-.campaign_sub p  {
+.campaign_sub p {
     font-size: 2.5vw;
     letter-spacing: -4px;
-    line-height: 1.5    ;
+    line-height: 1.5;
     font-weight: var(--font-weight-medium);
     font-family: var(--font-family-gmarket);
     padding: 0;
@@ -1024,7 +1026,7 @@ nav .iqr {
 .cam_sub_tit .cam_st {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 5px;
- }
+}
 
 .cam_sub_tit .fir {
     color: gray;
@@ -1033,6 +1035,7 @@ nav .iqr {
 .campaign_card em b {
     color: #fabe00;
 }
+
 .campaign_cards .slick-slide {
     margin: 10px;
 }
@@ -1076,7 +1079,7 @@ nav .iqr {
 
 .kt_icon p {
     color: #fff;
-    font-size:28px;
+    font-size: 28px;
     font-family: var(--font-family-gmarket);
     letter-spacing: -3px;
     height: 100px;
@@ -1095,8 +1098,7 @@ nav .iqr {
     align-items: center;
 }
 
-#review .wrapper {
-}
+#review .wrapper {}
 
 .review_title {
     margin-top: 10px;
@@ -1105,8 +1107,8 @@ nav .iqr {
 
 /* custom  */
 
-  /* Default slide */
-  #review .center-slider .slick-slide{
+/* Default slide */
+#review .center-slider .slick-slide {
 
     background-color: #fff;
     color: #FFF;
@@ -1124,126 +1126,133 @@ nav .iqr {
     text-align: center;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  }
+}
 
-  
-  #review .center-slider .slick-slide,
-  #review .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+
+#review .center-slider .slick-slide,
+#review .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
     transform: scale(0.8, 0.8);
     transition: all 0.4s ease-in-out;
-  }
-  
-  /* Active center slide (You can change anything here for cenetr slide)*/
-  #review .center-slider .slick-center,
-  #review .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+}
+
+/* Active center slide (You can change anything here for cenetr slide)*/
+#review .center-slider .slick-center,
+#review .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
     transform: scale(1);
     background-color: #fff !important;
-  }
-  
-  #review .slick-next, .slick-prev{
+}
+
+#review .slick-next,
+.slick-prev {
     z-index: 5;
-  }
-  #review .slick-next{
+}
+
+#review .slick-next {
     right: -11px;
-  }
-  #review .slick-prev{
+}
+
+#review .slick-prev {
     left: -13px;
-  }
-  #review .slick-next:before, .slick-prev:before{
+}
+
+#review .slick-next:before,
+.slick-prev:before {
     color: #000;
     font-size: 2vw !important;
-  }
+}
 
-  #review .slick-next:before, .slick-prev:before {
+#review .slick-next:before,
+.slick-prev:before {
     color: #000 !important;
     font-size: 2vw;
 
-  }
+}
 
-  .review_box {
-      width: 385px ;
-      height: 680px;
-      border: 1px solid yellow !important;
-      text-align: center;
-      display: block !important;
-      margin: 0 auto !important;
-      justify-content: center;
-      background: #f3f3f3;
-      border-radius: 20px !important;
-  }
-
-
-  .review_img img {
-      height: 340px;
-  }
-
-  .review_con {
-      color: #333;
-      padding: 20px;
-      font-size: 1vw;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 30%;
-  }
-
-  .rev_sns {
-      font-size: 1vw;
-      font-family: var(--font-familly-gmarket);
-      font-weight: bold;
-      background : var(--point-color);
-      padding: 8px 30px;
-      border-radius: 30px;
-  }
-  
-  .review_con p {
-      padding: 0;
-      margin: 15px 0 5px;
-  }
-
-  .rev_profile {
-      width: 100%;
-      text-align: center;
-      margin: 20px 0 0;
-
-  }
-
-  .rev_profile img {
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-  }
-
-  #review .slick-slider {
-      height: 75vh;
-
-  }
-
-  .slick-slider .slick-track, .slick-slider .slick-list {
-      display: flex;
-      align-items: center;
-      height: 75vh;
+.review_box {
+    width: 385px;
+    height: 680px;
+    border: 1px solid yellow !important;
+    text-align: center;
+    display: block !important;
+    margin: 0 auto !important;
+    justify-content: center;
+    background: #f3f3f3;
+    border-radius: 20px !important;
+}
 
 
-  }
+.review_img img {
+    height: 340px;
+}
 
-  #review .slick-slide img {
-      margin : 0 auto;
-  }
+.review_con {
+    color: #333;
+    padding: 20px;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+}
 
-  .rev_profile em {
-      font-size: 20px;
-  }
+.rev_sns {
+    font-size: 1vw;
+    font-family: var(--font-familly-gmarket);
+    font-weight: bold;
+    background: var(--point-color);
+    padding: 8px 30px;
+    border-radius: 30px;
+}
 
-  #review .center-slider .slick-slide {
-      box-sizing: border-box;
-  }
+.review_con p {
+    padding: 0;
+    margin: 15px 0 5px;
+}
+
+.rev_profile {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
+
+}
+
+.rev_profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#review .slick-slider {
+    height: 75vh;
+
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+
+
+}
+
+#review .slick-slide img {
+    margin: 0 auto;
+}
+
+.rev_profile em {
+    font-size: 20px;
+}
+
+#review .center-slider .slick-slide {
+    box-sizing: border-box;
+}
 
 
 
 /************** 파트너사 영역 **************/
 
-#partner{
+#partner {
     background: #f3f3f3;
 }
 
@@ -1261,7 +1270,7 @@ nav .iqr {
 }
 
 
-.partner_img img{
+.partner_img img {
     width: 100%;
     width: 1200px;
     max-width: 100%;
@@ -1277,7 +1286,7 @@ nav .iqr {
 /************** 광고 문의 신청하기 영역 **************/
 
 #contact {
-   background: url(../imgs/contact_bg.jpg) no-repeat center / auto;
+    background: url(../imgs/contact_bg.jpg) no-repeat center / auto;
 }
 
 #contact .contents {
@@ -1329,7 +1338,7 @@ form input {
 }
 
 form input[type=checkbox] {
-    height: 25px; 
+    height: 25px;
     width: 25px;
     font-size: 28px;
 }
@@ -1420,9 +1429,9 @@ form input::placeholder {
 /************** footer 영역 **************/
 
 #footer {
-   background: url(../imgs/);
-   background: #333;
-   padding-top: 0;
+    background: url(../imgs/);
+    background: #333;
+    padding-top: 0;
 }
 
 #footer .contents {
@@ -1665,7 +1674,7 @@ form input::placeholder {
         margin-top: 10px;
     }
 
-    .swiper-pagination-bullet-active:after{
+    .swiper-pagination-bullet-active:after {
         top: 97%;
     }
 
@@ -1803,7 +1812,7 @@ form input::placeholder {
     }
 
     .point_ic_1,
-    .point_ic_2, 
+    .point_ic_2,
     .point_ic_3 {
         display: flex;
         flex-direction: row;
@@ -1834,477 +1843,516 @@ form input::placeholder {
         text-align: right !important;
     }
 
-        /***** support 영역 *****/
-        .support_txt {
-            font-size: 6vw;
-            padding: 0 30px;
-        }
-
-        .support_img {
-            width: 100% !important;
-            max-width: 100%;
-        }
-
-        .support_main_txt p {
-            font-size: 8vw;
-            padding: 0 30px !important;
-        }
-
-        /***** #management 관리 영역 *****/
-
-        #management .contents {
-            padding: 0 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        .manage_icons {
-            height: unset;
-        }
-
-        .manage_icons > div {
-            margin-top: 0;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            margin-top: 0;
-        }
-
-        .manage_icons {
-            flex-direction: column;
-        }
-
-        .manage_ico {
-            margin: 10px 0;
-            padding: 10px 0;
-        }
-        .manage_ico img {
-            width: 110px;
-            height: 110px;
-            max-width: 100%;
-        }
-
-        .manage_des {
-            display: flex;
-            flex-direction: column;
-            margin-left: 15px;
-            width: 217px;
-        }
-
-        .manage_des hr {
-            width: 100%;
-        }
-
-        .manage_des span {
-            font-size: 5vw;
-            text-align: left;
-        }
-        
-        .manage_des p {
-            font-size: 18px;
-            text-align: left;
-            margin: 0;
-        }
-
-        .manage_ico:first-child .manage_des p {
-            padding: 0 2px;
-        }
-
-        .manage_ico:nth-child(2) .manage_des p  {
-
-        }
-
-        /***** #growth 함께성장해요 영역 *****/
-
-        #growth .contents {
-            display: block;
-            padding: 0 15px;
-        }
-
-        .grow_sub,
-        .grow_main {
-            display: none;
-        }
-
-        .mo_grow_sub, 
-        .mo_grow_main {
-            display: block;
-        }
-
-        .mo_grow_sub {
-            font-size: 4.5vw;
-            letter-spacing: -2px;
-        }
-
-        .grows {
-            border: 1px solid green;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-        }
-
-        .grow_left img  {
-            width: 90%;
-        }
-
-        .grow_left {
-            margin: 0 auto;
-            text-align: center;
-            flex: 1;
-            display: flex;
-        }
-
-        .grow_left {
-            display: flex;
-            flex: 2;
-        }
-
-        .grow_txt {
-            margin-left: 0;
-            font-size: 24px;
-        }
-
-        .grow_txt span {
-            font-size: 52px;
-        }
-
-        .grow_lines {
-            left: -220px;
-            width: 250%;
-        }
-
-        .grow_line {
-            height: 60px;
-            padding-left: 65px;
-    margin-bottom: 13px;            
-        }
-
-        .check img {
-            width: 65%;
-        }
-        
-        .grow_line em {
-            font-size: 25px;
-            margin-left: -15px;
-        }
-
-        .grow_line p {
-            font-size: 14px;
-            right: 37px;
-            width: 170px;
-            justify-content: flex-start;
-        }
-
-        .grow_line p:before {
-            left: -59px;
-    border: 30px solid #fff;
-    border-left: 30px solid transparent;
-    border-top: 30px solid transparent;
-        }
-
-
-
-        /***** campaign 영역 *****/
-
-
-        #campaign {
-            width: 100%;
-        }
-        
-        .campaign_round {
-            width: 100%;
-        }
-
-        .round_con {
-            flex-direction: column;
-        }
-
-        /***** 마케팅 진행 순서 영역 *****/
-
-        .main_title.mkt_title {
-            width: 100%;
-            padding-bottom: 0;
-        }
-
-        .mkt_icons {
-            flex-direction: column;
-            margin-top: 18px;
-        }
-
-        .kt_icon {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: flex-start;
-            height: 105px;
-            border-bottom: 1px solid #e3e3e3
-        }
-
-        .kt_icon:last-child {
-            border: none;
-        }
-
-        .kt_icon p  {
-            margin-left: 20px;
-            display: flex;
-            align-items: center;
-            text-align: left;
-            font-size: 24px;
-        }
-
-        .kt_icon img {
-            width: 11vh;
-        }
-
-        
-
-    
-        /***** review 영역 *****/
-
-        .main_title.review_title {
-            width: 100%;
-        }
-        
-
-
-        /***** 파트너사 영역 *****/
-        section#partner {
-            background: #eee;
-        }
-
-        .mo_portner_img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 15px;
-        }
-
-        .mo_portner_img img {
-            width: 80%;
-            margin-top: 10px;
-        }
-
-        .main_title.partner_title {
-            width: 100%;
-        }
-
-        #partner {
-            height: auto;
-        }
-
-        .partner_img img {
-            display: none;
-        }
-
-        .mo_parter_img {
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .mo_parter_img img {
-            width: 95%;
-        }
-
-        /***** #contact 광고 문의 신청하기 영역 *****/
-
-        #contact {
-            width: 100%;
-            height: 700px;
-            position: relative;
-            background: url(../imgs/mo/mo_contact.jpg) no-repeat center / auto 100%;
-            box-sizing: border-box;
-        }
-
-        .main_title.contact_title {
-            width: 100%;
-        }
-
-        #contact:before {
-            content: '';
-            background: url(../imgs/mo/mo_contact_txt.png) no-repeat center;
-            position: absolute;
-            top: 10px;
-            left: 0;
-            z-index: 10;
-            height: 150px;
-            background-size: 90%;
-        }
-
-        #contact .form {
-            width: 88%;
-            border-radius: 15px;
-        }
-
-        form input {
-            width: 100%;
-            height: 50px;
-            font-size: 18px;
-        }
-
-        form input[type=checkbox] {
-            height: 18px;
-            width: 18px;
-            font-size: 28px;
-        }
-
-        .form {
-            width: 100%;
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box !important;
-        }
-
-
-        form input::placeholder {
-            font-size: 18px;
-            color: #000;
-        }
-
-        form em {
-            font-size: 14px;
-            margin-left: 8px;
-        }
-
-        .contact_btn {
-            margin: 20px 0 10px;
-            width: 100%;
-        }
-
-        .contact_btn span {
-            width: 190px;
-            height: 55px;
-            line-height: 55px;
-            font-size: 25px;
-            padding-right: 62px;
-        }
-
-        .contact_btn img {
-            max-width: 100%;
-            width: 30px;
-            right: 60px;
-        }
-
-        .last_input span {
-            font-size: 16px;
-        }
-
-        .footer_thankyou_message span,
-        .thankyou_message span {
-            font-size: 40px;
-        }
-
-        /***** footer 영역 *****/
-
-        #footer {
-            width: 100%;
-            position: relative;
-        }
-
-        .footer_logo {
-            width: 174px;
-            left: 20px;
-            top: 60px
-        }
-
-        .keymessage {
-            left: 20px;
-            top: 286px;
-            font-size: 7.5vw;
-        }
-        
-        .footer_txt {
-            color: #fff;
-            font-weight: var(--font-weight-light);
-            font-size: 12px;
-            line-height: 1.5;
-            width: 100%;
-            padding: 0 20px;
-            margin-right: 70px;
-        }
-
-
-
-        /***** floating_menu 영역 *****/
-        .floating_menu.active {
-            display: none;
-        }
-
-        /* fullpage custom */
-
-        .visual_title p {
-            font-size: 4vw;
-        }
-
-        #fp-nav {
-            top: 55% !important;
-        }
-
-        #fp-nav.right {
-            right: -5px !important;
-        }
-
-        #fp-nav ul li a span, .fp-slidesNav ul li a span {
-            transform: translate(-30%, 6%) !important;
-            border: 1px solid #fff !important;
-        }
-
-        #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
-            opacity: 0 !important;
-        }
-
-        .point_des em {
-            width: 93%;
-            font-size: 3vw;
-            text-align:left;
-        }
-       
-        #fp-nav ul li, .fp-slidesNav ul li {
-            margin: 15px !important;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        
-       
-
+    /***** support 영역 *****/
+    .support_txt {
+        font-size: 6vw;
+        padding: 0 30px;
+    }
+
+    .support_img {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .support_main_txt p {
+        font-size: 8vw;
+        padding: 0 30px !important;
+    }
+
+    /***** #management 관리 영역 *****/
+
+    #management .contents {
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .manage_icons {
+        height: unset;
+    }
+
+    .manage_icons>div {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .manage_icons {
+        flex-direction: column;
+    }
+
+    .manage_ico {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .manage_ico img {
+        width: 110px;
+        height: 110px;
+        max-width: 100%;
+    }
+
+    .manage_des {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        width: 217px;
+    }
+
+    .manage_des hr {
+        width: 100%;
+    }
+
+    .manage_des span {
+        font-size: 5vw;
+        text-align: left;
+    }
+
+    .manage_des p {
+        font-size: 18px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .manage_ico:first-child .manage_des p {
+        padding: 0 2px;
+    }
+
+    .manage_ico:nth-child(2) .manage_des p {}
+
+    /***** #growth 함께성장해요 영역 *****/
+
+    #growth .contents {
+        display: block;
+        padding: 0 15px;
+    }
+
+    .grow_sub,
+    .grow_main {
+        display: none;
+    }
+
+    .mo_grow_sub,
+    .mo_grow_main {
+        display: block;
+    }
+
+    .mo_grow_sub {
+        font-size: 4.5vw;
+        letter-spacing: -2px;
+    }
+
+    .grows {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .grow_left img {
+        width: 90%;
+    }
+
+    .grow_left {
+        margin: 0 auto;
+        text-align: center;
+        flex: 1;
+        display: flex;
+    }
+
+    .grow_left {
+        display: flex;
+        flex: 2;
+    }
+
+    .grow_txt {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .grow_txt span {
+        font-size: 52px;
+    }
+
+    .grow_lines {
+        left: -220px;
+        width: 250%;
+    }
+
+    .grow_line {
+        height: 60px;
+        padding-left: 65px;
+        margin-bottom: 13px;
+    }
+
+    .check img {
+        width: 65%;
+    }
+
+    .grow_line em {
+        font-size: 25px;
+        margin-left: -15px;
+    }
+
+    .grow_line p {
+        font-size: 14px;
+        right: 37px;
+        width: 170px;
+        justify-content: flex-start;
+    }
+
+    .grow_line p:before {
+        left: -59px;
+        border: 30px solid #fff;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
+    }
+
+
+
+    /***** campaign 영역 *****/
+
+    .campaign_round {
+        width: 170px;
+        height: 170px;
+        margin-right: 5vw;
+    }
+
+    .campaign_round:after {
+        left: -10px;
+        top: -11px;
+        border: 10px solid var(--point-color);
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
 
     }
 
- /* fullpage css  */
+    .campaign_number {
+        font-size: 30px;
+        width: 58vw;
+    }
 
- #fp-nav ul li a span, .fp-slidesNav ul li a span {
-     background: var(--point-color) !important;
- }
+    .round_txt p {
+        font-size: 13px;
+        letter-spacing: -1px;
+    }
 
- #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    .campaign_sub {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8vh;
+    }
+
+    .campaign_sub img {
+        width: 10vw;
+    }
+ 
+    .campaign_sub p {
+        font-size: 6.5vw;
+    }
+
+    .more_btn {
+        right: 12%;
+        bottom: 45px;
+    }
+
+    .campaign_cards .slick-dots {
+        bottom: 150px;
+    }
+ 
+    /***** 마케팅 진행 순서 영역 *****/
+
+    .main_title.mkt_title {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .mkt_icons {
+        flex-direction: column;
+        margin-top: 18px;
+    }
+
+    .kt_icon {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+        height: 105px;
+        border-bottom: 1px solid #e3e3e3
+    }
+
+    .kt_icon:last-child {
+        border: none;
+    }
+
+    .kt_icon p {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .kt_icon img {
+        width: 11vh;
+    }
+
+
+
+
+    /***** review 영역 *****/
+
+    .main_title.review_title {
+        width: 100%;
+    }
+
+
+
+    /***** 파트너사 영역 *****/
+    section#partner {
+        background: #eee;
+    }
+
+    .mo_portner_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .mo_portner_img img {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .main_title.partner_title {
+        width: 100%;
+    }
+
+    #partner {
+        height: auto;
+    }
+
+    .partner_img img {
+        display: none;
+    }
+
+    .mo_parter_img {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mo_parter_img img {
+        width: 95%;
+    }
+
+    /***** #contact 광고 문의 신청하기 영역 *****/
+
+    #contact {
+        width: 100%;
+        height: 700px;
+        position: relative;
+        background: url(../imgs/mo/mo_contact.jpg) no-repeat center / auto 100%;
+        box-sizing: border-box;
+    }
+
+    .main_title.contact_title {
+        width: 100%;
+    }
+
+    #contact:before {
+        content: '';
+        background: url(../imgs/mo/mo_contact_txt.png) no-repeat center;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 10;
+        height: 150px;
+        background-size: 90%;
+    }
+
+    #contact .form {
+        width: 88%;
+        border-radius: 15px;
+    }
+
+    form input {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    form input[type=checkbox] {
+        height: 18px;
+        width: 18px;
+        font-size: 28px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box !important;
+    }
+
+
+    form input::placeholder {
+        font-size: 18px;
+        color: #000;
+    }
+
+    form em {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    .contact_btn {
+        margin: 20px 0 10px;
+        width: 100%;
+    }
+
+    .contact_btn span {
+        width: 190px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 25px;
+        padding-right: 62px;
+    }
+
+    .contact_btn img {
+        max-width: 100%;
+        width: 30px;
+        right: 60px;
+    }
+
+    .last_input span {
+        font-size: 16px;
+    }
+
+    .footer_thankyou_message span,
+    .thankyou_message span {
+        font-size: 40px;
+    }
+
+    /***** footer 영역 *****/
+
+    #footer {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer_logo {
+        width: 174px;
+        left: 20px;
+        top: 60px
+    }
+
+    .keymessage {
+        left: 20px;
+        top: 286px;
+        font-size: 7.5vw;
+    }
+
+    .footer_txt {
+        color: #fff;
+        font-weight: var(--font-weight-light);
+        font-size: 12px;
+        line-height: 1.5;
+        width: 100%;
+        padding: 0 20px;
+        margin-right: 70px;
+    }
+
+
+
+    /***** floating_menu 영역 *****/
+    .floating_menu.active {
+        display: none;
+    }
+
+    /* fullpage custom */
+
+    .visual_title p {
+        font-size: 4vw;
+    }
+
+    #fp-nav {
+        top: 55% !important;
+    }
+
+    #fp-nav.right {
+        right: -5px !important;
+    }
+
+    #fp-nav ul li a span,
+    .fp-slidesNav ul li a span {
+        transform: translate(-30%, 6%) !important;
+        border: 1px solid #fff !important;
+    }
+
+    #fp-nav ul li:hover .fp-tooltip,
+    #fp-nav.fp-show-active a.active+.fp-tooltip {
+        opacity: 0 !important;
+    }
+
+    .point_des em {
+        width: 93%;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #fp-nav ul li,
+    .fp-slidesNav ul li {
+        margin: 15px !important;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+
+
+
+}
+
+/* fullpage css  */
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: var(--point-color) !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
     transform: translate(-30%, 6%) !important;
     border: 1px solid #fff !important;
 }
 
- #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
-     width: 20px !important;
-     height: 20px !important;
-     border: 1px solid #fff;
- }
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #fff;
+}
 
- #fp-nav ul li .fp-tooltip.right {
-     font-size: 20px ;
-     color: #999;
- }
+#fp-nav ul li .fp-tooltip.right {
+    font-size: 20px;
+    color: #999;
+}
 
- #fp-nav ul li, .fp-slidesNav ul li {
-     margin: 15px !important;
-     padding-left: 20px;
- }
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    margin: 15px !important;
+    padding-left: 20px;
+}
 
- #fp-nav {
-     transform: translateY(-50%);
- }
-
-
- 
+#fp-nav {
+    transform: translateY(-50%);
+}
