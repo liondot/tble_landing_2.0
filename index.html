@@ -21,10 +21,23 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- fullpage scroll  -->
-    <script src="js/fullpage/scrolloverflow.js"></script>
+    <!-- <script src="js/fullpage/scrolloverflow.js"></script> -->
     <script src="js/fullpage/jquery.fullPage.js" defer></script>
+    <script src="js/fullpage/scrolloverflow.js"></script>
+    <script src="js/fullpage/scrolloverflow.min.js"></script>
     <link rel="stylesheet" href="js/fullpage/jquery.fullPage.css">
 </head>
+<style>
+    #btnBb a {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        color: red;
+    }
+</style>
 
 <body>
     <header>
@@ -54,7 +67,7 @@
     </header>
     <!-- header  -->
     <div id="fullpage">
-        <section id="main_visual" class="section active" data-anchor="anchor1">
+        <section id="main_visual" class="section active">
             <h2 class="hide">메인비주얼</h2>
             <div class="contents">
                 <div class="visual_desc">
@@ -63,9 +76,11 @@
                         <strong>플랫폼 &quot;<span>티블</span>&quot;</strong>
                         <p>효과있는 마케팅 티블 체험단과 함께 성장하세요!</p>
                     </div>
-                    <div class="visual_btn">
-                        상담문의
-                        <img src="imgs/arrow_right.png" alt="">
+                    <div id="visualBtn" class="visual_btn">
+                        <a href="#page11">
+                            상담문의
+                            <img src="imgs/arrow_right.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="visual_image">
@@ -74,7 +89,7 @@
             </div>
         </section>
         <!-- 메인 비주얼 영역  -->
-        <section id="promotion" class="section" data-anchor="anchor2">
+        <section id="promotion" class="section">
             <h2 class="hide">프로모션</h2>
             <div class="contents">
                 <div class="main_title promotion_title">
@@ -114,7 +129,7 @@
             </div>
         </section>
         <!-- 프로모션 영역 -->
-        <section id="point" class="section" data-anchor="anchor3">
+        <section id="point" class="section">
             <h2 class="hide">포인트</h2>
             <div class="contents">
                 <div class="main_title point_title">
@@ -153,7 +168,7 @@
             </div>
         </section>
         <!-- tble point 영역  -->
-        <section id="support" class="section" data-anchor="anchor4">
+        <section id="support" class="section">
             <h2 class="hide">서포트 영역</h2>
             <div class="contents">
                 <div class="support_txt">
@@ -173,7 +188,7 @@
             </div>
         </section>
         <!-- 분석 시스템 영역  -->
-        <section id="management" class="section" data-anchor="anchor5">
+        <section id="management" class="section">
             <h2 class="hide">관리 영역</h2>
             <div class="contents">
                 <div class="manage_icons">
@@ -225,7 +240,7 @@
             </div>
         </section>
         <!-- 관리 영역 -->
-        <section id="growth" class="section" data-anchor="anchor6">
+        <section id="growth" class="section">
             <h2 class="hide">함께성장해요 영역</h2>
             <div class="contents">
                 <div class="grows">
@@ -280,7 +295,7 @@
             </div>
         </section>
         <!-- 함께성장해요 영역  -->
-        <section id="campaign" class="section" data-anchor="anchor7">
+        <section id="campaign" class="section">
             <h2 class="hide">캠페인 영역</h2>
             <div class="contents">
                 <div class="round_con">
@@ -456,7 +471,7 @@
             </div>
         </section>
         <!-- 캠페인  -->
-        <section id="mkt_order" class="section" data-anchor="anchor8">
+        <section id="mkt_order" class="section">
             <h2 class="hide">마케팅 진행 순서 영역</h2>
             <div class="contents">
                 <div class="main_title mkt_title">
@@ -488,7 +503,7 @@
             </div>
         </section>
         <!-- 마케팅 진행 순서 영역-->
-        <section id="review" class="section" data-anchor="anchor9">
+        <section id="review" class="section">
             <h2 class="hide">리뷰영역</h2>
             <div class="container contents">
                 <div class="main_title review_title">
@@ -512,7 +527,7 @@
                         </a>
                     </div>
                     <div class="review_box">
-                       <a href="https://blog.naver.com/gowlsl2222/222649143483">
+                        <a href="https://blog.naver.com/gowlsl2222/222649143483">
                             <div class="review_img">
                                 <img src="imgs/review/r2.png" alt="">
                             </div>
@@ -525,7 +540,7 @@
                                     <em>지니주노</em>
                                 </div>
                             </div>
-                       </a>
+                        </a>
                     </div>
                     <div class="review_box">
                         <a href="https://blog.naver.com/ewewoo/222648712378">
@@ -595,7 +610,7 @@
             </div>
         </section>
         <!-- 리뷰  -->
-        <section id="partner" class="section" data-anchor="anchor10">
+        <section id="partner" class="section">
             <h2 class="hide">파트너 영역</h2>
             <div class="contents">
                 <div class="main_title partner_title">
@@ -611,7 +626,7 @@
             </div>
         </section>
         <!-- 파트너사 영역  -->
-        <section id="contact" class="section" data-anchor="anchor11">
+        <section id="contact" class="section">
             <h2 class="hide">컨텍트 영역</h2>
             <div class="contents">
                 <div class="main_title contact_title">
@@ -645,7 +660,7 @@
             </div>
         </section>
         <!-- 광고 문의 신청하기 영역  -->
-        <section id="footer" class="section" data-anchor="anchor12">
+        <section id="footer" class="section">
             <h2 class="hide">푸터영역</h2>
             <div class="contents">
                 <div class="footer_txt">
@@ -667,11 +682,10 @@
                 <a href="#contact" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
                 <a href="https://pf.kakao.com/_krlIC"><img src="imgs/ft_icon2.png" alt=""></a>
             </div>
-        </div>
         </section>
         <!-- footer 영역 -->
         <div class="floating_menu">
-            <a href="#contact" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
+            <a href="#page11" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
             <a href="https://pf.kakao.com/_krlIC"><img src="imgs/ft_icon2.png" alt=""></a>
         </div>
     </div>
@@ -693,8 +707,7 @@
                 //options here
                 autoScrolling: true,
                 scrollHorizontally: true,
-                lockAnchors: true,
-                menu: '#myMenu',
+                lockAnchors: false,
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['MAIN', 'PROMOTION', 'POINT', 'SUPPORT', 'MANAGEMENT', 'GROWTH',
@@ -705,6 +718,12 @@
                 // autoScrolling:false,
                 responsiveSlides: true,
                 scrollOverflow: true,
+                showActiveTooltip: true,
+                scrollOverflow: false,
+                menu: '#btnBb',
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8',
+                    'page9', 'page10', 'page11', 'page12'
+                ],
 
 
                 // scrollBar: true,
@@ -718,12 +737,30 @@
             //methods
             $.fn.fullpage.setAllowScrolling(true);
 
+            $('.center-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      arrows: true,
+      dots: false,
+      speed: 1000,
+      centerPadding: '20px',
+      infinite: true,
+      autoplaySpeed: 1000,
+      autoplay: true,
+      responsive: [ 
+      {
+          breakpoint: 500,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      },
+  ]
+    });
+
 
         });
-
-  
-
-
     </script>
 
 

@@ -19,12 +19,12 @@ document.addEventListener('scroll', () => {
 })
 
 // btn scroll 
-const visualBtn = document.querySelector('.visual_btn');
+// const visualBtn = document.querySelector('.visual_btn');
 
-visualBtn.addEventListener('click', () => {
-    const scrollTo = document.querySelector('#contact')
-    scrollTo.scrollIntoView({behavior: 'smooth'})
-});
+// visualBtn.addEventListener('click', () => {
+//     const scrollTo = document.querySelector('#contact')
+//     scrollTo.scrollIntoView({behavior: 'smooth'})
+// });
 
 // 모바일 .iqr btn 클릭시 스크롤 적용 
 const iqrBtn = document.querySelector ('.iqr')
@@ -148,42 +148,42 @@ $('.campaign_cards').slick({
 
   // review slide 
 
-  var $st = $('.pagination');
-var $slickEl = $('.center');
+//   var $st = $('.pagination');
+// var $slickEl = $('.center');
 
-$slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-  var i = (currentSlide ? currentSlide : 0) + 1;
-  $st.text(i + ' of ' + slick.slideCount);
-});
+// $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+//   var i = (currentSlide ? currentSlide : 0) + 1;
+//   $st.text(i + ' of ' + slick.slideCount);
+// });
 
-$slickEl.slick({
-  centerMode: true,
-  centerPadding: '100px',
-  slidesToShow: 5,
-  focusOnSelect: true,
-  dots: false,
-  infinite: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+// $slickEl.slick({
+//   centerMode: true,
+//   centerPadding: '100px',
+//   slidesToShow: 5,
+//   focusOnSelect: true,
+//   dots: false,
+//   infinite: true,
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
 
   $(document).ready(function(){
     $('.center-slider').slick({
@@ -192,10 +192,10 @@ $slickEl.slick({
       centerMode: true,
       arrows: true,
       dots: false,
-      speed: 2000,
+      speed: 1000,
       centerPadding: '20px',
       infinite: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1000,
       autoplay: true,
       responsive: [ 
       {
