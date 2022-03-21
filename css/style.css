@@ -645,7 +645,7 @@ nav .iqr {
 
 /************** growth 함께성장해요 영역 **************/
 #growth {
-    background: url(../imgs/growth_bg.jpg) no-repeat center / auto;
+    background: url(../imgs/growth_bg.jpg) no-repeat center / auto 143%;
     padding-top: 0;
     position: relative;
     z-index: -3;
@@ -964,6 +964,7 @@ nav .iqr {
 
 .campaign_card {
     width: 285px;
+    cursor: pointer;
 }
 
 .campaign_card a {
@@ -1050,6 +1051,14 @@ nav .iqr {
 
 .campaign_cards .slick-list {
     margin-top: 12px;
+}
+
+.campaign_cards .slick-dots {
+    bottom: 260px;
+}
+
+#campaign .slick-next, .slick-prev {
+    display: none !important;
 }
 
 
@@ -1948,6 +1957,7 @@ form input::placeholder {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        margin-top: 2vh;
     }
 
     .grow_left {
@@ -2110,7 +2120,14 @@ form input::placeholder {
     .main_title.review_title {
         width: 100%;
     }
+    
+    #review .slick-next, .slick-prev {
+        display: none !important;
+    }
 
+    .review_con {
+        font-size: 4.5vw;
+    }
 
 
     /***** 파트너사 영역 *****/
