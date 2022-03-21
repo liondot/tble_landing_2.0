@@ -1727,6 +1727,7 @@ form input::placeholder {
     .promotion_title {
         width: 100%;
         padding: 0 10px;
+        border: 1px solid red;
     }
 
     .promotion_title img {
