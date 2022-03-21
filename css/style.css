@@ -195,6 +195,10 @@ nav .iqr {
 }
 
 
+.main_wrapper {
+    display: none;
+}
+
 
 
 
@@ -1553,7 +1557,7 @@ form input::placeholder {
 }
 
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     html {
         box-sizing: border-box;
         width: 100%;
@@ -1573,6 +1577,14 @@ form input::placeholder {
         display: none;
     }
 
+    #fullpage {
+        display: none;
+    }
+
+    #main_wrapper {
+        display: block
+    }
+
     /***** header 영영 *****/
     header {
         box-sizing: border-box;
@@ -1583,7 +1595,6 @@ form input::placeholder {
     #nav {
         padding: 10px 20px;
         height: 80px;
-
     }
 
     nav {
