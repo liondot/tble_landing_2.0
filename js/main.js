@@ -146,38 +146,68 @@ $('.campaign_cards').slick({
 });
 
 
-// 리뷰 라이브러리 comtom 
-console.clear();
+  // review slide 
 
-// review section slide
-$('.reviews').slick({
-    slide: 'div', 
-    infinite: true, 	 
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    speed: 600,
-    arrows: true, 
-    dots: true,
-    autoplay: true, 
-    autoplaySpeed: 10000, 
-    pauseOnHover: true, 
-    vertical: false, 
-    prevArrow: "<button type='button' class='slick-prev'>Previous</button>", 
-    nextArrow: "<button type='button' class='slick-next'>Next</button>", 
-    dotsClass: "slick-dots", 
-    draggable: true, 
-    responsive: [ 
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-    ]
+  var $st = $('.pagination');
+var $slickEl = $('.center');
 
+$slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  $st.text(i + ' of ' + slick.slideCount);
 });
 
+$slickEl.slick({
+  centerMode: true,
+  centerPadding: '100px',
+  slidesToShow: 5,
+  focusOnSelect: true,
+  dots: false,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+  $(document).ready(function(){
+    $('.center-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      arrows: true,
+      dots: false,
+      speed: 2000,
+      centerPadding: '20px',
+      infinite: true,
+      autoplaySpeed: 2000,
+      autoplay: true,
+      responsive: [ 
+      {
+          breakpoint: 500,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      },
+  ]
+    });
+  });
 
 
 
