@@ -554,6 +554,10 @@ nav .iqr {
     letter-spacing: -3px;
 }
 
+.mo_support_txt {
+    display: none;
+}
+
 .line {
     display: inline-block;
     width: 1px;
@@ -987,7 +991,8 @@ nav .iqr {
 }
 
 .campaign_card img {
-    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .campaign_img {
@@ -1023,8 +1028,6 @@ nav .iqr {
     margin-left: 0;
 }
 
-
-
 .cam_sub_tit {
     color: gray;
 }
@@ -1034,8 +1037,6 @@ nav .iqr {
     color: #000;
     text-overflow: ellipsis;
     width: 100%;
-
-
 }
 
 .cam_sub_tit .cam_st {
@@ -1068,7 +1069,7 @@ nav .iqr {
 }
 
 .campaign_cards .slick-dots {
-    bottom: 260px;
+    bottom: 230px;
 }
 
 
@@ -1907,6 +1908,7 @@ form input::placeholder {
     .support_txt {
         font-size: 6vw;
         padding: 0 30px;
+        display: none;
     }
 
     .support_img {
@@ -1917,6 +1919,16 @@ form input::placeholder {
     .support_main_txt p {
         font-size: 8vw;
         padding: 0 30px !important;
+    }
+
+    .mo_support_txt {
+        display: block;
+        font-size: 6vw;
+        padding: 0 30px;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: -1px;
+        margin-top: 10px;
     }
 
     /***** #management 관리 영역 *****/
