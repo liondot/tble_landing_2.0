@@ -421,7 +421,7 @@ nav .iqr {
 }
 
 .pr-pagination.swiper-pagination {
-    top: 48px !important;
+    top: 14px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -1030,6 +1030,8 @@ nav .iqr {
     color: #000;
     text-overflow: ellipsis;
     width: 100%;
+
+
 }
 
 .cam_sub_tit .cam_st {
@@ -1505,6 +1507,8 @@ form input::placeholder {
 
 
 /****** floating_menu 영역 ******/
+
+
 .floating_menu {
     position: fixed;
     z-index: 50;
@@ -1703,7 +1707,7 @@ form input::placeholder {
     }
 
     #promotion .swiper-pagination-clickable .swiper-pagination-bullet {
-        padding: 4px 35px !important;
+        padding: 0 35px !important;
         margin-right: 10px !important;
     }
 
@@ -1726,7 +1730,7 @@ form input::placeholder {
         flex-direction: column !important;
         overflow: hidden;
         position: relative;
-        width: 38%;
+        width: 35%;
     }
 
     .pro_card img {
@@ -1972,7 +1976,7 @@ form input::placeholder {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        margin-top: 2vh;
+        margin-top: 6vh;
     }
 
     .grow_left {
@@ -2027,12 +2031,12 @@ form input::placeholder {
     .grow_line p {
         font-size: 14px;
         right: 37px;
-        width: 170px;
+        width: 190px;
         justify-content: flex-start;
     }
 
     .grow_line p:before {
-        left: -59px;
+        left: -58px;
         border: 30px solid #fff;
         border-left: 30px solid transparent;
         border-top: 30px solid transparent;
@@ -2073,6 +2077,10 @@ form input::placeholder {
         margin-top: 8vh;
     }
 
+    .cam_sub_tit strong {
+        font-size: 4vw !important;
+    }
+
     .campaign_sub img {
         width: 10vw;
     }
@@ -2082,8 +2090,9 @@ form input::placeholder {
     }
 
     .more_btn {
-        right: 12%;
+        right: -10%;
         bottom: 45px;
+        width: 150px;
     }
 
     .campaign_cards .slick-dots {
@@ -2149,7 +2158,7 @@ form input::placeholder {
     }
 
     .review_box {
-       height: 570px; 
+       height: 620px; 
     }
 
     .rev_sns {

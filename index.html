@@ -66,6 +66,13 @@
         </div>
     </header>
     <!-- header  -->
+    <div class="floating_menu" id="floatingMenu">
+        <a href="#page11" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
+        <a href="https://pf.kakao.com/_krlIC"><img src="imgs/ft_icon2.png" alt=""></a>
+    </div>
+</div>
+<!-- floating_menu  -->
+
     <div id="fullpage">
         <section id="main_visual" class="section active">
             <h2 class="hide">메인비주얼</h2>
@@ -684,14 +691,6 @@
             </div>
         </section>
         <!-- footer 영역 -->
-        <div class="floating_menu">
-            <a href="#page11" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
-            <a href="https://pf.kakao.com/_krlIC"><img src="imgs/ft_icon2.png" alt=""></a>
-        </div>
-    </div>
-
-
-    <!-- floating_menu  -->
 
 
     <!-- slick slide js  -->
@@ -705,9 +704,10 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //options here
-                autoScrolling: true,
+                // autoScrolling: true,
                 scrollHorizontally: true,
-                lockAnchors: false,
+                lockAnchors: false, //
+
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['MAIN', 'PROMOTION', 'POINT', 'SUPPORT', 'MANAGEMENT', 'GROWTH',
@@ -715,9 +715,9 @@
                 ],
                 showActiveTooltip: true,
                 responsiveHeight: 800,
-                // autoScrolling:false,
+                autoScrolling:true,
+
                 responsiveSlides: true,
-                scrollOverflow: true,
                 showActiveTooltip: true,
                 scrollOverflow: false,
                 menu: '#btnBb',
@@ -725,13 +725,16 @@
                     'page9', 'page10', 'page11', 'page12'
                 ],
 
+                // normalScrollElements:'#floatingMenu',
+                css3: true,
+
 
                 // scrollBar: true,
 
 
                 // 스크롤 
-                // scrollingSpeed: 500,
-                easing: 'easeInOutCubic',
+                scrollingSpeed: 1000,
+                // easing: 'easeInOutCubic',
             });
 
             //methods
