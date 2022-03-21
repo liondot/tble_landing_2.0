@@ -656,6 +656,12 @@ nav .iqr {
     align-items: center;
     padding: 0 50px;
 } 
+
+.mo_grow_sub, 
+.mo_grow_main {
+    display: none;
+}
+
 .grows {
     display: flex;
 
@@ -1911,17 +1917,46 @@ form input::placeholder {
         /***** #growth 함께성장해요 영역 *****/
 
         #growth .contents {
-            display: unset;
+            display: block;
+            padding: 0 15px;
+        }
+
+        .grow_sub,
+        .grow_main {
+            display: none;
+        }
+
+        .mo_grow_sub, 
+        .mo_grow_main {
+            display: block;
+        }
+
+        .mo_grow_sub {
+            font-size: 4.5vw;
+            letter-spacing: -2px;
+        }
+
+        .grows {
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
         }
 
         .grow_left img  {
-            width: 100%;
-            display: none;
+            width: 90%;
         }
 
         .grow_left {
             margin: 0 auto;
             text-align: center;
+            flex: 1;
+            display: flex;
+        }
+
+        .grow_left {
+            display: flex;
+            flex: 2;
         }
 
         .grow_txt {
@@ -1932,83 +1967,42 @@ form input::placeholder {
         .grow_txt span {
             font-size: 52px;
         }
-        /* .grow_left {
-            display: none;
-        }
-
-        #growth .contents {
-            padding: 0;
-        }
-
-        .grow_txt {
-            margin-left: 0;
-            font-size: 6vw;
-            padding: 0 15px;
-            margin-right: 30px;
-        }
 
         .grow_lines {
-            margin-top: 4vh;
-            position: relative;
-            width: 100%;
-            z-index: -2;
-
+            left: -220px;
+            width: 250%;
         }
 
         .grow_line {
-            height: unset;
-            padding-left: unset;
-           
+            height: 60px;
+            padding-left: 65px;
+    margin-bottom: 13px;            
         }
 
-        .grow_txt span {
-            font-size: 53px;
+        .check img {
+            width: 65%;
         }
-
-        .grow_lines {
-            left: 0;
-        }
-
-        .grow_line {
-            display: flex;
-            margin-bottom: 80px;
-            padding: 1vh 0;
-            width: 80%;
-        }
-
-        .grow_line:after {
-            content: '';
-            right: -59px;
-            border: 30px solid var(--point-color);
-            border-right: 30px solid transparent;
-            position: absolute;
-            border-top: 30px solid transparent;
-        }
-
+        
         .grow_line em {
-            font-size: 33px;
-        }
-
-        .grow_line p:before {
-            display: none;
+            font-size: 25px;
+            margin-left: -15px;
         }
 
         .grow_line p {
-            width: 119%;
-            top: 70%;
-            display: flex;
-            align-items: center;
-            font-size: 20px;
-            right: -59px;
+            font-size: 14px;
+            right: 37px;
+            width: 170px;
             justify-content: flex-start;
-            padding-left: 60px;
         }
 
-        .grow_line p:after {
-            display: none;
+        .grow_line p:before {
+            left: -59px;
+    border: 30px solid #fff;
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
         }
 
- */
+
 
         /***** campaign 영역 *****/
 
