@@ -114,11 +114,11 @@ const prSwiper = new Swiper(".pr_swiper", {
 $('.campaign_cards').slick({
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 700,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -156,10 +156,10 @@ $('.campaign_cards').slick({
         centerMode: true,
         arrows: true,
         dots: false,
-        speed: 1000,
+        speed: 700,
         centerPadding: '20px',
         infinite: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 700,
         autoplay: true,
         responsive: [ 
         {

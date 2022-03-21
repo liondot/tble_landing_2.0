@@ -21,23 +21,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- fullpage scroll  -->
-    <!-- <script src="js/fullpage/scrolloverflow.js"></script> -->
     <script src="js/fullpage/jquery.fullPage.js" defer></script>
-    <script src="js/fullpage/scrolloverflow.js"></script>
     <script src="js/fullpage/scrolloverflow.min.js"></script>
     <link rel="stylesheet" href="js/fullpage/jquery.fullPage.css">
 </head>
-<style>
-    #btnBb a {
-        font-size: 30px;
-        cursor: pointer;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 100;
-        color: red;
-    }
-</style>
+
 
 <body>
     <header>
@@ -68,7 +56,7 @@
     <!-- header  -->
     <div class="floating_menu" id="floatingMenu">
         <a href="#page11" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
-        <a href="https://pf.kakao.com/_krlIC"><img src="imgs/ft_icon2.png" alt=""></a>
+        <a href="https://pf.kakao.com/_EJbIj/chat"><img src="imgs/ft_icon2.png" alt=""></a>
     </div>
 </div>
 <!-- floating_menu  -->
@@ -651,29 +639,31 @@
                 <div class="main_title contact_title">
                     <img src="imgs/contact_title.svg" alt="">
                 </div>
-                <div class="form">
-                    <div class="container">
-                        <form class="gform pure-form pure-form-stacked" method="POST" data-email="trendies.go@gmail.com"
-                            action="https://script.google.com/macros/s/AKfycbyMsXbmYfxqwmI0dVmCKckvZa3zXMPwoeelU4lY0UAiT6FIMXV7NaycN5E1S9Q03pqDMw/exec">
-                            <div class="form-elements">
-                                <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요." required>
-                                <input type="text" name="area" id="area" placeholder="지역을 입력해주세요." required>
-                                <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요." required>
-                                <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)"
-                                    required>
-                                <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. </em>
+                <div class="cont_form">
+                    <div class="form">
+                        <div class="container">
+                            <form class="gform pure-form pure-form-stacked" method="POST" data-email="trendies.go@gmail.com"
+                                action="https://script.google.com/macros/s/AKfycbyMsXbmYfxqwmI0dVmCKckvZa3zXMPwoeelU4lY0UAiT6FIMXV7NaycN5E1S9Q03pqDMw/exec">
+                                <div class="form-elements">
+                                    <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요." required>
+                                    <input type="text" name="area" id="area" placeholder="지역을 입력해주세요." required>
+                                    <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요." required>
+                                    <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)"
+                                        required>
+                                    <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. </em>
+                                    </div>
+                                    <button class="contact_btn">
+                                        <span>상담문의 </span>
+                                        <img src="imgs/arrow_right.png" alt="">
+                                    </button>
                                 </div>
-                                <button class="contact_btn">
-                                    <span>상담문의 </span>
-                                    <img src="imgs/arrow_right.png" alt="">
-                                </button>
-                            </div>
-                            <!-- thankyou message  -->
-                            <div class="thankyou_message">
-                                <span>감사합니다!</span>
-                                <p>곧 티블 담당자가 연락드리겠습니다.</p>
-                            </div>
-                        </form>
+                                <!-- thankyou message  -->
+                                <div class="thankyou_message">
+                                    <span>감사합니다!</span>
+                                    <p>곧 티블 담당자가 연락드리겠습니다.</p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

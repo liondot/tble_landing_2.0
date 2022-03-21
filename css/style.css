@@ -302,7 +302,7 @@ nav .iqr {
 
 #promotion .contents {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -425,7 +425,7 @@ nav .iqr {
 }
 
 .pr-pagination.swiper-pagination {
-    top: 25px !important;
+    top: 40px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -472,7 +472,7 @@ nav .iqr {
 
 #point .contents {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
 }
@@ -1086,7 +1086,7 @@ nav .iqr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .mkt_title {
@@ -1115,15 +1115,15 @@ nav .iqr {
 #review {
     background: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     overflow: hidden;
     align-items: center;
 }
 
-
-.review_title {
-    margin-top: 10px;
+.main_title {
+    margin-top: 50px;
 }
+
 
 
 /* custom  */
@@ -1300,8 +1300,7 @@ nav .iqr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    justify-content: flex-start;
 }
 
 .mo_portner_img {
@@ -1333,7 +1332,7 @@ nav .iqr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
@@ -1365,6 +1364,22 @@ form input {
     padding: 20px 0;
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
+}
+
+#contact .cont_form {
+    width: 35vw;
+    display: flex;
+}
+
+#contact .cont_form .form {
+    width: 100vw !important;
+    margin-top: 50px;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
 }
 
 .last_input {
@@ -1480,6 +1495,8 @@ form input::placeholder {
     position: relative;
     padding: 50px 0 100px;
 }
+
+
 
 .keymessage {
     position: absolute;
@@ -1912,7 +1929,7 @@ form input::placeholder {
 
     /***** support 영역 *****/
     .support_txt {
-        font-size: 6vw;
+        font-size: 5.4vw;
         padding: 0 30px;
         display: none;
     }
@@ -2193,6 +2210,7 @@ form input::placeholder {
 
     .main_title.review_title {
         width: 100%;
+        margin-top: 100px;
     }
     
     #review .slick-next, .slick-prev {
@@ -2283,16 +2301,8 @@ form input::placeholder {
         background-size: 90%;
     }
 
-    #contact .form {
-        width: 88%;
-        border-radius: 15px;
-    }
+    
 
-    form input {
-        width: 100%;
-        height: 50px;
-        font-size: 18px;
-    }
 
     form input[type=checkbox] {
         height: 18px;
