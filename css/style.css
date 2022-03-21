@@ -1733,7 +1733,7 @@ form input::placeholder {
     .promotion_title {
         width: 100%;
         padding: 0 10px;
-        border: 1px solid red;
+        border: 1px solid green;
     }
 
     .promotion_title img {
