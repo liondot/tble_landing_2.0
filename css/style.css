@@ -1715,7 +1715,6 @@ form input::placeholder {
 
     /***** 프로모션 영역 *****/
     section#promotion {
-        height: 580px;
         padding-bottom: 0;
     }
 
