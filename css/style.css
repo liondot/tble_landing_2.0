@@ -425,7 +425,7 @@ nav .iqr {
 }
 
 .pr-pagination.swiper-pagination {
-    top: 14px !important;
+    top: 25px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -1716,6 +1716,12 @@ form input::placeholder {
     /***** 프로모션 영역 *****/
     section#promotion {
         padding-bottom: 0;
+        
+    }
+
+    #promotion .contents {
+        /* align-items: flex-start; */
+        justify-content: flex-start;
     }
 
 
