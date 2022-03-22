@@ -497,6 +497,11 @@ section#promotion {
     width: 285px;
 }
 
+.campaign_card a {
+    width: unset;
+    height: unset;
+}
+
 .campaign_card img {
     width: 100%;
     height: 285px;
