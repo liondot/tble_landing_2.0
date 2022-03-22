@@ -1288,8 +1288,8 @@ form input::placeholder {
     #campaign {
         box-sizing: border-box;
         width: 100%;
-        height: auto;
-        border: 2px solid red;
+        height: 700px;
+        border: 2px solid green;
     }
 
     #campaign:after {
