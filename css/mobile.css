@@ -1288,7 +1288,7 @@ form input::placeholder {
     #campaign {
         box-sizing: border-box;
         width: 100%;
-        height: 788px;
+        height: auto;
     }
 
     #campaign:after {
@@ -1298,13 +1298,18 @@ form input::placeholder {
     .campaign_con {
         width: 100%;
         padding: 0 15px;
-        margin-top: 50px;
+        /* margin-top: 50px; */
+    }
+
+    #campaign .slick-slider {
+        margin-bottom: 0;
     }
 
     .campaign_con h3 {
         font-size: 25px;
         line-height: 1.5;
         font-family: 'GmarketSansMedium';
+        letter-spacing: -2px;
     }
 
     .campaign_con h3 strong {
