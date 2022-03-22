@@ -1289,7 +1289,7 @@ form input::placeholder {
         box-sizing: border-box;
         width: 100%;
         height: 700px;
-        border: 2px solid green;
+        border: 2px solid blue;
     }
 
     #campaign:after {
@@ -1545,6 +1545,8 @@ form input::placeholder {
         margin-left: 8px;
     }
 
+    
+
     .contact_btn {
         margin: 20px 0 10px;
         width: 100%;
@@ -1558,11 +1560,28 @@ form input::placeholder {
         padding-right: 62px;
     }
 
-    .contact_btn img {
-        max-width: 100%;
+    .contact_img {
         width: 30px;
-        right: 60px;
+    } 
+
+    .contact_btn img {
+        width: 12%;
+        left: 220px;
     }
+
+    .campaign_box {
+        height: 470px;
+    }
+
+    .campaign_cards.slick-slider {
+        height: 465px;
+    }
+
+    .campaign_cards .slick-dots {
+        bottom: -10px;
+    }
+
+  
 
     .last_input span {
         font-size: 16px;
