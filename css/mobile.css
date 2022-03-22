@@ -100,9 +100,14 @@ header {
     color: var(--point-color);
 }
 
-#nav.bright .brand_logo {
+/* #nav.bright .brand_logo {
     background: url(../imgs/tble_logo_dark.svg) no-repeat;
-}
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    left: 0;
+} */
 
 nav {
     width: 1200px;
@@ -120,11 +125,17 @@ nav .iqr {
 }
 
 
-.brand_logo {
+/* .brand_logo {
     width: 196px;
     height: 52px;
     background: url(../imgs/tble_logo.svg) no-repeat;
-}
+    position: absolute;
+    border: 2px solid purple;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+} */
 
 .main_menu ul {
     display: flex;
@@ -154,6 +165,7 @@ nav .iqr {
     width: 1200px;
     margin: 0 auto;
 }
+
 
 
 
@@ -256,13 +268,13 @@ section#promotion {
     transform: rotate(90deg);
 }
 
-#promotion:before {
+/* #promotion:before {
     content: '';
     width: 100%;
     height: auto;
     background: url(../imgs/tble_logo.png) no-repeat;
     z-index: 2;
-}
+} */
 
 #promotion h3 {
     font-size: 40px;
@@ -309,7 +321,7 @@ section#promotion {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    background: #2b2b2b;
+    /* background: #2b2b2b; */
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -557,206 +569,182 @@ section#promotion {
     background: url(../imgs/section_mkt_order.jpg) no-repeat center / auto 100%;
 }
 
+
 /* ****************** review ****************** */
-section#review {
-    height: 502px;
-    margin: 100px 0;
-}
 
 #review {
     background: #fff;
     display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+}
+
+.main_title {
+    margin-top: 50px;
+}
+
+
+
+/* custom  */
+
+/* Default slide */
+#review .center-slider .slick-slide {
+    background-color: #fff;
+    color: #FFF;
+    height: 200px;
+    margin: 30px 15px 15px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+    width: 400px;
+    height: 480px;
+    position: relative;
     overflow: hidden;
-}
-
-.review_con {
-    display: flex;
+    text-align: center;
+    border-radius: 20px;
     position: relative;
 }
 
 
-.reivew_info {
-    margin-right: 35px;
+#review .center-slider .slick-slide,
+#review .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+    transform: scale(0.75, 0.75);
+    transition: all 0.4s ease-in-out;
+    opacity: .5;
 }
 
-.reivew_info h3 {
-    font-size: 50px;
-    font-weight: lighter;
-    line-height: 1.3;
-    margin: 0;
-    margin-bottom: 15px;
-    font-family: 'GmarketSansMedium';
-}
-
-.mo_review_txt {
-    display: none;
-}
-
-.reivew_info p {
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.reviews {
-    display: flex;
-    width: 900px;
-    height: 800px;
-}
-
-.review_box {
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-
-.review_box .box_tit {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 15px 45px;
-    position: relative;
-}
-
-.review_box .box_tit:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 92%;
-    height: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.review_box .box_tit span {
-    padding: 10px 0;
-    font-size: 18px;
-    color: rgb(36, 106, 172);
-}
-
-.review_box .box_tit em {
-    display: flex;
-    width: 100%;
-}
-
-.review_box a {
-    display: inline-block;
-    width: 100%;
-}
-
-.review_box a .r_img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: 290px;
-}
-
-.review_box a .r_img img {
-    width: 100%;
-}
-
-.review_box a p {
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 15px 0;
-}
-
-.review_box a span {
-    font-size: 17px;
-    font-weight: bold;
-    display: flex;
-    line-height: 40px;
-    margin-top: 10px;
-}
-
-.review_box a>span {
-    margin-left: 15px;
-}
-
-
-.review_box a span img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-}
-
-.review_box a:first-child span img {
+#review .center-slider .slick-center,
+#review .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="1"])+.slick-cloned[aria-hidden="true"] {
+    transform: scale(0.95);
+    background-color: #fff !important;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     opacity: 1;
 }
 
-.review_box a em {
-    width: 16px;
-    display: inline-block;
-    margin-left: 0;
-    height: 40px;
+
+.slick-slide.slick-active {
+    width: 100%;
 }
 
-
-.reviews .slick-prev.slick-arrow,
-.reviews .slick-next.slick-arrow {
-    border: 3px solid rgba(0, 0, 0, 0.3);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-top: 75px;
-}
-
-.reviews .slick-prev.slick-arrow:after {
-    content: '';
-    color: #000;
-    width: 25px;
-    height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../imgs/review/prev_arrow.png) no-repeat center / auto 100%;
-}
-
-.reviews .slick-next.slick-arrow:after {
-    content: '';
-    color: #000;
-    width: 25px;
-    height: 22px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../imgs/review/next_arrow.png) no-repeat center / auto 100%;
-}
-
-
-.slick-next,
+#review .slick-next,
 .slick-prev {
-    position: absolute;
-    top: 262px !important;
-    left: -231px !important;
-    z-index: 50;
-    width: 45px;
-    height: 45px;
+    z-index: 5;
 }
 
-.reviews .slick-prev {
-    left: -292px !important;
+#review .slick-next {
+    right: -11px;
 }
 
-.reviews .slick-slide {
-    margin: 0 5px;
+#review .slick-prev {
+    left: -13px;
+    display: block !important;
 }
 
-.slick-next:before,
-[dir=rtl] .slick-prev:before {
+#review .slick-next:before,
+.slick-prev:before {
     color: #000;
-    width: 45px;
-    height: 45px;
+    font-size: 2vw !important;
+}
+
+#review .slick-next:before,
+.slick-prev:before {
+    color: #000 !important;
+    font-size: 2vw;
+
+}
+
+.review_box {
+    width: 385px;
+    height: 680px;
+    text-align: center;
+    display: block !important;
+    margin: 0 auto !important;
+    justify-content: flex-start;
+    background: #f3f3f3;
+    border-radius: 20px !important;
+    width: 100% !important;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+#review .slick-slide img {
+    margin: unset;
+}
+
+.review_img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+}
+
+.review_img img {
+    width: 100%;
+}
+
+.review_con {
+    color: #333;
+    padding: 20px;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+}
+
+.rev_sns {
+    font-size: 1vw;
+    font-family: var(--font-familly-gmarket);
+    font-weight: bold;
+    background: var(--point-color);
+    padding: 8px 30px;
+    border-radius: 30px;
+}
+
+.review_con p {
+    padding: 0;
+    margin: 15px 0 5px;
+}
+
+.rev_profile {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
+
+}
+
+.rev_profile img {
     border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+
+#review .slick-slider {
+    height: 75vh;
+
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+
+
+}
+
+#review .slick-slide img {
+    margin: 0 auto;
+}
+
+.rev_profile em {
+    font-size: 20px;
+}
+
+#review .center-slider .slick-slide {
+    box-sizing: border-box;
 }
 
 
@@ -967,7 +955,7 @@ form input::placeholder {
     font-size: 18px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     html {
         box-sizing: border-box;
         width: 100%;
@@ -986,17 +974,16 @@ form input::placeholder {
         display: block;
     }
 
-    /***** header 영영 *****/
-    header {
+       /***** header 영영 *****/
+       header {
         box-sizing: border-box;
         width: 100%;
         height: 60px;
     }
 
     #nav {
-        padding: 10px 20px;
+        padding: 10px  20px;
         height: 80px;
-
     }
 
     nav {
@@ -1006,40 +993,45 @@ form input::placeholder {
 
     nav .iqr {
         display: block;
+        float: right;
         width: 130px;
         height: 34px;
         cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
     }
 
     .iqr:after {
         content: '';
         width: 130px;
         background: url(../imgs/mo/in_yellow.png) no-repeat center / auto 100%;
-        position: absolute;
-        top: 14px;
-        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
         height: 40px;
         z-index: 100;
         display: none;
         transition: all .2s ease-in;
     }
 
-    .iqr.active:after {
-        display: block;
-    }
-
-    nav .iqr img {
-        width: 100%;
-    }
 
     nav .main_menu {
         display: none;
     }
-
+/* 
     .brand_logo {
         width: 140px;
         height: 30px;
-    }
+        display: block;
+    } */
+
+    /* .brand_logo.visible {
+        background: url(../imgs/tble_logo_dark.svg) no-repeat;
+        position: absolute;
+        z-index: 200;
+    } */
+
 
     /***** 메인 비주얼 영역 *****/
     #main_visual {
@@ -1104,7 +1096,7 @@ form input::placeholder {
         flex-direction: column;
         align-items: center;
         height: 127vh;
-        padding-top: 18vh;
+        padding-top: 19vh;
     }
 
     /***** 프로모션 영역 *****/
@@ -1124,9 +1116,10 @@ form input::placeholder {
     }
 
     .promotion_title img {
-        width: 90%;
-        margin-top: 40px;
+        width: 85%;
     }
+
+
 
     #promotion .swiper-pagination-clickable .swiper-pagination-bullet {
         padding: 8px 20px !important;
@@ -1239,6 +1232,10 @@ form input::placeholder {
         height: unset !important;
     }
 
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        color: #fff !important;
+    }
+
 
 
 
@@ -1253,7 +1250,7 @@ form input::placeholder {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 50;
     }
 
     /***** 분석 시스템 영역 *****/
@@ -1294,6 +1291,10 @@ form input::placeholder {
         box-sizing: border-box;
         width: 100%;
         height: 788px;
+    }
+
+    #campaign:after {
+        display: none;
     }
 
     .campaign_con {
@@ -1340,95 +1341,102 @@ form input::placeholder {
     }
 
     #mkt_order:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
         background: url(../imgs/mo/mo_mkt_order.jpg) no-repeat center / auto 100%;
     }
 
+
+
+
     /***** review 영역 *****/
-    section#review {
-        margin: 0;
-        height: 770px;
+    #review {
         width: 100%;
-        box-sizing: border-box;
-        overflow: hidden;
-        margin: 0;
     }
 
-
-    .review_box {
-        margin-top: 290px;
-        box-sizing: border-box !important;
-        overflow: hidden;
+    .main_title.review_title {
+        width: 100%;
+        margin-top: 50px;
     }
 
-    .review_box a .r_img {
-        display: inline-block;
-        width: 100%;
-        height: 150px;
-        overflow: hidden;
+    #review .contents {
+        width: 100% !important;
     }
 
-
-    .review_box a .r_img img {
-        object-fit: contain;
-        overflow: hidden;
-        width: 100%;
+    #review .slick-next,
+    .slick-prev {
+        display: none !important;
     }
 
     .review_con {
-        position: static;
-        flex-direction: column;
+        font-size: 4.5vw;
     }
 
-    .reivew_info {
-        position: absolute;
+    #campaign .slick-next,
+    .slick-prev {
+        display: none !important;
+    }
+
+    .review_box {
+        height: 620px;
+    }
+
+    .rev_sns {
+        font-size: 4.5vw;
+    }
+
+    #review .center-slider {
         width: 100%;
-        right: 0;
-        margin-right: 0;
-        margin-top: 40px;
-        padding: 0 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .reivew_info h3 {
-        margin-bottom: 0;
-        font-family: 'GmarketSansMedium';
-        font-size: 45px;
         box-sizing: border-box;
     }
 
-    .pc_reivew_txt {
+    #review .center-slider .slick-slide {
+        width: 100%;
+    }
+
+    /***** 파트너사 영역 *****/
+    section#partner {
+        background: #eee;
+    }
+
+    .mo_portner_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .mo_portner_img img {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .main_title.partner_title {
+        width: 100%;
+    }
+
+    #partner {
+        height: auto;
+    }
+
+    .partner_img img {
         display: none;
     }
 
-    .mo_review_txt {
-        display: block;
-        font-size: 20px;
-        font-family: 'GmarketSansMedium';
+    .mo_parter_img {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+
     }
 
-    .reviews {
-        width: 100%;
-        height: unset !important;
-    }
-
-    .reviews .slick-dots {
-        bottom: -85px;
-    }
-
-
-    .review_con {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    #review .slick-list {
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    #review .slick-track {
-        box-sizing: border-box;
+    .mo_parter_img img {
+        width: 95%;
     }
 
 
@@ -1567,6 +1575,10 @@ form input::placeholder {
     }
 
     #footer:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
         background: url(../imgs/mo/mo_footer.jpg) no-repeat center / auto 100%;
     }
 

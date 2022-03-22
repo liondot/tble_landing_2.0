@@ -8,8 +8,9 @@
     <meta name="author" content="tble">
     <meta name="keywords" content="티블, 체험단, 블로그체험단, 인스타그램체험단, 페이스북체험단 체험단sns, 후기, tble, 유튜브 체험단">
     <title>tble ad</title>
+    </script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylesheet.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 500px)">
     <script src="js/main.js" defer></script>
     <script src="js/responsive.js" defer></script>
     <!-- swiper  -->
@@ -26,6 +27,8 @@
     <script src="js/fullpage/jquery.fullPage.js" defer></script>
     <script src="js/fullpage/scrolloverflow.min.js"></script>
     <link rel="stylesheet" href="js/fullpage/jquery.fullPage.css">
+
+   
 </head>
 
 
@@ -33,7 +36,7 @@
     <header>
         <div id="nav">
             <nav>
-                <div class="brand_logo">
+                <div class="brand_logo posible">
                 </div>
                 <div class="main_menu">
                     <ul id="myMenu">
@@ -51,7 +54,7 @@
                         <li data-menuanchor="anchor12" style="display: none;"><a href="#footer">푸터</a></li>
                     </ul>
                 </div>
-                <div class="iqr"><img src="imgs/mo/in.png" alt=""></div>
+                <div class="iqr iqr_btn"><a href="#contact"><img src="imgs/mo/in.png" alt=""></a></div>
             </nav>
         </div>
     </header>
@@ -697,7 +700,7 @@
 
     <div id="main_wrapper">
         <header>
-            <div id="nav">
+            <!-- <div id="nav">
                 <nav>
                     <div class="brand_logo">
                     </div>
@@ -711,9 +714,11 @@
                             <li><a href="#partner">파트너사</a></li>
                         </ul>
                     </div>
-                    <div class="iqr"><img src="imgs/mo/in.png" alt=""></div>
+                    <div class="iqr_btn">
+                       <a href="#point"></a>
+                    </div>
                 </nav>
-            </div>
+            </div> -->
         </header>
         <!-- head영역 -->
         <section id="main_visual">
@@ -725,8 +730,10 @@
                         <p>효과있는 마케팅 티블 체험단과 함께 성장하세요!</p>
                     </div>
                     <div class="visual_btn">
-                        상담문의
-                        <img src="imgs/arrow_right.png" alt="">
+                        <a href="#contact">
+                            상담문의
+                            <img src="imgs/arrow_right.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="visual_image">
@@ -947,77 +954,107 @@
         <section id="mkt_order">
         </section>
         <!-- 마케팅 진행 순서 영역-->
-        <section id="review">
-            <div class="review_con">
-                <div class="reivew_info">
-                    <h3 class="pc_reivew_txt">티블 <br>
-                        인플루언서의 <br>
-                        진짜 후기
-                    </h3>
-                    <h3 class="mo_review_txt">티블 인플루언서의 진짜 후기
-                    </h3>
-                    <p>꼼꼼하고 리얼한 후기로 많은 분들에게 <br>
-                        정보를 공유하며 브랜딩을 만들어냅니다.</p>
+        <section id="review" class="section">
+            <h2 class="hide">리뷰영역</h2>
+            <div class="container contents">
+                <div class="main_title review_title">
+                    <img src="imgs/review_title.svg" alt="">
                 </div>
-                <div class="reviews">
+                <div class="center-slider">
                     <div class="review_box">
                         <a href="https://blog.naver.com/upeyesup/222649163555">
-                            <div class="r_img"><img src="imgs/review/r1.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[배송] 탐난다</em>
+                            <div class="review_img">
+                                <img src="imgs/review/r1.png" alt="">
                             </div>
-                            <span><img src="imgs/review/rv1.png" alt="">쿵맘</span>
+                            <div class="review_con">
+                                <span class="rev_sns">블로그</span>
+                                <p>[배송] 탐난다</p>
+                                <strong></strong>
+                                <div class="rev_profile">
+                                    <img src="imgs/review/rv1.png" alt="">
+                                    <em>쿵맘</em>
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="review_box">
                         <a href="https://blog.naver.com/gowlsl2222/222649143483">
-                            <div class="r_img"><img src="imgs/review/r2.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[배송] 뜨락영농조합</em>
+                            <div class="review_img">
+                                <img src="imgs/review/r2.png" alt="">
                             </div>
-                            <span><img src="imgs/review/profile.png" alt="">지니주노</span>
+                            <div class="review_con">
+                                <span class="rev_sns">블로그</span>
+                                <p>[배송] 뜨락영농조합</p>
+                                <strong></strong>
+                                <div class="rev_profile">
+                                    <img src="imgs/review/profile.png" alt="">
+                                    <em>지니주노</em>
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="review_box">
                         <a href="https://blog.naver.com/ewewoo/222648712378">
-                            <div class="r_img"><img src="imgs/review/r3.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[마포] 다이안</em>
+                            <div class="review_img">
+                                <img src="imgs/review/r3.png" alt="">
                             </div>
-                            <span><img src="imgs/review/profile.png" alt="">하이하잉</span>
+                            <div class="review_con">
+                                <span class="rev_sns">블로그</span>
+                                <p>[마포] 다이안</p>
+                                <strong></strong>
+                                <div class="rev_profile">
+                                    <img src="imgs/review/profile.png" alt="">
+                                    <em>하이하잉</em>
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="review_box">
                         <a href="https://blog.naver.com/yes3221/222654205991">
-                            <div class="r_img"><img src="imgs/review/r6.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>인스타</span>
-                                <em>[인스타기자단] 피부관리닥터수전주점</em>
+                            <div class="review_img">
+                                <img src="imgs/review/r6.png" alt="">
                             </div>
-                            <span><img src="imgs/review/rv2.png" alt="">용용이9</span>
+                            <div class="review_con">
+                                <span class="rev_sns">인스타</span>
+                                <p>[인스타기자단] 피부관리닥터수전주점</p>
+                                <strong></strong>
+                                <div class="rev_profile">
+                                    <img src="imgs/review/rv2.png" alt="">
+                                    <em>용용이9</em>
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="review_box">
                         <a href="https://blog.naver.com/lemong_s/222651860325">
-                            <div class="r_img"><img src="imgs/review/r7.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[경기 파주] 어반그로브</em>
+                            <div class="review_img">
+                                <img src="imgs/review/r7.png" alt="">
                             </div>
-                            <span><img src="imgs/review/rv7.png" alt="">시소소</span>
+                            <div class="review_con">
+                                <span class="rev_sns">블로그</span>
+                                <p>[경기 파주] 어반그로브</p>
+                                <strong></strong>
+                                <div class="rev_profile">
+                                    <img src="imgs/review/rv7.png" alt="">
+                                    <em>시소소</em>
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="review_box">
                         <a href="https://blog.naver.com/kym9576/222654088965">
-                            <div class="r_img"><img src="imgs/review/r9.png" alt=""></div>
-                            <div class="box_tit">
-                                <span>블로그</span>
-                                <em>[배송] 소유라이프-케이지</em>
+                            <div class="review_img">
+                                <img src="imgs/review/r9.png" alt="">
                             </div>
-                            <span><img src="imgs/review/rv9.png" alt="">Liydah</span>
+                            <div class="review_con">
+                                <span class="rev_sns">블로그</span>
+                                <p>[배송] 소유라이프-케이지</p>
+                                <strong></strong>
+                                <div class="rev_profile">
+                                    <img src="imgs/review/rv9.png" alt="">
+                                    <em>Liydah</em>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>

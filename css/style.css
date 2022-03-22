@@ -97,19 +97,21 @@ section.active {
 
 
 
+
 /************** header 영역 *************/
 header {
     width: 100vw;
-    height: 80px;
+    height: 100px;
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
+    z-index: 50;
 }
 
 #nav {
     width: 100%;
     height: inherit;
-    display: none;
+    position: fixed;
 }
 
 #nav.bright {
@@ -117,7 +119,6 @@ header {
     color: #000;
     box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
     transition: all .2s ease-in-out;
-    height: 80px;
 }
 
 #nav.bright .main_menu li a {
@@ -127,11 +128,6 @@ header {
 
 #nav.bright .main_menu li a:hover {
     color: var(--point-color);
-}
-
-#nav.bright .brand_logo {
-    background: url(../imgs/tble_logo_dark.svg) no-repeat center;
-    background-size: 80%;
 }
 
 nav {
@@ -150,11 +146,26 @@ nav .iqr {
 }
 
 
-.brand_logo {
-    width: 196px;
+.brand_logo.posible {
+    width: 120px;
     height: 52px;
-    background: url(../imgs/tble_logo.svg) no-repeat center;
-    background-size: 80%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-30%);
+    background: url(../imgs/tble_logo.svg) no-repeat;
+}
+
+.brand_logo.visible {
+    width: 120px;
+    height: 52px;
+    display: inline-block;
+    background: url(../imgs/tble_logo_dark.svg) no-repeat;
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-30%);
 }
 
 .main_menu ul {
@@ -162,23 +173,10 @@ nav .iqr {
     margin: 0;
 }
 
-.main_menu ul li {
-    /* display: none; */
-}
-
-.main_menu ul li:nth-child(2),
-.main_menu ul li:nth-child(3),
-.main_menu ul li:nth-child(6),
-.main_menu ul li:nth-child(8),
-.main_menu ul li:nth-child(9),
-.main_menu ul li:nth-child(10) {
-    display: flex;
-}
-
 .main_menu ul li a {
     color: #fff;
     font-size: 20px;
-    padding: 20px;
+    padding: 32px;
     margin: 4px;
     display: flex;
     cursor: pointer;
@@ -194,12 +192,10 @@ nav .iqr {
     margin-right: 0;
 }
 
-
-.main_wrapper {
-    display: none;
+.contents {
+    width: 1200px;
+    margin: 0 auto;
 }
-
-
 
 
 /************** 메인 비주얼 영역 **************/
@@ -1378,12 +1374,14 @@ form input {
 #contact .cont_form .form {
     width: 100vw !important;
     margin-top: 50px;
+    height: 60vh;
 }
 
 form input {
     width: 100%;
-    height: 50px;
+    height: 58px;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .last_input {
@@ -1584,17 +1582,19 @@ form input::placeholder {
     #main_wrapper {
         display: block
     }
-
     /***** header 영영 *****/
     header {
+        display: flex;
         box-sizing: border-box;
         width: 100%;
         height: 60px;
     }
 
     #nav {
-        padding: 10px 20px;
+        padding: 10px  20px;
         height: 80px;
+        position: fixed;
+        z-index: 100;
     }
 
     nav {
@@ -1617,7 +1617,7 @@ form input::placeholder {
         top: 14px;
         right: 0;
         height: 40px;
-        z-index: 100;
+        z-index: 900;
         display: none;
         transition: all .2s ease-in;
     }
@@ -1625,6 +1625,10 @@ form input::placeholder {
     .iqr.active:after {
         display: block;
     }
+
+    .iqr .iqr_img.visible {
+        display: block !important;
+    } 
 
     nav .iqr img {
         width: 100%;
@@ -1761,7 +1765,6 @@ form input::placeholder {
     .promotion_title {
         width: 100%;
         padding: 0 10px;
-        border: 1px solid green;
     }
 
     .promotion_title img {
@@ -1781,7 +1784,7 @@ form input::placeholder {
     .pr_swiper .swiper-slide {
         margin-top: 50px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
 
@@ -1805,6 +1808,13 @@ form input::placeholder {
         width: 248px;
     }
 
+    .pr-pagination .swiper-pagination-bullet-active {
+        color: #fff !important;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        color: #fff !important;
+    }
 
     .pro_card:first-child,
     .pro_card:nth-child(3) {
@@ -2218,9 +2228,12 @@ form input::placeholder {
 
 
     /***** review 영역 *****/
+    #review {
+        width: 100%;
+    }
 
     .main_title.review_title {
-        width: 100%;
+        width: 40%;
         margin-top: 100px;
     }
     

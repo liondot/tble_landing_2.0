@@ -5,31 +5,44 @@ const navbarHight = navbar.getBoundingClientRect().height;
 const mainVisual = document.querySelector('#main_visual');
 const mainVisualHeight = mainVisual.getBoundingClientRect().height;
 
-const navIqr = document.querySelector('.iqr');
 
+const navIqr = document.querySelector('.iqr');
+const brandLogo = document.querySelector('.brand_logo')
 
 document.addEventListener('scroll', () => {
     if(window.scrollY > navbarHight) {
         navbar.classList.add('bright');
-        navIqr.classList.add('active')
+        navIqr.classList.add('active');
+        brandLogo.classList.add('visible')
     }else {
         navbar.classList.remove('bright');
-        navIqr.classList.remove('active')
+        navbar.classList.remove('img');
+        navIqr.classList.remove('active');
+        brandLogo.classList.remove('visible')
     }
 })
 
 // btn scroll 
-// const visualBtn = document.querySelector('.visual_btn');
+const visualBtn = document.querySelector('.visual_btn');
 
-// visualBtn.addEventListener('click', () => {
-//     const scrollTo = document.querySelector('#contact')
-//     scrollTo.scrollIntoView({behavior: 'smooth'})
-// });
+visualBtn.addEventListener('click', () => {
+    const scrollTo = document.querySelector('#contact')
+    scrollTo.scrollIntoView({behavior: 'smooth'})
+});
 
 // 모바일 .iqr btn 클릭시 스크롤 적용 
-const iqrBtn = document.querySelector ('.iqr')
+const iqrBtn = document.querySelector('.iqr_btn')
+iqrBtn.addEventListener('click', () => {
+    const ctt = document.querySelector('#contact')
+    ctt.scrollIntoView({behavior : 'smooth'})
+})
 
 iqrBtn.addEventListener('click', () => {
+    const campaign = document.querySelector('#campaign')
+    campaign.scrollIntoView({behavior: 'smooth'})
+})
+
+navIqr.addEventListener('click', () => {
     const goto = document.querySelector('#contact')
     goto.scrollIntoView({behavior : 'smooth'})
 })
@@ -53,25 +66,10 @@ function scrollIntoView(selector) {
 }
 
 
-// navar scroll intoview 
-// const navPm = document.querySelector('.nav_btn:first-child')
-// const navPt = document.querySelector('.nav_btn:nth-child(2)')
-// const navCn = document.querySelector('.nav_btn:nth-child(3)')
-// const navOd= document.querySelector('.nav_btn:nth-child(4)')
-// const navRv = document.querySelector('.nav_btn:nth-child(5)')
-// const navPn = document.querySelector('.nav_btn:last-child')
-
-
-// navPm.addEventListener('click', () => {
-//     const gotoUp = document.querySelector('#promotion');
-//     gotoUp.scrollIntoView({behavior: 'smooth'})
-// });
-
 // 모바일 버전 
 
 // 메인 카톡상담 전화상담 
 const mainVisualBf = document.querySelector('#main_visual:before');
-
 
 
 // // 광고주 대상 프로모션 section promotion 
@@ -104,6 +102,8 @@ const prSwiper = new Swiper(".pr_swiper", {
 
 
 });
+
+
 
 
 
@@ -156,10 +156,10 @@ $('.campaign_cards').slick({
         centerMode: true,
         arrows: true,
         dots: false,
-        speed: 700,
+        speed: 1000,
         centerPadding: '20px',
         infinite: true,
-        autoplaySpeed: 700,
+        autoplaySpeed: 1000,
         autoplay: true,
         responsive: [ 
         {
