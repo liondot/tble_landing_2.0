@@ -1323,7 +1323,8 @@ form input::placeholder {
     }
 
     .campaign_card img {
-        height: 270px;
+        height: 280px;
+        width: 280px;
     }
 
     .campaing_more {
