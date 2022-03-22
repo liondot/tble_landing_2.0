@@ -133,10 +133,10 @@ $('.campaign_cards').slick({
         centerMode: true,
         arrows: true,
         dots: false,
-        speed: 1000,
+        speed: 800,
         centerPadding: '20px',
         infinite: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 800,
         autoplay: true,
         responsive: [ 
         {
