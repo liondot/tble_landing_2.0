@@ -992,7 +992,7 @@ form input::placeholder {
     }
 
     nav .iqr {
-        display: block;
+        display: none;
         float: right;
         width: 130px;
         height: 34px;
