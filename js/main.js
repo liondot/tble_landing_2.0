@@ -9,6 +9,7 @@ const mainVisualHeight = mainVisual.getBoundingClientRect().height;
 const navIqr = document.querySelector('.iqr');
 const brandLogo = document.querySelector('.brand_logo')
 
+
 document.addEventListener('scroll', () => {
     if(window.scrollY > navbarHight) {
         navbar.classList.add('bright');
@@ -22,29 +23,10 @@ document.addEventListener('scroll', () => {
     }
 })
 
-// btn scroll 
-const visualBtn = document.querySelector('.visual_btn');
-
-visualBtn.addEventListener('click', () => {
-    const scrollTo = document.querySelector('#contact')
-    scrollTo.scrollIntoView({behavior: 'smooth'})
-});
-
-// 모바일 .iqr btn 클릭시 스크롤 적용 
-const iqrBtn = document.querySelector('.iqr_btn')
-iqrBtn.addEventListener('click', () => {
-    const ctt = document.querySelector('#contact')
-    ctt.scrollIntoView({behavior : 'smooth'})
-})
-
-iqrBtn.addEventListener('click', () => {
-    const campaign = document.querySelector('#campaign')
-    campaign.scrollIntoView({behavior: 'smooth'})
-})
-
-navIqr.addEventListener('click', () => {
-    const goto = document.querySelector('#contact')
-    goto.scrollIntoView({behavior : 'smooth'})
+const gotoConta = document.querySelector('.gotoCont')
+gotoConta.addEventListener('click', () => {
+    const gotoCo = document.querySelector('#contact_form')
+    gotoCo.scrollIntoView({behavior : 'smooth'})
 })
 
 
@@ -57,7 +39,6 @@ document.addEventListener('scroll', () => {
         ftMenu.classList.remove('active')
     }
 })
-
 
 // scrollintoview 
 function scrollIntoView(selector) {
@@ -102,10 +83,6 @@ const prSwiper = new Swiper(".pr_swiper", {
 
 
 });
-
-
-
-
 
 
 
