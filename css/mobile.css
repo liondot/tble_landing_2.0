@@ -1300,6 +1300,7 @@ form input::placeholder {
     .campaign_con {
         width: 100%;
         padding: 0 15px;
+        margin-top: 50px;
     }
 
     .campaign_con h3 {
@@ -1320,8 +1321,12 @@ form input::placeholder {
         width: 228px;
     }
 
+    .campaign_cards {
+        margin-top: 0;
+    }
+
     .campaign_cards .slick-dots {
-        bottom: -32px;
+        bottom: -10px;
     }
 
     .more_btn {
