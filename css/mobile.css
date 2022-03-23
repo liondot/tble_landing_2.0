@@ -368,6 +368,16 @@ section#promotion {
 }
 
 .pr_swiper {
+
+}
+
+.pro_card_con {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.pr_swiper {
     height: 650px !important;
 }
 
