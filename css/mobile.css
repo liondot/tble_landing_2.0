@@ -1327,6 +1327,16 @@ form input::placeholder {
         width: 280px;
     }
 
+    .campaign_card {
+        width: 287px;
+        overflow: hidden;
+        display: flex !important;
+        justify-content: center;
+    }
+    
+    .campaign_card a {
+        padding: 0;
+    }
     .campaing_more {
         width: 228px;
     }
@@ -1337,6 +1347,10 @@ form input::placeholder {
 
     .campaign_cards .slick-dots {
         bottom: 35px;
+    }
+
+    .campaign_cards .slick-slide {
+        margin: 0;
     }
 
     .more_btn {
