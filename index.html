@@ -26,6 +26,9 @@
     <script src="js/fullpage/jquery.fullPage.js" defer></script>
     <script src="js/fullpage/scrolloverflow.min.js"></script>
     <link rel="stylesheet" href="js/fullpage/jquery.fullPage.css">
+    </script>
+    <!-- wow  -->
+    <link rel="stylesheet" href="js/wow/animate.css">
 
 </head>
 
@@ -68,7 +71,7 @@
     <div id="fullpage">
         <section id="main_visual" class="section active">
             <h2 class="hide">메인비주얼</h2>
-            <div class="contents">
+            <div class="contents ani ani-$">
                 <div class="visual_desc">
                     <div class="visual_title">
                         <strong>효과로 보여주는 </strong>
@@ -98,7 +101,7 @@
         <!-- 메인 비주얼 영역  -->
         <section id="promotion" class="section">
             <h2 class="hide">프로모션</h2>
-            <div class="contents">
+            <div class="contents wow slideInLeft" data-wow-duration="2s">
                 <div class="main_title promotion_title">
                     <img src="imgs/promotion_title.svg" alt="">
                 </div>
@@ -138,7 +141,7 @@
         <!-- 프로모션 영역 -->
         <section id="point" class="section">
             <h2 class="hide">포인트</h2>
-            <div class="contents">
+            <div class="contents ani ani-$">
                 <div class="main_title point_title">
                     <img src="imgs/point_title.svg" alt="포인트 타이틀">
                 </div>
@@ -177,7 +180,7 @@
         <!-- tble point 영역  -->
         <section id="support" class="section">
             <h2 class="hide">서포트 영역</h2>
-            <div class="contents">
+            <div class="contents ani ani-$">
                 <div class="support_txt">
                     온라인 마케팅은 진행뿐만 아니라 <br>
                     광고주님들께서 확인 하실 수 있는 <strong>보고 내용</strong>이 가장 <strong>중요</strong>합니다.
@@ -701,7 +704,7 @@
     <div id="main_wrapper">
         <header>
         </header>
-        <!-- head영역 -->
+        <!-- mobile head영역 -->
         <section id="main_visual">
             <div class="visual_contents contents">
                 <div class="visual_desc">
@@ -722,9 +725,11 @@
                 </div>
             </div>
         </section>
-        <!-- 메인 비주얼 영역  -->
+        <!-- mobile 메인 비주얼 영역  -->
         <section id="promotion">
-            <div class="promotion_title"><img src="imgs/promotion_title.png" alt=""></div>
+            <div class="promotion_title">
+                <img src="imgs/promotion_title.png" alt="">
+            </div>
             <div class="pr_swiper">
                 <div class="pro_card_con swiper-wrapper">
                     <div class="pro_cards swiper-slide">
@@ -757,20 +762,55 @@
                 <div class="pr-button swiper-button-next"></div>
             </div>
         </section>
-        <!-- 프로모션 영역 -->
-        <section id="point">
-
+        <!-- mobile 프로모션 영역 -->
+        <section id="point" class="section">
+            <h2 class="hide">포인트</h2>
+            <div class="contents">
+                <div class="main_title point_title">
+                    <img src="imgs/point_title.svg" alt="포인트 타이틀">
+                </div>
+                <div class="point_ics">
+                    <div class="point_ic_1">
+                        <img src="imgs/point_ic1.png" alt="무제한 아이콘">
+                        <div class="point_des">
+                            <p>무제한 모집 <br> 시스템</p>
+                            <span>티블은 될 때까지! <br>
+                                인원제약 없는 <br> 무제한 모집</span>
+                            <em>*업종/지역 등에 따라 모집률 상이 <br>
+                                *한 회차 당 한 개의 제공 내역을 원칙 </em>
+                        </div>
+                    </div>
+                    <div class="point_ic_2">
+                        <div class="point_des">
+                            <p>진행속도 <br> 2배</p>
+                            <span>자동화 시스템을 통한 <br>
+                                2배의 진행속도</span>
+                            <em>*타사는 월 1회 티블은 월 2회 진행</em>
+                        </div>
+                        <img src="imgs/point_ic2.png" alt="진행속도 아이콘">
+                    </div>
+                    <div class="point_ic_3">
+                        <img src="imgs/point_ic3.png" alt="보고 아이콘">
+                        <div class="point_des">
+                            <p>실시간 보고 <br> 시스템</p>
+                            <span>자동 알림톡 <br> 시스템을 통해 <br>
+                                캠페인을 등록, <br>
+                                리뷰선정 등 <br> 실시간 알림 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- tble point 영역  -->
+        <!-- mobile tble point 영역  -->
         <section id="system">
         </section>
-        <!-- 분석 시스템 영역  -->
+        <!--mobile 분석 시스템 영역  -->
         <section id="management">
         </section>
-        <!-- 관리 영역 -->
+        <!--mobile 관리 영역 -->
         <section id="growth">
         </section>
-        <!-- 함께성장해요 영역  -->
+        <!--mobile 함께성장해요 영역  -->
         <section id="campaign">
             <div class="campaign_con">
                 <h3><strong>티블</strong>은 <br>
@@ -931,10 +971,10 @@
                 </div>
             </div>
         </section>
-        <!-- 캠페인  -->
+        <!--mobile 캠페인  -->
         <section id="mkt_order">
         </section>
-        <!-- 마케팅 진행 순서 영역-->
+        <!--mobile 마케팅 진행 순서 영역-->
         <section id="review" class="section">
             <h2 class="hide">리뷰영역</h2>
             <div class="container contents">
@@ -1041,7 +1081,7 @@
                 </div>
             </div>
         </section>
-        <!-- 리뷰  -->
+        <!--mobile 리뷰  -->
         <section id="partner">
             <div class="contants">
                 <div class="main_title partner_title">
@@ -1050,7 +1090,7 @@
                 <div class="partner_img"></div>
             </div>
         </section>
-        <!-- 파트너사 영역  -->
+        <!--mobile 파트너사 영역  -->
         <section id="contact">
             <div class="contents">
                 <div class="main_title contact_title">
@@ -1064,52 +1104,66 @@
                                 <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요." required>
                                 <input type="text" name="area" id="area" placeholder="지역을 입력해주세요." required>
                                 <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요." required>
-                                <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)" required>
+                                <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)"
+                                    required>
                                 <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. </em>
                                 </div>
                                 <button class="contact_btn">
                                     <span>상담문의 </span>
-                                    <div class="contact_img"><img src="imgs/arrow_right.png" alt=""></button></div>
+                                    <div class="contact_img"><img src="imgs/arrow_right.png" alt="">
+                                </button>
                             </div>
-                            <!-- thankyou message  -->
-                            <div class="thankyou_message">
-                                <span>감사합니다!</span>
-                                <p>곧 티블 담당자가 연락드리겠습니다.</p>
-                            </div>
-                        </form>
                     </div>
+                    <!-- thankyou message  -->
+                    <div class="thankyou_message">
+                        <span>감사합니다!</span>
+                        <p>곧 티블 담당자가 연락드리겠습니다.</p>
+                    </div>
+                    </form>
+                </div>
             </div>
         </section>
-        <!-- 광고 문의 신청하기 영역  -->
+        <!--mobile 광고 문의 신청하기 영역  -->
         <section id="footer">
         </section>
-        <!-- footer 영역 -->
+        <!--mobile footer 영역 -->
         <div class="floating_menu" id="floatingMenu">
             <a href="#page11" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
             <a href="https://pf.kakao.com/_EJbIj/chat"><img src="imgs/ft_icon2.png" alt=""></a>
         </div>
-        <!-- floating_menu  -->
+        <!--mobile floating_menu  -->
 
     </div>
     <!-- main_wrapper  -->
 
     <!-- slick slide js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
     </script>
-
+    <script src="js/wow/wow.min.js"></script>
 
     <script>
-  
-
-
+        var wow = new WOW({
+            boxClass: 'wow', // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            // offset: 0, // distance to the element when triggering the animation (default is 0)
+            // mobile: true, // trigger animations on mobile devices (default is true)
+            // live: true, // act on asynchronously loaded content (default is true)
+            // callback: function (box) {
+            //     // the callback is fired every time an animation is started
+            //     // the argument that is passed in is the DOM node being animated
+            // },
+            // scrollContainer: null, // optional scroll container selector, otherwise use window,
+            // resetAnimation: true, // reset animation on end (default is true)
+        });
+        wow.init();
         // <!-- fullpage  -->
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //options here
                 // autoScrolling: true,
-                scrollHorizontally: true,
-                lockAnchors: false, //
+                scrollHorizontally: false,
+                lockAnchors: false,
 
                 navigation: true,
                 navigationPosition: 'right',
@@ -1118,38 +1172,52 @@
                 ],
                 showActiveTooltip: true,
                 responsiveHeight: 800,
-                autoScrolling: true,
+                autoScrolling: false,
 
-                responsiveSlides: true,
-                showActiveTooltip: true,
+                responsiveSlides: false,
+                showActiveTooltip: false,
                 scrollOverflow: false,
                 menu: '#btnBb',
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8',
                     'page9', 'page10', 'page11', 'page12'
                 ],
+                scrollBar: true,
+                afterRender: function () {
+                    wow.init();
+        
+                },
+                afterLoad: function () {
+                    wow.init();
+        
+                }
+                // easing: 'easeInOutCubisc',
 
-                // normalScrollElements:'#floatingMenu',
-                css3: true,
-
-
-                // scrollBar: true,
-
-
-                // 스크롤 
-                scrollingSpeed: 1000,
-                // easing: 'easeInOutCubic',
             });
 
             //methods
-            $.fn.fullpage.setAllowScrolling(true);
+            $.fn.fullpage.setAllowScrolling(false);
+
+            // 기존 섹션을 다시 활성화 하여, 최초에도 애니메이션이 발동 하도록
 
 
 
         });
 
-
-        
-
+        // // wow.js 
+        // var wow = new WOW({
+        //     boxClass: 'wow', // animated element css class (default is wow)
+        //     animateClass: 'animated', // animation css class (default is animated)
+        //     offset: 0, // distance to the element when triggering the animation (default is 0)
+        //     mobile: true, // trigger animations on mobile devices (default is true)
+        //     live: true, // act on asynchronously loaded content (default is true)
+        //     callback: function (box) {
+        //         // the callback is fired every time an animation is started
+        //         // the argument that is passed in is the DOM node being animated
+        //     },
+        //     scrollContainer: null, // optional scroll container selector, otherwise use window,
+        //     resetAnimation: true, // reset animation on end (default is true)
+        // });
+        // wow.init();
     </script>
 
 
