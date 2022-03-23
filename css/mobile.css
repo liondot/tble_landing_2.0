@@ -394,18 +394,70 @@ section#promotion {
     top: 48px !important;
 }
 
+
 /************** tble point 영역 **************/
 #point {
-    width: 100%;
-    height: 1240px;
     position: relative;
+    background: url(../imgs/point_bg.jpg);
 }
 
-#point:before {
-    background: url(../imgs/section_tble_point.jpg) no-repeat center / auto 100%;
+#point .contents {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
+.main_title {
+    text-align: center;
+    max-width: 100%;
+    width: 45%;
+    margin: 0 auto;
+}
 
+.main_title img {
+    width: 100%;
+}
+
+.point_ics {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.point_ics img {
+    width: 90%;
+}
+
+.point_des {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.point_des p {
+    color: #161616;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size: 1.6vw;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+}
+
+.point_des span {
+    padding: 10px 0;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.point_des em {
+    display: block;
+    margin-left: 0;
+    color: #fff;
+}
 /************* 분석 시스템 영역 *************/
 #system {
     width: 100%;
@@ -1253,18 +1305,66 @@ form input::placeholder {
 
 
     /***** tble point 영역 *****/
-    #point {
+    #point {}
+
+    #point .main_title {
         width: 100%;
-        height: 500px;
     }
 
-    #point:before {
-        background: url(../imgs/mo/mo_point.jpg) no-repeat center / auto 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 50;
+    .point_ics > div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
+
+    .point_ics {
+        flex-direction: row !important;
+    }
+
+    .point_ics img {
+        width: 100%;
+    }
+
+    .point_ics {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .point_ic_1,
+    .point_ic_2,
+    .point_ic_3 {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .point_des {
+        margin-left: 0;
+        
+    }
+
+    .point_des p {
+        font-size: 5.5vw;
+        text-align: center;
+    }
+
+    .point_des span {
+        text-align: center;
+        font-size: 3.5vw;
+        padding: 0;
+
+    }
+
+    .point_ic_2 .point_des p,
+    .point_ic_2 .point_des span,
+    .point_ic_2 .point_des em {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+
+
 
     /***** 분석 시스템 영역 *****/
 
