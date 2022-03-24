@@ -30,11 +30,10 @@
     <!-- wow  -->
     <link rel="stylesheet" href="js/wow/animate.css">
     <!-- aos  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script> -->
     <!-- counter  -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="jquery.counterup.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
 </head>
 
 
@@ -76,7 +75,7 @@
     <div id="fullpage">
         <section id="main_visual" class="section active">
             <h2 class="hide">메인비주얼</h2>
-            <div class="contents ani ani-$">
+            <div class="contents">
                 <div class="visual_desc">
                     <div class="visual_title">
                         <strong>효과로 보여주는 </strong>
@@ -106,7 +105,7 @@
         <!-- 메인 비주얼 영역  -->
         <section id="promotion" class="section">
             <h2 class="hide">프로모션</h2>
-            <div class="contents wow slideInLeft" data-wow-duration="2s">
+            <div class="contents wow bounceIn" data-wow-duration="1s">
                 <div class="main_title promotion_title">
                     <img src="imgs/promotion_title.svg" alt="">
                 </div>
@@ -321,7 +320,7 @@
                     <div class="campaign_round">
                         <div class="round_txt">
                             <div class="campaign_number">
-                                <strong class="counter">235,814</strong>건
+                                <strong class="count">235,814</strong>건
                             </div>
                             <p>티블과 함께한 체험단 캠페인 수</p>
                         </div>
@@ -777,7 +776,7 @@
                 <div class="point_ics">
                     <div class="point_ic_1">
                         <img class="point_img wow flipInY" src="imgs/point_ic1.png" alt="무제한 아이콘">
-                        <div class="point_des wow fadeIn"  data-wow-delay="0.3s" data-wow-duration="1s">
+                        <div class="point_des wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1s">
                             <p>무제한 모집 시스템</p>
                             <span>티블은 될 때까지! <br>
                                 인원제약 없는 무제한 모집</span>
@@ -792,7 +791,8 @@
                                 2배의 진행속도</span>
                             <em>*타사는 월 1회 티블은 월 2회 진행</em>
                         </div>
-                        <img class="point_img wow flipInY" data-wow-delay="0.3s" src="imgs/point_ic2.png" alt="진행속도 아이콘">
+                        <img class="point_img wow flipInY" data-wow-delay="0.3s" src="imgs/point_ic2.png"
+                            alt="진행속도 아이콘">
                     </div>
                     <div class="point_ic_3">
                         <img class="point_img wow flipInY" data-wow-delay="0.6s" src="imgs/point_ic3.png" alt="보고 아이콘">
@@ -810,17 +810,18 @@
         <section id="support" class="section">
             <h2 class="hide">서포트 영역</h2>
             <div class="contents">
-                <div class="mo_support_txt wow fadeIn"  data-aos-delay="50">
+                <div class="mo_support_txt wow fadeIn" data-aos-delay="50">
                     온라인 마케팅은 진행뿐만 아니라
-                    광고주님들께서  <br> 확인 하실 수 있는 <strong>보고 내용</strong>이 가장 <strong>중요</strong>합니다.
+                    광고주님들께서 <br> 확인 하실 수 있는 <strong>보고 내용</strong>이 가장 <strong>중요</strong>합니다.
                 </div>
                 <div class="line"></div>
                 <div class="support_main_txt">
-                    <p data-aos="fade-right"  data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="900">
+                    <p data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="900">
                         티블은 정확한 <strong>데이터 기반 <br> 분석시스템</strong>을 통해<br>
                         <span>고도화된 마케팅 리포트</span>를 <br> 제공합니다.
                     </p>
-                    <div class="support_img" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="600">
+                    <div class="support_img" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out"
+                        data-aos-duration="600">
                         <img src="imgs/support_img.png" alt="">
                     </div>
                 </div>
@@ -888,7 +889,8 @@
         <section id="campaign">
             <div class="campaign_con">
                 <h3><strong>티블</strong>은 <br>
-                    총 <strong class="counter">235,814 건</strong>의 <strong>체험단 <br> 캠페인을 진행</strong>했습니다.
+                    총 <strong class="counter">235,814</strong>건의 <strong>체험단 <br> 캠페인을
+                        진행</strong>했습니다.
                 </h3>
                 <div class="campaign_box">
                     <div class="more_btn">
@@ -1046,7 +1048,41 @@
             </div>
         </section>
         <!--mobile 캠페인  -->
-        <section id="mkt_order">
+        <section id="mkt_order" class="section">
+            <h2 class="hide">마케팅 진행 순서 영역</h2>
+            <div class="contents">
+                <div class="main_title mkt_title">
+                    <img src="imgs/mkt_order_title.svg" alt="마케팅 진행순서 타이틀">
+                </div>
+                <div class="mkt_icons">
+                    <div class="kt_icon">
+                        <img class="wow flipInY" data-wow-duration=".3s" src="imgs/mkt_ic1.png" alt="진행순서 아이콘">
+                        <em></em>
+                        <p data-aos="fade-up">상담신청</p>
+                    </div>
+                    <div class="kt_icon">
+                        <img class="wow flipInY" data-wow-delay="0.4s" data-wow-duration=".5s" src="imgs/mkt_ic2.png" alt="진행순서 아이콘">
+                        <em></em>
+                        <p class="" data-aos="fade-up">상담신전문마케터 <br>
+                            1:1 컨설팅청</p>
+                    </div>
+                    <div class="kt_icon">
+                        <img class="wow flipInY" data-wow-delay="0.6s" data-wow-duration=".5s" src="imgs/mkt_ic3.png" alt="진행순서 아이콘">
+                        <em></em>
+                        <p data-aos="fade-up">계약완료</p>
+                    </div>
+                    <div class="kt_icon">
+                        <img class="wow flipInY"  data-wow-delay="0.8s" data-wow-duration=".5s" src="imgs/mkt_ic4.png" alt="진행순서 아이콘">
+                        <em></em>
+                        <p data-aos="fade-up">캠페인 진행</p>
+                    </div>
+                    <div class="kt_icon">
+                        <img class="wow flipInY" data-wow-delay="1.0s" data-wow-duration="1s" src="imgs/mkt_ic5.png" alt="진행순서 아이콘">
+                        <em></em>
+                        <p data-aos="fade-up">결과보고</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--mobile 마케팅 진행 순서 영역-->
         <section id="review" class="section">
@@ -1220,13 +1256,12 @@
 
 
     <script>
-
-        
-//campaign counter 
+        //campaign counter 
 
 
+        // wow.js 
         var wow = new WOW({
-            offset:      -3000,  
+            offset: -3000,
             // boxClass: 'wow', // animated element css class (default is wow)
             // animateClass: 'animated', // animation css class (default is animated)
             // offset: 0, // distance to the element when triggering the animation (default is 0)
@@ -1237,7 +1272,7 @@
             // scrollContainer: null, // optional scroll container selector, otherwise use window,
             // resetAnimation: true, // reset animation on end (default is true)
         });
-       
+
         // <!-- fullpage  -->
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -1263,7 +1298,7 @@
                     'page9', 'page10', 'page11', 'page12'
                 ],
 
-                onLeave:function(){
+                onLeave: function () {
                     new WOW().init();
                 }
 
@@ -1277,11 +1312,56 @@
 
         });
 
-  
-    AOS.init();
 
+        AOS.init();
 
+        // campaign countup mo.ver
 
+        const counterUp = window.counterUp.default
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    counterUp(el, {
+                        duration: 2000,
+                        delay: 16,
+                    })
+                    el.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IO = new IntersectionObserver(callback, {
+            threshold: 1
+        })
+
+        const el = document.querySelector('.counter')
+        IO.observe(el)
+
+        // campaign countup pc.ver
+
+        const counteUp = window.counterUp.default
+
+        const cb = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    counteUp(el, {
+                        duration: 2000,
+                        delay: 16,
+                    })
+                    el.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IOt = new IntersectionObserver(cb, {
+            threshold: 1
+        })
+
+        const elt = document.querySelector('.count')
+        IO.observe(elt)
     </script>
 
 

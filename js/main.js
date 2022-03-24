@@ -46,12 +46,6 @@ function scrollIntoView(selector) {
     scrollTo.scrollIntoView({behavior: 'smooth'})
 }
 
-//campaign counter 
-$('.counter').counterUp({
-    delay: 10,
-    time: 1000
-});
-
 
 // 모바일 버전 
 

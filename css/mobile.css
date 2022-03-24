@@ -268,13 +268,6 @@ section#promotion {
     transform: rotate(90deg);
 }
 
-/* #promotion:before {
-    content: '';
-    width: 100%;
-    height: auto;
-    background: url(../imgs/tble_logo.png) no-repeat;
-    z-index: 2;
-} */
 
 #promotion h3 {
     font-size: 40px;
@@ -321,7 +314,6 @@ section#promotion {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    /* background: #2b2b2b; */
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -367,9 +359,7 @@ section#promotion {
     transform: translate(-50%, -50%);
 }
 
-.pr_swiper {
-
-}
+.pr_swiper {}
 
 .pro_card_con {
     width: 100%;
@@ -782,17 +772,42 @@ section#promotion {
 }
 
 
-/************** 마케팅 진행 순서 영역 **************/
+
+
+/**************#mkt_order (process) 마케팅 진행 순서 영역 **************/
 
 #mkt_order {
-    width: 100%;
-    height: 900px;
-    position: relative;
+    background: url('../imgs/mkt_order_bg.jpg');
+    padding-top: 0;
 }
 
-#mkt_order:before {
-    background: url(../imgs/section_mkt_order.jpg) no-repeat center / auto 100%;
+#mkt_order .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+.mkt_title {
+    padding: 0 0 100px
+}
+
+.mkt_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kt_icon p {
+    color: #fff;
+    font-size: 28px;
+    font-family: var(--font-family-gmarket);
+    letter-spacing: -3px;
+    height: 100px;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+}
+
 
 
 /* ****************** review ****************** */
@@ -1197,15 +1212,15 @@ form input::placeholder {
         display: block;
     }
 
-       /***** header 영영 *****/
-       header {
+    /***** header 영영 *****/
+    header {
         box-sizing: border-box;
         width: 100%;
         height: 60px;
     }
 
     #nav {
-        padding: 10px  20px;
+        padding: 10px 20px;
         height: 80px;
     }
 
@@ -1464,7 +1479,7 @@ form input::placeholder {
         margin-top: 0;
     }
 
-    .point_ics > div {
+    .point_ics>div {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -1494,7 +1509,7 @@ form input::placeholder {
 
     .point_des {
         margin-left: 0;
-        
+
     }
 
     .point_des p {
@@ -1525,6 +1540,7 @@ form input::placeholder {
         height: auto;
         padding-top: 20px;
     }
+
     .support_txt {
         font-size: 5.4vw;
         padding: 0 30px;
@@ -1559,7 +1575,7 @@ form input::placeholder {
         line-height: 1.5;
         letter-spacing: -1px;
         margin-top: 10px;
-        width: 100%;    
+        width: 100%;
     }
 
 
@@ -1581,9 +1597,9 @@ form input::placeholder {
 
     /***** #growth 함께성장해요 영역 *****/
     #growth {
-        border: 2px solid red;
         height: 100vh;
     }
+
     #growth .contents {
         display: block;
         padding: 0 15px;
@@ -1601,7 +1617,7 @@ form input::placeholder {
 
     .mo_grow_sub {
         font-size: 4.5vw;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
     }
 
     .grows {
@@ -1651,6 +1667,10 @@ form input::placeholder {
         margin-bottom: 13px;
     }
 
+    .check {
+        margin-left: 10px;
+    }
+
     .check img {
         width: 65%;
     }
@@ -1674,8 +1694,17 @@ form input::placeholder {
         border-top: 30px solid transparent;
     }
 
+    .counter:not(.is-visible) {
+        visibility: hidden;
+    }
 
-  
+    .campaign_con h3 .counter {
+        width: 130px;
+        display: inline-block;
+    }
+
+
+
     /***** #campaign 영역 *****/
 
 
@@ -1722,10 +1751,11 @@ form input::placeholder {
         display: flex !important;
         justify-content: center;
     }
-    
+
     .campaign_card a {
         padding: 0;
     }
+
     .campaing_more {
         width: 228px;
     }
@@ -1750,20 +1780,48 @@ form input::placeholder {
         height: 29px;
     }
 
-    /***** 마케팅 진행 순서 영역 *****/
-
-    #mkt_order {
-        width: 100%;
-        height: 640px;
-        position: relative;
+    /***** #mkt_order 마케팅 진행 순서 영역 *****/
+    .mkt_icons {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 30px;
+        justify-content: center;
     }
 
-    #mkt_order:before {
+    .kt_icon {
+        width: unset;
+        height: auto;
+        flex-direction: column;
+        width: 110px;
+        margin: 5px;
+        justify-content: space-between;
+        position: relative;
+        border-bottom: none;
+    }
+
+    .kt_icon img {
+        width: 15vh;
+    }
+
+    .kt_icon em {
+        width: 68px;
+        height: 68px;
+        display: inline-block;
+        border-radius: 50%;
+        opacity: .3;
         position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 3;
-        background: url(../imgs/mo/mo_mkt_order.jpg) no-repeat center / auto 100%;
+        top: 20px;
+        left: 5px;
+        transition: all .3s;
+    }
+
+
+    .kt_icon p {
+        font-size: 16px;
+        letter-spacing: -1px;
+        margin: 0;
+        padding: 0;
     }
 
 
@@ -1954,7 +2012,7 @@ form input::placeholder {
         margin-left: 8px;
     }
 
-    
+
 
     .contact_btn {
         margin: 20px 0 10px;
@@ -1971,7 +2029,7 @@ form input::placeholder {
 
     .contact_img {
         width: 30px;
-    } 
+    }
 
     .contact_btn img {
         width: 12%;
@@ -1990,7 +2048,7 @@ form input::placeholder {
         bottom: -10px;
     }
 
-  
+
 
     .last_input span {
         font-size: 16px;
@@ -2023,4 +2081,4 @@ form input::placeholder {
     }
 
 
-} 
+}
