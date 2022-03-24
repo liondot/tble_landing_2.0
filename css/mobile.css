@@ -1688,7 +1688,6 @@ form input::placeholder {
         right: 105px;
         width: 223px;
         justify-content: flex-start;
-        border: 2px solid blue;
     }
 
     .grow_line p:before {
