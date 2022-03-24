@@ -1690,11 +1690,12 @@ form input::placeholder {
         border: 2px solid red;
     }
 
-    .grow_line p:before {
-        left: -58px;
-        border: 30px solid #fff;
-        border-left: 30px solid transparent;
-        border-top: 30px solid transparent;
+        .grow_line p:before {
+            left: -61px;
+            top: 0;
+            border: 30px solid #fff;
+            border-left: 30px solid transparent;
+            border-top: 30px solid transparent;
     }
 
     .counter:not(.is-visible) {
