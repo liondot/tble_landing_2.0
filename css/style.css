@@ -20,9 +20,9 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     margin: 0;
@@ -497,6 +497,7 @@ nav .iqr {
 
 .point_ics img {
     width: 90%;
+    margin-top: 20px !important;
 }
 
 .point_des {
@@ -669,6 +670,7 @@ nav .iqr {
     height: 100vh;
     align-items: center;
     padding: 0 50px;
+    overflow: hidden;
 }
 
 .mo_grow_sub,
@@ -678,7 +680,6 @@ nav .iqr {
 
 .grows {
     display: flex;
-
 }
 
 .grow_right {
@@ -705,19 +706,23 @@ nav .iqr {
 .grow_lines {
     margin-top: 50px;
     position: absolute;
-    width: 100%;
-    left: -100px;
+    left: -50px;
     z-index: -2;
+    width: 140%;
+    overflow: hidden;
+
 }
 
 .grow_line {
     display: flex;
     background: var(--point-color);
     height: 88px;
+    width: 575px;
     margin-bottom: 20px;
-    padding-left: 150px;
+    padding-left: 67px;
     align-items: center;
     position: relative;
+    
 }
 
 .grow_line em {
@@ -825,8 +830,8 @@ nav .iqr {
     border: 15px solid var(--point-color);
     border-left: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    animation: spin 1s ease-in-out infinite;
-    -webkit-animation: spin 1.5s 1s ease-in-out;
+    animation: spin 1s 1s ease-in-out infinite;
+    -webkit-animation: spin 1.5s 1s ease-in-out infinite;
 }
  
   

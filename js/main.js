@@ -56,10 +56,10 @@ const mainVisualBf = document.querySelector('#main_visual:before');
 // // 광고주 대상 프로모션 section promotion 
 var swiperSt = ["방문형", "배송형"];
 const prSwiper = new Swiper(".pr_swiper", {
-    spaceBetween: 30,
+    // spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 5000,
+        delay: 2000,
         disableOnInteraction: false,
     },
     pagination: {
@@ -91,11 +91,11 @@ const prSwiper = new Swiper(".pr_swiper", {
 $('.campaign_cards').slick({
     dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 800,
     slidesToShow: 7,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 800,
     responsive: [{
             breakpoint: 1024,
             settings: {

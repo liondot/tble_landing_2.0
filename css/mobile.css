@@ -26,9 +26,9 @@ body {
     box-sizing: border-box;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 li {
     list-style: none;
@@ -1483,6 +1483,7 @@ form input::placeholder {
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin: 10px;
     }
 
     .point_ics {
@@ -1702,6 +1703,9 @@ form input::placeholder {
         width: 130px;
         display: inline-block;
     }
+
+
+
 
 
 

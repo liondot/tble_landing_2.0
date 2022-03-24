@@ -30,10 +30,11 @@
     <!-- wow  -->
     <link rel="stylesheet" href="js/wow/animate.css">
     <!-- aos  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <!-- <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script> -->
+
     <!-- counter  -->
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"> </script>
 </head>
 
 
@@ -105,7 +106,7 @@
         <!-- 메인 비주얼 영역  -->
         <section id="promotion" class="section">
             <h2 class="hide">프로모션</h2>
-            <div class="contents wow bounceIn" data-wow-duration="1s">
+            <div class="contents wow bounceIn" data-wow-duration="1.5s">
                 <div class="main_title promotion_title">
                     <img src="imgs/promotion_title.svg" alt="">
                 </div>
@@ -150,9 +151,9 @@
                     <img src="imgs/point_title.svg" alt="포인트 타이틀">
                 </div>
                 <div class="point_ics">
-                    <div class="point_ic_1">
-                        <img src="imgs/point_ic1.png" alt="무제한 아이콘">
-                        <div class="point_des">
+                    <div class="point_ic">
+                        <img src="imgs/point_ic1.png" class="wow flipInY" data-wow-duration="1s" alt="무제한 아이콘">
+                        <div class="point_des wow fadeInLeft" data-wow-duration="1.8s">
                             <p>무제한 모집 시스템</p>
                             <span>티블은 될 때까지! <br>
                                 인원제약 없는 무제한 모집</span>
@@ -161,17 +162,17 @@
                         </div>
                     </div>
                     <div class="point_ic_2">
-                        <div class="point_des">
+                        <div class="point_des wow fadeInDown" data-wow-duration="1.8s">
                             <p>진행속도 2배</p>
                             <span>자동화 시스템을 통한 <br>
                                 2배의 진행속도</span>
                             <em>*타사는 월 1회 티블은 월 2회 진행</em>
                         </div>
-                        <img src="imgs/point_ic2.png" alt="진행속도 아이콘">
+                        <img src="imgs/point_ic2.png" class="wow flipInY" data-wow-delay=".2s" data-wow-duration="2s" alt="진행속도 아이콘">
                     </div>
                     <div class="point_ic_3">
-                        <img src="imgs/point_ic3.png" alt="보고 아이콘">
-                        <div class="point_des">
+                        <img src="imgs/point_ic3.png" class="wow flipInY"data-wow-delay=".4s" data-wow-duration="3s" alt="보고 아이콘">
+                        <div class="point_des wow fadeInRight" data-wow-duration="1.8s">
                             <p>실시간 보고 시스템</p>
                             <span>자동 알림톡 시스템을 통해 <br>
                                 캠페인을 등록, <br>
@@ -184,7 +185,7 @@
         <!-- tble point 영역  -->
         <section id="support" class="section">
             <h2 class="hide">서포트 영역</h2>
-            <div class="contents ani ani-$">
+            <div class="contents">
                 <div class="support_txt">
                     온라인 마케팅은 진행뿐만 아니라 <br>
                     광고주님들께서 확인 하실 수 있는 <strong>보고 내용</strong>이 가장 <strong>중요</strong>합니다.
@@ -199,7 +200,7 @@
                         티블은 정확한 <strong>데이터 기반 분석시스템</strong>을 통해<br>
                         <span>고도화된 마케팅 리포트</span>를 제공합니다.
                     </p>
-                    <div class="support_img">
+                    <div class="support_img wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                         <img src="imgs/support_img.png" alt="">
                     </div>
                 </div>
@@ -211,8 +212,8 @@
             <div class="contents">
                 <div class="manage_icons">
                     <div class="manage_ico">
-                        <img src="imgs/mana_ic1.png" alt="">
-                        <div class="manage_des">
+                        <img class="wow bounceIn" src="imgs/mana_ic1.png" alt="">
+                        <div class="manage_des wow bounceInUp">
                             <span>
                                 데이터 기반의 <br>
                                 전문적 관리
@@ -226,8 +227,8 @@
                     </div>
                     <div class="ma_and">&#38;</div>
                     <div class="manage_ico">
-                        <img src="imgs/mana_ic2.png" alt="">
-                        <div class="manage_des">
+                        <img src="imgs/mana_ic2.png" class="wow bounceIn" alt="">
+                        <div class="manage_des wow bounceInUp">
                             <span>
                                 효율적인 <br>
                                 리뷰어 관리
@@ -241,8 +242,8 @@
                     </div>
                     <div class="ma_and and_se">&#38;</div>
                     <div class="manage_ico">
-                        <img src="imgs/mana_ic3.png" alt="">
-                        <div class="manage_des">
+                        <img src="imgs/mana_ic3.png" class="wow bounceIn" alt="">
+                        <div class="manage_des wow bounceInUp">
                             <span>
                                 체계적인 <br>
                                 관리 시스템
@@ -275,7 +276,7 @@
                             </span>
                         </div>
                         <div class="grow_lines">
-                            <div class="grow_line">
+                            <div class="grow_line wow slideInLeft" data-wow-duration="1s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>한번에</em>
                                 <p>
@@ -283,7 +284,7 @@
                                     One-Stop으로 제공
                                 </p>
                             </div>
-                            <div class="grow_line">
+                            <div class="grow_line wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>쉽게!</em>
                                 <p>
@@ -291,7 +292,7 @@
                                     확인 가능
                                 </p>
                             </div>
-                            <div class="grow_line">
+                            <div class="grow_line wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>전문적으로!</em>
                                 <p>
@@ -299,7 +300,7 @@
                                     빅데이터를 통한 마케팅
                                 </p>
                             </div>
-                            <div class="grow_line">
+                            <div class="grow_line wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>확실하게!</em>
                                 <p>
@@ -497,24 +498,24 @@
                 </div>
                 <div class="mkt_icons">
                     <div class="kt_icon">
-                        <img src="imgs/mkt_ic1.png" alt="진행순서 아이콘">
+                        <img src="imgs/mkt_ic1.png" class="wow bounceIn" alt="진행순서 아이콘">
                         <p>상담신청</p>
                     </div>
                     <div class="kt_icon">
-                        <img src="imgs/mkt_ic2.png" alt="진행순서 아이콘">
+                        <img src="imgs/mkt_ic2.png" class="wow bounceIn" data-wow-delay="0.1s" alt="진행순서 아이콘">
                         <p>상담신전문마케터 <br>
                             1:1 컨설팅청</p>
                     </div>
                     <div class="kt_icon">
-                        <img src="imgs/mkt_ic3.png" alt="진행순서 아이콘">
+                        <img src="imgs/mkt_ic3.png" class="wow bounceIn" data-wow-delay="0.2s" alt="진행순서 아이콘">
                         <p>계약완료</p>
                     </div>
                     <div class="kt_icon">
-                        <img src="imgs/mkt_ic4.png" alt="진행순서 아이콘">
+                        <img src="imgs/mkt_ic4.png" class="wow bounceIn" data-wow-delay="0.3s" alt="진행순서 아이콘">
                         <p>캠페인 진행</p>
                     </div>
                     <div class="kt_icon">
-                        <img src="imgs/mkt_ic5.png" alt="진행순서 아이콘">
+                        <img src="imgs/mkt_ic5.png" class="wow bounceIn" data-wow-delay="0.4s" alt="진행순서 아이콘">
                         <p>결과보고</p>
                     </div>
                 </div>
@@ -773,7 +774,7 @@
                 <div class="main_title point_title">
                     <img src="imgs/point_title.svg" alt="포인트 타이틀">
                 </div>
-                <div class="point_ics">
+                <div class="point_ics wow fadeInLeft">
                     <div class="point_ic_1">
                         <img class="point_img wow flipInY" src="imgs/point_ic1.png" alt="무제한 아이콘">
                         <div class="point_des wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1s">
@@ -1058,28 +1059,32 @@
                     <div class="kt_icon">
                         <img class="wow flipInY" data-wow-duration=".3s" src="imgs/mkt_ic1.png" alt="진행순서 아이콘">
                         <em></em>
-                        <p data-aos="fade-up">상담신청</p>
+                        <p class="wow adeInLeft">상담신청</p>
                     </div>
                     <div class="kt_icon">
-                        <img class="wow flipInY" data-wow-delay="0.4s" data-wow-duration=".5s" src="imgs/mkt_ic2.png" alt="진행순서 아이콘">
+                        <img class="wow flipInY" data-wow-delay="0.4s" data-wow-duration=".5s" src="imgs/mkt_ic2.png"
+                            alt="진행순서 아이콘">
                         <em></em>
-                        <p class="" data-aos="fade-up">상담신전문마케터 <br>
+                        <p class="">상담신전문마케터 <br>
                             1:1 컨설팅청</p>
                     </div>
                     <div class="kt_icon">
-                        <img class="wow flipInY" data-wow-delay="0.6s" data-wow-duration=".5s" src="imgs/mkt_ic3.png" alt="진행순서 아이콘">
+                        <img class="wow flipInY" data-wow-delay="0.6s" data-wow-duration=".5s" src="imgs/mkt_ic3.png"
+                            alt="진행순서 아이콘">
                         <em></em>
-                        <p data-aos="fade-up">계약완료</p>
+                        <p class="wow fadeInUp">계약완료</p>
                     </div>
                     <div class="kt_icon">
-                        <img class="wow flipInY"  data-wow-delay="0.8s" data-wow-duration=".5s" src="imgs/mkt_ic4.png" alt="진행순서 아이콘">
+                        <img class="wow flipInY" data-wow-delay="0.8s" data-wow-duration=".5s" src="imgs/mkt_ic4.png"
+                            alt="진행순서 아이콘">
                         <em></em>
-                        <p data-aos="fade-up">캠페인 진행</p>
+                        <p>캠페인 진행</p>
                     </div>
                     <div class="kt_icon">
-                        <img class="wow flipInY" data-wow-delay="1.0s" data-wow-duration="1s" src="imgs/mkt_ic5.png" alt="진행순서 아이콘">
+                        <img class="wow flipInY" data-wow-delay="1.0s" data-wow-duration="1s" src="imgs/mkt_ic5.png"
+                            alt="진행순서 아이콘">
                         <em></em>
-                        <p data-aos="fade-up">결과보고</p>
+                        <p>결과보고</p>
                     </div>
                 </div>
             </div>
@@ -1256,12 +1261,11 @@
 
 
     <script>
-        //campaign counter 
 
 
         // wow.js 
         var wow = new WOW({
-            offset: -3000,
+            // offset: 1000,
             // boxClass: 'wow', // animated element css class (default is wow)
             // animateClass: 'animated', // animation css class (default is animated)
             // offset: 0, // distance to the element when triggering the animation (default is 0)
@@ -1272,6 +1276,7 @@
             // scrollContainer: null, // optional scroll container selector, otherwise use window,
             // resetAnimation: true, // reset animation on end (default is true)
         });
+        // wow.init();
 
         // <!-- fullpage  -->
         $(document).ready(function () {
@@ -1297,17 +1302,19 @@
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8',
                     'page9', 'page10', 'page11', 'page12'
                 ],
+                 scrollBar:true,
+
 
                 onLeave: function () {
                     new WOW().init();
-                }
+                },
 
             });
+
 
             //methods
             $.fn.fullpage.setAllowScrolling(true);
 
-            // 기존 섹션을 다시 활성화 하여, 최초에도 애니메이션이 발동 하도록
 
 
         });
@@ -1342,7 +1349,6 @@
         // campaign countup pc.ver
 
         const counteUp = window.counterUp.default
-
         const cb = entries => {
             entries.forEach(entry => {
                 const el = entry.target
@@ -1359,9 +1365,10 @@
         const IOt = new IntersectionObserver(cb, {
             threshold: 1
         })
-
         const elt = document.querySelector('.count')
         IO.observe(elt)
+
+
     </script>
 
 
