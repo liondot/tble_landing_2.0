@@ -584,6 +584,7 @@ section#promotion {
     width: 100%;
     left: -100px;
     z-index: -2;
+
 }
 
 .grow_line {
@@ -1658,7 +1659,7 @@ form input::placeholder {
     }
 
     .grow_lines {
-        left: -220px;
+        left: -234px;
         width: 250%;
     }
 
@@ -1687,15 +1688,15 @@ form input::placeholder {
         right: 105px;
         width: 223px;
         justify-content: flex-start;
-        border: 2px solid red;
+        border: 2px solid blue;
     }
 
-        .grow_line p:before {
-            left: -61px;
-            top: 0;
-            border: 30px solid #fff;
-            border-left: 30px solid transparent;
-            border-top: 30px solid transparent;
+    .grow_line p:before {
+        left: -61px;
+        top: 0;
+        border: 30px solid #fff;
+        border-left: 30px solid transparent;
+        border-top: 30px solid transparent;
     }
 
     .counter:not(.is-visible) {
