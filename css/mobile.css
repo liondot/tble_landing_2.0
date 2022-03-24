@@ -1682,8 +1682,9 @@ form input::placeholder {
     }
 
     .grow_line p {
+        padding-left: 4px;
         font-size: 14px;
-        right: 37px;
+        right: 105px;
         width: 190px;
         justify-content: flex-start;
     }
