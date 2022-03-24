@@ -29,7 +29,12 @@
     </script>
     <!-- wow  -->
     <link rel="stylesheet" href="js/wow/animate.css">
-
+    <!-- aos  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <!-- counter  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
 </head>
 
 
@@ -316,7 +321,7 @@
                     <div class="campaign_round">
                         <div class="round_txt">
                             <div class="campaign_number">
-                                <strong>235,814</strong>건
+                                <strong class="counter">235,814</strong>건
                             </div>
                             <p>티블과 함께한 체험단 캠페인 수</p>
                         </div>
@@ -771,8 +776,8 @@
                 </div>
                 <div class="point_ics">
                     <div class="point_ic_1">
-                        <img class="point_img wow flipInY" data-wow-delay="0.4s" src="imgs/point_ic1.png" alt="무제한 아이콘">
-                        <div class="point_des">
+                        <img class="point_img wow flipInY" src="imgs/point_ic1.png" alt="무제한 아이콘">
+                        <div class="point_des wow fadeIn"  data-wow-delay="0.3s" data-wow-duration="1s">
                             <p>무제한 모집 시스템</p>
                             <span>티블은 될 때까지! <br>
                                 인원제약 없는 무제한 모집</span>
@@ -781,17 +786,17 @@
                         </div>
                     </div>
                     <div class="point_ic_2">
-                        <div class="point_des">
+                        <div class="point_des wow fadeIn" data-wow-delay="0.6s">
                             <p>진행속도 <br> 2배</p>
                             <span>자동화 시스템을 통한 <br>
                                 2배의 진행속도</span>
                             <em>*타사는 월 1회 티블은 월 2회 진행</em>
                         </div>
-                        <img class="point_img wow flipInY" data-wow-delay="0.6s" src="imgs/point_ic2.png" alt="진행속도 아이콘">
+                        <img class="point_img wow flipInY" data-wow-delay="0.3s" src="imgs/point_ic2.png" alt="진행속도 아이콘">
                     </div>
                     <div class="point_ic_3">
-                        <img class="point_img wow flipInY" data-wow-delay="0.8s" src="imgs/point_ic3.png" alt="보고 아이콘">
-                        <div class="point_des">
+                        <img class="point_img wow flipInY" data-wow-delay="0.6s" src="imgs/point_ic3.png" alt="보고 아이콘">
+                        <div class="point_des wow fadeIn" data-wow-delay="0.9s">
                             <p>실시간 보고 시스템</p>
                             <span>자동 알림톡 시스템을 통해 <br>
                                 캠페인을 등록, <br>
@@ -802,19 +807,88 @@
             </div>
         </section>
         <!-- mobile tble point 영역  -->
-        <section id="system">
+        <section id="support" class="section">
+            <h2 class="hide">서포트 영역</h2>
+            <div class="contents">
+                <div class="mo_support_txt wow fadeIn"  data-aos-delay="50">
+                    온라인 마케팅은 진행뿐만 아니라
+                    광고주님들께서  <br> 확인 하실 수 있는 <strong>보고 내용</strong>이 가장 <strong>중요</strong>합니다.
+                </div>
+                <div class="line"></div>
+                <div class="support_main_txt">
+                    <p data-aos="fade-right"  data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="900">
+                        티블은 정확한 <strong>데이터 기반 <br> 분석시스템</strong>을 통해<br>
+                        <span>고도화된 마케팅 리포트</span>를 <br> 제공합니다.
+                    </p>
+                    <div class="support_img" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" data-aos-duration="600">
+                        <img src="imgs/support_img.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
         <!--mobile 분석 시스템 영역  -->
         <section id="management">
         </section>
         <!--mobile 관리 영역 -->
-        <section id="growth">
+        <section id="growth" class="section">
+            <h2 class="hide">함께성장해요 영역</h2>
+            <div class="contents">
+                <div class="grows">
+                    <div class="grow_left">
+                        <img src="imgs/growth_img.png" alt="">
+                    </div>
+                    <div class="grow_right">
+                        <div class="grow_txt">
+                            <p class="grow_sub">티블 체험단과 함께 성장하세요!</p>
+                            <span class="grow_main">효과있는 마케팅 <strong>티블</strong>은?</span>
+                            <p class="mo_grow_sub">티블 체험단과 함께 성장하세요!</p>
+                            <span class="mo_grow_main">
+                                효과있는 <br> 마케팅 <br> <strong>티블</strong>은? <br>
+                            </span>
+                        </div>
+                        <div class="grow_lines">
+                            <div class="grow_line wow fadeInLeft">
+                                <div class="check"><img src="imgs/growth_check.png" alt=""></div>
+                                <em>한번에</em>
+                                <p>
+                                    모든 마케팅 솔루션을 <br>
+                                    One-Stop으로 제공
+                                </p>
+                            </div>
+                            <div class="grow_line wow fadeInLeft">
+                                <div class="check"><img src="imgs/growth_check.png" alt=""></div>
+                                <em>쉽게!</em>
+                                <p>
+                                    실시간 광고주 현황 <br>
+                                    확인 가능
+                                </p>
+                            </div>
+                            <div class="grow_line wow fadeInLeft">
+                                <div class="check"><img src="imgs/growth_check.png" alt=""></div>
+                                <em>전문적으로!</em>
+                                <p>
+                                    분석 시스템의 <br>
+                                    빅데이터를 통한 마케팅
+                                </p>
+                            </div>
+                            <div class="grow_line wow fadeInLeft">
+                                <div class="check"><img src="imgs/growth_check.png" alt=""></div>
+                                <em>확실하게!</em>
+                                <p>
+                                    엄격한 관리 정책을 통해 <br>
+                                    최적화된 리뷰어 매칭
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--mobile 함께성장해요 영역  -->
         <section id="campaign">
             <div class="campaign_con">
                 <h3><strong>티블</strong>은 <br>
-                    총 <strong>235,814 건</strong>의 <strong>체험단 <br> 캠페인을 진행</strong>했습니다.
+                    총 <strong class="counter">235,814 건</strong>의 <strong>체험단 <br> 캠페인을 진행</strong>했습니다.
                 </h3>
                 <div class="campaign_box">
                     <div class="more_btn">
@@ -1137,13 +1211,22 @@
     <!-- main_wrapper  -->
 
     <!-- slick slide js  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
     </script>
     <script src="js/wow/wow.min.js"></script>
 
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
     <script>
+
+        
+//campaign counter 
+
+
         var wow = new WOW({
+            offset:      -3000,  
             // boxClass: 'wow', // animated element css class (default is wow)
             // animateClass: 'animated', // animation css class (default is animated)
             // offset: 0, // distance to the element when triggering the animation (default is 0)
@@ -1184,18 +1267,6 @@
                     new WOW().init();
                 }
 
-
-                // scrollBar: true,
-                // afterRender: function () {
-                //     wow.init();
-        
-                // },
-                // afterLoad: function () {
-                //     wow.init();
-        
-                // }
-                // easing: 'easeInOutCubisc',
-
             });
 
             //methods
@@ -1206,21 +1277,11 @@
 
         });
 
-        // // wow.js 
-        // var wow = new WOW({
-        //     boxClass: 'wow', // animated element css class (default is wow)
-        //     animateClass: 'animated', // animation css class (default is animated)
-        //     offset: 0, // distance to the element when triggering the animation (default is 0)
-        //     mobile: true, // trigger animations on mobile devices (default is true)
-        //     live: true, // act on asynchronously loaded content (default is true)
-        //     callback: function (box) {
-        //         // the callback is fired every time an animation is started
-        //         // the argument that is passed in is the DOM node being animated
-        //     },
-        //     scrollContainer: null, // optional scroll container selector, otherwise use window,
-        //     resetAnimation: true, // reset animation on end (default is true)
-        // });
-        // wow.init();
+  
+    AOS.init();
+
+
+
     </script>
 
 
