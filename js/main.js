@@ -59,7 +59,7 @@ const prSwiper = new Swiper(".pr_swiper", {
     // spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {
