@@ -36,14 +36,14 @@
 
 </head>
 <script>
-    $(document).ready(function(){
-        var protocol = window.location.protocol;
-        var hostname = window.location.hostname;
-        if(protocol.indexOf("https") == -1) {
-            window.location.href = 'https://www.tble-biz.kr';
-        }
+    // $(document).ready(function(){
+    //     var protocol = window.location.protocol;
+    //     var hostname = window.location.hostname;
+    //     if(protocol.indexOf("https") == -1) {
+    //         window.location.href = 'https://www.tble-biz.kr';
+    //     }
 
-    })
+    // })
 </script>
 
 <body>
@@ -86,8 +86,8 @@
             <h2 class="hide">메인비주얼</h2>
             <div class="contents">
                 <div class="visual_desc">
-                    <div class="visual_title">
-                        <strong>효과로 보여주는 </strong>
+                    <div class="visual_title pc_m">
+                        <strong>효과로 보여주는</strong>
                         <strong>플랫폼 &quot;<span>티블</span>&quot;</strong>
                         <p>효과있는 마케팅 티블 체험단과 함께 성장하세요!</p>
                     </div>
@@ -114,7 +114,7 @@
         <!-- 메인 비주얼 영역  -->
         <section id="promotion" class="section">
             <h2 class="hide">프로모션</h2>
-            <div class="contents wow bounceIn" data-wow-duration="1.8s">
+            <div class="contents wow bounceIn" data-wow-delay="0.5s" data-wow-duration="1.8s">
                 <div class="main_title promotion_title">
                     <img src="imgs/promotion_title.svg" alt="">
                 </div>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="point_ics">
                     <div class="point_ic">
-                        <img src="imgs/point_ic1.png" class="wow flipInY" data-wow-duration=".2s" alt="무제한 아이콘">
+                        <img src="imgs/point_ic1.png" class="wow flipInY" data-wow-duration="1.5s" alt="무제한 아이콘">
                         <div class="point_des wow fadeInLeft" data-wow-duration="1.8s">
                             <p>무제한 모집 시스템</p>
                             <span>티블은 될 때까지! <br>
@@ -170,17 +170,17 @@
                         </div>
                     </div>
                     <div class="point_ic_2">
-                        <div class="point_des wow fadeInDown" data-wow-duration="1.8s">
+                        <div class="point_des wow fadeInDown" data-wow-duration="1.5s">
                             <p>진행속도 2배</p>
                             <span>자동화 시스템을 통한 <br>
                                 2배의 진행속도</span>
                             <em>*타사는 월 1회 티블은 월 2회 진행</em>
                         </div>
-                        <img src="imgs/point_ic2.png" class="wow flipInY" data-wow-delay=".2s" data-wow-duration=".5s" alt="진행속도 아이콘">
+                        <img src="imgs/point_ic2.png" class="wow flipInY" data-wow-delay=".3s" data-wow-duration="1.5s" alt="진행속도 아이콘">
                     </div>
                     <div class="point_ic_3">
-                        <img src="imgs/point_ic3.png" class="wow flipInY"data-wow-delay=".4s" data-wow-duration=".5s" alt="보고 아이콘">
-                        <div class="point_des wow fadeInRight" data-wow-duration="1.8s">
+                        <img src="imgs/point_ic3.png" class="wow flipInY"data-wow-delay=".6s" data-wow-duration="1.5s" alt="보고 아이콘">
+                        <div class="point_des wow fadeInRight" data-wow-duration="1.5s">
                             <p>실시간 보고 시스템</p>
                             <span>자동 알림톡 시스템을 통해 <br>
                                 캠페인을 등록, <br>
@@ -217,11 +217,11 @@
         <!-- 분석 시스템 영역  -->
         <section id="management" class="section">
             <h2 class="hide">관리 영역</h2>
-            <div class="contents">
+            <div class="contents wow fadeIn" data-wow-delay=".5s">
                 <div class="manage_icons">
                     <div class="manage_ico">
-                        <img class="wow bounceIn" src="imgs/mana_ic1.png" alt="">
-                        <div class="manage_des wow bounceInUp">
+                        <img class="wow bounceIn" data-wow-delay=".2s" data-wow-duration="1s" src="imgs/mana_ic1.png" alt="">
+                        <div class="manage_des wow bounceInUp" data-wow-delay=".1s" data-wow-duration="1.5s">
                             <span>
                                 데이터 기반의 <br>
                                 전문적 관리
@@ -233,10 +233,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ma_and">&#38;</div>
+                    <div class="ma_and" style="opacity: .1;">&#38;</div>
                     <div class="manage_ico">
-                        <img src="imgs/mana_ic2.png" class="wow bounceIn" alt="">
-                        <div class="manage_des wow bounceInUp">
+                        <img src="imgs/mana_ic2.png" class="wow bounceIn" data-wow-delay=".4s" data-wow-duration="1s" alt="">
+                        <div class="manage_des wow bounceInUp"  data-wow-delay=".1s" data-wow-duration="1.5s">
                             <span>
                                 효율적인 <br>
                                 리뷰어 관리
@@ -250,8 +250,8 @@
                     </div>
                     <div class="ma_and and_se">&#38;</div>
                     <div class="manage_ico">
-                        <img src="imgs/mana_ic3.png" class="wow bounceIn" alt="">
-                        <div class="manage_des wow bounceInUp">
+                        <img src="imgs/mana_ic3.png" class="wow bounceIn" data-wow-delay=".6s" data-wow-duration="1s" alt="">
+                        <div class="manage_des wow bounceInUp"  data-wow-delay=".1s" data-wow-duration="1.5s">
                             <span>
                                 체계적인 <br>
                                 관리 시스템
@@ -507,24 +507,24 @@
                 <div class="mkt_icons">
                     <div class="kt_icon">
                         <img src="imgs/mkt_ic1.png" class="wow bounceIn" alt="진행순서 아이콘">
-                        <p>상담신청</p>
+                        <p class="wow fadeIn" data-wow-duration="1.5fs">상담신청</p>
                     </div>
                     <div class="kt_icon">
                         <img src="imgs/mkt_ic2.png" class="wow bounceIn" data-wow-delay="0.1s" alt="진행순서 아이콘">
-                        <p>상담신전문마케터 <br>
-                            1:1 컨설팅청</p>
+                        <p class="wow fadeIn" data-wow-duration="1.5fs">전문 마케터 <br>
+                            1:1 컨설팅</p>
                     </div>
                     <div class="kt_icon">
                         <img src="imgs/mkt_ic3.png" class="wow bounceIn" data-wow-delay="0.2s" alt="진행순서 아이콘">
-                        <p>계약완료</p>
+                        <p class="wow fadeIn" data-wow-duration="1.5fs">계약완료</p>
                     </div>
                     <div class="kt_icon">
                         <img src="imgs/mkt_ic4.png" class="wow bounceIn" data-wow-delay="0.3s" alt="진행순서 아이콘">
-                        <p>캠페인 진행</p>
+                        <p class="wow fadeIn" data-wow-duration="1.5fs">캠페인 진행</p>
                     </div>
                     <div class="kt_icon">
                         <img src="imgs/mkt_ic5.png" class="wow bounceIn" data-wow-delay="0.4s" alt="진행순서 아이콘">
-                        <p>결과보고</p>
+                        <p class="wow fadeIn" data-wow-duration="1.5fs">결과보고</p>
                     </div>
                 </div>
             </div>
@@ -1332,7 +1332,7 @@
                 const el = entry.target
                 if (entry.isIntersecting && !el.classList.contains('is-visible')) {
                     counterUp(el, {
-                        duration: 2000,
+                        duration: 3000,
                         delay: 16,
                     })
                     el.classList.add('is-visible')
@@ -1355,7 +1355,7 @@
                 const el = entry.target
                 if (entry.isIntersecting && !el.classList.contains('is-visible')) {
                     counteUp(el, {
-                        duration: 2000,
+                        duration: 4000,
                         delay: 16,
                     })
                     el.classList.add('is-visible')

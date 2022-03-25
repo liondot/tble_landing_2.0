@@ -1691,7 +1691,7 @@ form input::placeholder {
     }
 
     .grow_line p:before {
-        left: -61px;
+        left: -60px;
         top: 0;
         border: 30px solid #fff;
         border-left: 30px solid transparent;
@@ -1825,10 +1825,15 @@ form input::placeholder {
 
 
     .kt_icon p {
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: -1px;
         margin: 0;
         padding: 0;
+        text-align: center;
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        height: 82px;
     }
 
 
