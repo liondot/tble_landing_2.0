@@ -526,6 +526,7 @@ section#promotion {
     padding: 0;
     position: relative;
     z-index: -2;
+    display: none;
 }
 
 #management .contents {
@@ -1642,6 +1643,9 @@ form input::placeholder {
     }
 
     /*****#management 관리 영역 *****/
+    #management {
+        display: block;
+    }
 
     #management .contents {
         height: auto;
