@@ -556,7 +556,7 @@ section#promotion {
     position: absolute;
     top: 5%;
     left: 0;
-    transform: translate(-15%, 5%);
+    transform: translate(-15%, 10%);
     z-index: -1;
     color: #fff;
 }
