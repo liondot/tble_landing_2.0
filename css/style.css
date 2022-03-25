@@ -701,33 +701,6 @@ nav .iqr {
     opacity: .1;
 
 }
-/* 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0; visibility: hidden;}
-    100% {opacity: 1;visibility: visible;}
-    }
-    
-    @-moz-keyframes fadeIn {
-        0% {opacity: 0; visibility: hidden;}
-        100% {opacity: 1;visibility: visible;}
-        }
-    
-    @-o-keyframes fadeIn {
-        0% {opacity: 0; visibility: hidden;}
-        100% {opacity: 1;visibility: visible;}
-        }
-    
-    @keyframes fadeIn {
-        0% {opacity: 0; visibility: hidden;}
-        100% {opacity: 1;visibility: visible;}
-        }
-    
-    .fadeIn {
-    -webkit-animation-name: fadeIn;
-    -moz-animation-name: fadeIn;
-    -o-animation-name: fadeIn;
-    animation-name: fadeIn;
-    } */
 
 
 /************** growth 함께성장해요 영역 **************/
@@ -783,7 +756,6 @@ nav .iqr {
     z-index: -2;
     width: 140%;
     overflow: hidden;
-
 }
 
 .grow_line {
@@ -795,7 +767,7 @@ nav .iqr {
     padding-left: 67px;
     align-items: center;
     position: relative;
-    
+
 }
 
 .grow_line em {
@@ -2077,8 +2049,8 @@ form input::placeholder {
     /***** #management 관리 영역 *****/
 
     #management .contents {
-        padding: 0 10px;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
@@ -2092,6 +2064,7 @@ form input::placeholder {
         width: 100%;
         align-items: center;
         margin-top: 0;
+        flex-direction: column;
     }
 
     .manage_icons {

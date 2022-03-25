@@ -518,18 +518,79 @@ section#promotion {
     width: 100%;
 }
 
-/************* 관리 영역 *************/
+
+
+/************* management 관리 영역 *************/
 #management {
-    width: 100%;
-    height: 750px;
+    background: url(../imgs/manage_bg.jpg) no-repeat center / auto;
+    padding: 0;
+    position: relative;
+    z-index: -2;
+}
+
+#management .contents {
+    padding: 0 60px;
+    padding: 0;
+}
+
+.manage_icons {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
     position: relative;
 }
 
-#management:before {
-    background: url(../imgs/section_management.jpg) no-repeat center / auto 100%;
+.manage_icons div {
+    margin-top: 30px;
 }
 
-/************** 함께성장해요 영역 **************/
+.manage_icons .ma_and {
+    font-size: 13vw;
+    opacity: .1;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-85%);
+    z-index: -1;
+    right: 60%;
+}
+
+.manage_icons .ma_and.and_se {
+    right: 280px;
+}
+
+.manage_ico img {
+    width: 50%;
+}
+
+.manage_des {
+    width: 30vw;
+    margin: 0 5px;
+}
+
+.manage_des span {
+    font-size: 3.5vw;
+    text-align: center;
+    color: var(--point-color);
+    font-family: var(--font-familly-gmarket);
+}
+
+.manage_des p {
+    font-size: 12px;
+    font-weight: var(--font-weight-light);
+    width: 110px;
+    height: 80px;
+    text-align: center;
+}
+
+.ma_and {
+    opacity: .1;
+
+}
+
 
 /************** growth 함께성장해요 영역 **************/
 #growth {
@@ -1576,22 +1637,22 @@ form input::placeholder {
         width: 100%;
     }
 
-
-
     .mo_support_txt strong {
         display: inline-block;
     }
 
-
     /*****#management 관리 영역 *****/
-    #management {
-        width: 100%;
-        height: 265px;
+
+    #management .contents {
+        height: auto;
+        padding: 20px 0;
     }
 
-    #management:before {
-        background: url(../imgs/mo/mo_management.jpg) no-repeat center / auto 100%;
+    .manage_icons {
+        display: flex;
+        flex-direction: row;
     }
+
 
     /***** #growth 함께성장해요 영역 *****/
     #growth {
