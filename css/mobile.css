@@ -2071,6 +2071,21 @@ form input::placeholder {
         font-size: 40px;
     }
 
+    .thankyou_message,
+.footer_thankyou_message {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    border-radius: 40px;
+    width: 160px;
+    height: 300px;
+    display: none;
+}
+
+
+
+
     /***** footer 영역 *****/
 
     #footer {

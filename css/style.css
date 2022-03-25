@@ -236,7 +236,7 @@ nav .iqr {
     font-family: 'GmarketSansMedium';
     line-height: 1.3;
     text-shadow: 5px 5px 5px rgb(0 0 0 / 60%);
-    animation: mainTxt 1s .5s ease-in-out forwards;
+    animation: mainTxt 1s .2s ease-in-out forwards;
     opacity: 0;
 }
 
@@ -307,7 +307,7 @@ nav .iqr {
     cursor: pointer;
     margin-top: 45px;
     font-weight: bold;
-    animation: mainScale 1.8s .5s ease-in-out forwards;
+    animation: mainScale 1.0s .5s ease-in-out forwards;
     opacity: 0;
 }
 
@@ -321,6 +321,8 @@ nav .iqr {
     margin-left: 10px;
     transition: all .3s ease-in-out;
 }
+
+
 
 .visual_btn:hover img {
     transform: translateX(10px);
@@ -543,7 +545,6 @@ nav .iqr {
 
 .point_des {
     text-align: center;
-
 }
 
 .point_des p {
@@ -790,7 +791,7 @@ nav .iqr {
     display: flex;
     background: var(--point-color);
     height: 88px;
-    width: 575px;
+    width: 600px;
     margin-bottom: 20px;
     padding-left: 67px;
     align-items: center;
