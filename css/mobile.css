@@ -1198,7 +1198,6 @@ form input::placeholder {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     box-sizing: border-box;
     height: 100%;
 }
