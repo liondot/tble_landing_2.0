@@ -562,6 +562,10 @@ section#promotion {
 }
 
 
+.manage_img {
+    height: 120px;
+}
+
 .manage_ico img {
     width: 100%;
 }
@@ -1654,7 +1658,6 @@ form input::placeholder {
     /*****#management 관리 영역 *****/
     #management {
         display: block;
-        border: 2px solid red;
     }
 
     #management .contents {
