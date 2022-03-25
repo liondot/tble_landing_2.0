@@ -36,13 +36,13 @@
 
 </head>
 <script>
-    // $(document).ready(function(){
-    //     var protocol = window.location.protocol;
-    //     var hostname = window.location.hostname;
-    //     if(protocol.indexOf("https") == -1) {
-    //         window.location.href = 'https://www.tble-biz.kr';
-    //     }
-    // })
+    $(document).ready(function(){
+        var protocol = window.location.protocol;
+        var hostname = window.location.hostname;
+        if(protocol.indexOf("https") == -1) {
+            window.location.href = 'https://www.tble-biz.kr';
+        }
+    })
 </script>
 
 <body>
@@ -267,7 +267,7 @@
                 </div>
             </div>
         </section>
-        <!-- 관리 영역 -->
+        <!--#management 관리 영역 -->
         <section id="growth" class="section">
             <h2 class="hide">함께성장해요 영역</h2>
             <div class="contents">
@@ -322,7 +322,7 @@
                 </div>
             </div>
         </section>
-        <!-- 함께성장해요 영역  -->
+        <!--#growth 함께성장해요 영역  -->
         <section id="campaign" class="section">
             <h2 class="hide">캠페인 영역</h2>
             <div class="contents">
@@ -907,7 +907,7 @@
                             </span>
                         </div>
                         <div class="grow_lines">
-                            <div class="grow_line wow fadeInLeft">
+                            <div class="grow_line wow fadeInLeft" >
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>한번에</em>
                                 <p>
@@ -915,7 +915,7 @@
                                     One-Stop으로 제공
                                 </p>
                             </div>
-                            <div class="grow_line wow fadeInLeft">
+                            <div class="grow_line wow fadeInLeft" data-wow-delay=".2s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>쉽게!</em>
                                 <p>
@@ -923,7 +923,7 @@
                                     확인 가능
                                 </p>
                             </div>
-                            <div class="grow_line wow fadeInLeft">
+                            <div class="grow_line wow fadeInLeft" data-wow-delay=".4s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>전문적으로!</em>
                                 <p>
@@ -931,7 +931,7 @@
                                     빅데이터를 통한 마케팅
                                 </p>
                             </div>
-                            <div class="grow_line wow fadeInLeft">
+                            <div class="grow_line wow fadeInLeft" data-wow-delay=".6s">
                                 <div class="check"><img src="imgs/growth_check.png" alt=""></div>
                                 <em>확실하게!</em>
                                 <p>
