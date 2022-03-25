@@ -31,12 +31,20 @@
     <link rel="stylesheet" href="js/wow/animate.css">
     <!-- aos  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
-
     <!-- counter  -->
     <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"> </script>
-</head>
 
+</head>
+<script>
+    $(document).ready(function(){
+        var protocol = window.location.protocol;
+        var hostname = window.location.hostname;
+        if(protocol.indexOf("https") == -1) {
+            window.location.href = 'https://www.tble-biz.kr';
+        }
+
+    })
+</script>
 
 <body>
     <header>
@@ -106,7 +114,7 @@
         <!-- 메인 비주얼 영역  -->
         <section id="promotion" class="section">
             <h2 class="hide">프로모션</h2>
-            <div class="contents wow bounceIn" data-wow-duration="1.5s">
+            <div class="contents wow bounceIn" data-wow-duration="1.8s">
                 <div class="main_title promotion_title">
                     <img src="imgs/promotion_title.svg" alt="">
                 </div>
@@ -1297,9 +1305,7 @@
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8',
                     'page9', 'page10', 'page11', 'page12'
                 ],
-                 scrollBar:true,
-
-
+                scrollBar:true,
                 onLeave: function () {
                     new WOW().init();
                 },

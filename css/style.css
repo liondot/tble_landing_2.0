@@ -95,6 +95,10 @@ section.active {
     padding: 0;
 }
 
+#main_wrapper {
+    display: none;
+}
+
 
 
 
@@ -742,20 +746,18 @@ nav .iqr {
     border-top: 44px solid transparent;
 }
 
-
 .grow_line p {
     background: #fff;
     height: 100%;
     position: absolute;
-    width: 220px;
-    right: -100px;
+    width: 240px;
+    right: -90px;
     display: flex;
     align-items: center;
     font-weight: var(--font-weight-regular);
     font-size: 20px;
     justify-content: center;
 }
-
 
 .grow_line p:after {
     content: '';
@@ -772,7 +774,7 @@ nav .iqr {
 
 #campaign {
     position: relative;
-    z-index: -3;
+    z-index: 50;
 }
 
 #campaign .contents {
@@ -1403,7 +1405,6 @@ form input {
 #contact .cont_form .form {
     width: 100vw !important;
     margin-top: 50px;
-    height: 60vh;
 }
 
 form input {
@@ -1446,7 +1447,7 @@ form input::placeholder {
     margin: 0 auto;
     width: 268px;
     justify-content: center;
-    margin-top: 22px;
+    margin-top: 10px;
     box-sizing: border-box;
     border: none;
     outline: none;
