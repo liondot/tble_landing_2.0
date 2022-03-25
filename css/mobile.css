@@ -417,7 +417,7 @@ section#promotion {
 }
 
 .point_ics img {
-    width: 90%;
+    width: 84%;
 }
 
 .point_des {
@@ -537,14 +537,13 @@ section#promotion {
     padding-top: 0;
     position: relative;
     z-index: -3;
-
 }
 
 #growth .contents {
     display: flex;
-    height: 100vh;
     align-items: center;
     padding: 0 50px;
+    height: 750px;
 }
 
 .mo_grow_sub,
@@ -554,7 +553,6 @@ section#promotion {
 
 .grows {
     display: flex;
-
 }
 
 .grow_right {
@@ -737,8 +735,6 @@ section#promotion {
     margin-top: 40px;
     margin-left: 0;
 }
-
-
 
 .cam_sub_tit {
     color: gray;
@@ -1030,7 +1026,7 @@ section#promotion {
     background: #fff;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -43%);
+    transform: translate(-50%, -53%);
     padding: 45px;
 }
 
@@ -1120,7 +1116,7 @@ form input::placeholder {
     height: 17px;
     position: absolute;
     right: 0;
-    transform: translate(-80%, -30%);
+    transform: translate(-60%, -30%);
     top: 50%;
     transition: all .3s ease-in-out;
 }
@@ -1599,7 +1595,7 @@ form input::placeholder {
 
     /***** #growth 함께성장해요 영역 *****/
     #growth {
-        height: 100vh;
+        height: auto;
     }
 
     #growth .contents {
@@ -1788,6 +1784,10 @@ form input::placeholder {
     }
 
     /***** #mkt_order 마케팅 진행 순서 영역 *****/
+    #mkt_order .contents {
+        height: auto;
+    }
+
     .mkt_icons {
         flex-wrap: wrap;
         flex-direction: row;
