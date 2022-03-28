@@ -352,7 +352,8 @@ nav .iqr {
 }
 
 
-************* 프로모션 영역 ************* #promotion {
+/* ************* 프로모션 영역 *************  */
+#promotion {
     background: #f3f3f3;
     margin: 0 auto;
     text-align: center;
@@ -949,6 +950,11 @@ nav .iqr {
 .campaign_sub {
     height: 100%;
     position: relative;
+}
+
+.campaign_sub em {
+    margin-left: 0;
+    color: var(--point-color);
 }
 
 .campaign_sub p {
