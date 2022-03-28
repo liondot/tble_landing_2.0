@@ -475,6 +475,8 @@ section#promotion {
     display: block;
     margin-left: 0;
     color: #fff;
+    text-align: center;
+    width: 100%;
 }
 
 /************* support 영역 *************/
@@ -1439,7 +1441,7 @@ form input::placeholder {
 
     /***** #promotion프로모션 영역 *****/
     section#promotion {
-        height: 580px;
+        height: 520px;
         padding-bottom: 0;
     }
 
@@ -1602,7 +1604,7 @@ form input::placeholder {
     }
 
     .point_ics img {
-        width: 100%;
+        width: 102%;
     }
 
     .point_ics {
@@ -1633,7 +1635,7 @@ form input::placeholder {
         text-align: center;
         font-size: 3.5vw;
         padding: 0;
-
+        width: 100%;
     }
 
     .point_ic_2 .point_des p,
