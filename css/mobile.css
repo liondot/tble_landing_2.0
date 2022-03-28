@@ -1837,6 +1837,10 @@ form input::placeholder {
         z-index: 10;
     }
 
+    #campaign .contents {
+        padding: 20px 0;
+    }
+
     #campaign:after {
         display: none;
     }
@@ -1855,6 +1859,7 @@ form input::placeholder {
         line-height: 1.5;
         font-family: 'GmarketSansMedium';
         letter-spacing: -2px;
+        margin: 0;
     }
 
     .campaign_con h3 strong {
@@ -1890,7 +1895,7 @@ form input::placeholder {
     }
 
     .campaign_cards .slick-dots {
-        bottom: -18px !important;
+        bottom: -25px !important;
     }
 
     .campaign_cards .slick-slide {
