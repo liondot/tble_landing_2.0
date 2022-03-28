@@ -499,19 +499,6 @@ nav .iqr {
 
 }
 
-.swiper-pagination-bullet-active:after {
-    content: '';
-    position: absolute;
-    top: 102%;
-    right: 25px;
-    border: 15px solid var(--point-color);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid transparent;
-    transform: rotate(90deg);
-    transition: all 1s ease-in-out !important;
-}
-
 .pr-pagination .swiper-pagination-bullet-active {
     color: #fff !important;
 }
