@@ -247,9 +247,11 @@ nav .iqr {
         opacity: 0;
         transform: translateY(50%);
     }
+
     50% {
         transform: translateY(-15%)
     }
+
     100% {
         opacity: 1;
         transform: translateY(0%);
@@ -261,9 +263,11 @@ nav .iqr {
         opacity: 0;
         transform: scale(0);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
@@ -288,7 +292,26 @@ nav .iqr {
     position: absolute;
     object-fit: cover;
     right: 0;
+    transform: translateY(200px);
     bottom: -10px;
+    animation: upAnd 1s .3s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes upAnd {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
 }
 
 .visual_image img {
@@ -329,9 +352,7 @@ nav .iqr {
 }
 
 
-/************** 프로모션 영역 **************/
-
-#promotion {
+************* 프로모션 영역 ************* #promotion {
     background: #f3f3f3;
     margin: 0 auto;
     text-align: center;
@@ -539,7 +560,7 @@ nav .iqr {
 }
 
 .point_ics img {
-    width: 90%;
+    width: 84%;
     margin-top: 20px !important;
 }
 
@@ -835,7 +856,8 @@ nav .iqr {
     z-index: -2;
 }
 
-#campaign .slick-next, .slick-prev {
+#campaign .slick-next,
+.slick-prev {
     display: none !important;
 }
 
@@ -876,15 +898,20 @@ nav .iqr {
     animation: spin 1s 1s ease-in-out infinite;
     -webkit-animation: spin 1.5s 1s ease-in-out infinite;
 }
- 
-  
-  @keyframes spin {
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  @-webkit-keyframes spin {
-    00% { -webkit-transform: rotate(360deg); }
-  }
-  
+
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    00% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 
 
 
@@ -1651,8 +1678,9 @@ form input::placeholder {
     }
 
     #main_wrapper {
-        display: block
+        display: block;
     }
+
     /***** header 영영 *****/
     header {
         display: flex;
@@ -1662,7 +1690,7 @@ form input::placeholder {
     }
 
     #nav {
-        padding: 10px  20px;
+        padding: 10px 20px;
         height: 80px;
         position: fixed;
         z-index: 100;
@@ -1699,7 +1727,7 @@ form input::placeholder {
 
     .iqr .iqr_img.visible {
         display: block !important;
-    } 
+    }
 
     nav .iqr img {
         width: 100%;
@@ -1753,7 +1781,7 @@ form input::placeholder {
     }
 
 
-   
+
 
     .visual_contents {
         align-items: flex-start;
@@ -1816,17 +1844,12 @@ form input::placeholder {
         margin-top: 100px;
     }
 
-    /***** 프로모션 영역 *****/
+
+    /***** #promotion프로모션 영역 *****/
     section#promotion {
+        height: 580px;
         padding-bottom: 0;
-        
     }
-
-    #promotion .contents {
-        /* align-items: flex-start; */
-        justify-content: flex-start;
-    }
-
 
     #promotion h3 {
         font-size: 30px;
@@ -1839,79 +1862,66 @@ form input::placeholder {
     }
 
     .promotion_title img {
-        width: 100%;
-        margin-top: 10px;
+        width: 85%;
     }
 
-    .swiper-pagination-bullet-active:after {
-        top: 97%;
-    }
+
 
     #promotion .swiper-pagination-clickable .swiper-pagination-bullet {
-        padding: 0 35px !important;
+        padding: 8px 20px !important;
         margin-right: 10px !important;
     }
 
     .pr_swiper .swiper-slide {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
+        margin-top: 60px;
     }
 
 
     .pro_cards {
-        height: 460px !important;
+        height: 530px !important;
         justify-self: unset;
-        align-items: center !important;
+        align-items: unset !important;
         flex-wrap: nowrap;
     }
 
     .pro_card {
-        /* height: 187px !important; */
+        height: 187px !important;
         flex-direction: column !important;
         overflow: hidden;
         position: relative;
-        width: 35%;
     }
 
     .pro_card img {
         max-width: 100%;
-        width: 248px;
+        width: 185px;
     }
 
-    .pr-pagination .swiper-pagination-bullet-active {
-        color: #fff !important;
-    }
-
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        color: #fff !important;
-    }
 
     .pro_card:first-child,
     .pro_card:nth-child(3) {
-        margin-top: 0;
+        margin-top: 60px;
     }
 
     .pro_cards:first-child .pro_card:first-child {
-        margin-left: 0;
+        margin-left: 120px;
     }
 
     .pro_cards:first-child .card_second {
-        margin-right: 0;
+        margin-right: 120px;
     }
 
     .pro_cards:nth-child(2) .card_one {
-        margin-left: 0;
+        margin-left: 120px;
     }
 
     .pro_cards:nth-child(2) .card_two {
-        margin-right: 0;
+        margin-right: 120px;
     }
 
 
     .or_txt {
         font-size: 40px;
-        top: 51%;
+        top: 30%;
         z-index: 20;
     }
 
@@ -1954,7 +1964,7 @@ form input::placeholder {
     }
 
     .pr-pagination.swiper-pagination {
-        top: 14px !important;
+        top: 36px !important;
     }
 
     .new-pagination.swiper-pagination-bullet {
@@ -1968,18 +1978,42 @@ form input::placeholder {
         height: unset !important;
     }
 
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        color: #fff !important;
+    }
 
 
 
-    /***** tble point 영역 *****/
+
+
+
+
+    /***** tble #point 영역 *****/
     #point {}
+
+    #point .contents {
+        height: auto;
+        padding: 50px 0;
+    }
 
     #point .main_title {
         width: 100%;
+        margin-top: 0;
+    }
+
+    .point_ics>div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .point_ics {
+        flex-direction: row !important;
     }
 
     .point_ics img {
-        width: 33%;
+        width: 84%;
     }
 
     .point_ics {
@@ -1997,27 +2031,31 @@ form input::placeholder {
     }
 
     .point_des {
-        margin-left: 10px;
+        margin-left: 0;
+
     }
 
     .point_des p {
-        font-size: 6vw;
-        text-align: left;
+        font-size: 5.5vw;
+        text-align: center;
     }
 
     .point_des span {
-        text-align: left;
-        font-size: 4.5vw;
+        text-align: center;
+        font-size: 3.5vw;
         padding: 0;
+
     }
 
     .point_ic_2 .point_des p,
     .point_ic_2 .point_des span,
     .point_ic_2 .point_des em {
-
-        margin-right: 10px;
-        text-align: right !important;
+        text-align: center !important;
+        margin-bottom: 10px;
     }
+
+
+
 
     /***** support 영역 *****/
     .support_txt {
@@ -2244,7 +2282,7 @@ form input::placeholder {
     .campaign_sub img {
         width: 10vw;
     }
- 
+
     .campaign_sub p {
         font-size: 6.5vw;
     }
@@ -2258,7 +2296,7 @@ form input::placeholder {
     .campaign_cards .slick-dots {
         bottom: 150px;
     }
- 
+
     /***** #mkt_order 마케팅 진행 순서 영역 *****/
 
     .main_title.mkt_title {
@@ -2308,8 +2346,9 @@ form input::placeholder {
         width: 40%;
         margin-top: 100px;
     }
-    
-    #review .slick-next, .slick-prev {
+
+    #review .slick-next,
+    .slick-prev {
         display: none !important;
     }
 
@@ -2317,12 +2356,13 @@ form input::placeholder {
         font-size: 4.5vw;
     }
 
-    #campaign .slick-next, .slick-prev {
+    #campaign .slick-next,
+    .slick-prev {
         display: none !important;
     }
 
     .review_box {
-       height: 620px; 
+        height: 620px;
     }
 
     .rev_sns {
@@ -2397,7 +2437,7 @@ form input::placeholder {
         background-size: 90%;
     }
 
-    
+
 
 
     form input[type=checkbox] {

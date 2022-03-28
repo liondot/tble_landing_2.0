@@ -36,13 +36,13 @@
 
 </head>
 <script>
-    $(document).ready(function(){
-        var protocol = window.location.protocol;
-        var hostname = window.location.hostname;
-        if(protocol.indexOf("https") == -1) {
-            window.location.href = 'https://www.tble-biz.kr';
-        }
-    })
+    // $(document).ready(function(){
+    //     var protocol = window.location.protocol;
+    //     var hostname = window.location.hostname;
+    //     if(protocol.indexOf("https") == -1) {
+    //         window.location.href = 'https://www.tble-biz.kr';
+    //     }
+    // })
 </script>
 
 <body>
@@ -78,7 +78,6 @@
         <a href="#page11" class="ft_icon"><img src="imgs/ft_icon.png" alt=""></a>
         <a href="https://pf.kakao.com/_EJbIj/chat"><img src="imgs/ft_icon2.png" alt=""></a>
     </div>
-    </div>
     <!-- floating_menu  -->
     <div id="fullpage">
         <section id="main_visual" class="section active">
@@ -109,6 +108,7 @@
                     </div>
                 </div>
             </div>
+            <div class="main_vi_bg"></div>
         </section>
         <!-- 메인 비주얼 영역  -->
         <section id="promotion" class="section">
@@ -232,7 +232,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ma_and" style="opacity: .1;">&#38;</div>
+                    <div class="ma_and">&#38;</div>
                     <div class="manage_ico">
                         <img src="imgs/mana_ic2.png" class="wow bounceIn" data-wow-delay=".4s" data-wow-duration="1s" alt="">
                         <div class="manage_des wow bounceInUp"  data-wow-delay=".1s" data-wow-duration="1.5s">
@@ -247,8 +247,6 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ma_and and_se">&#38;</div>
-                    <div class="ma_and and_se" style="border: 5px solid green;">&#38;</div>
                     <div class="ma_and and_se">&#38;</div>
                     <div class="manage_ico">
                         <img src="imgs/mana_ic3.png" class="wow bounceIn" data-wow-delay=".6s" data-wow-duration="1s" alt="">
@@ -711,7 +709,6 @@
             </div>
         </section>
         <!-- footer 영역 -->
-
     </div>
     <!-- fullpage scroll  -->
 
@@ -1259,39 +1256,43 @@
             </div>
         </section>
         <!--mobile 파트너사 영역  -->
-        <section id="contact">
+        <section id="contact" class="section">
+            <h2 class="hide">컨텍트 영역</h2>
             <div class="contents">
                 <div class="main_title contact_title">
                     <img src="imgs/contact_title.svg" alt="">
                 </div>
-                <div class="form" id="contact_form">
-                    <div class="container">
-                        <form class="gform pure-form pure-form-stacked" method="POST" data-email="trendies.go@gmail.com"
-                            action="https://script.google.com/macros/s/AKfycbyMsXbmYfxqwmI0dVmCKckvZa3zXMPwoeelU4lY0UAiT6FIMXV7NaycN5E1S9Q03pqDMw/exec">
-                            <div class="form-elements">
-                                <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요." required>
-                                <input type="text" name="area" id="area" placeholder="지역을 입력해주세요." required>
-                                <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요." required>
-                                <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)"
-                                    required>
-                                <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. </em>
+                <div class="cont_form">
+                    <div class="form">
+                        <div class="container">
+                            <form class="gform pure-form pure-form-stacked" method="POST"
+                                data-email="trendies.go@gmail.com"
+                                action="https://script.google.com/macros/s/AKfycbyMsXbmYfxqwmI0dVmCKckvZa3zXMPwoeelU4lY0UAiT6FIMXV7NaycN5E1S9Q03pqDMw/exec">
+                                <div class="form-elements">
+                                    <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요." required>
+                                    <input type="text" name="area" id="area" placeholder="지역을 입력해주세요." required>
+                                    <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요." required>
+                                    <input type="number" name="number" id="numner" placeholder="연락처를 입력해주세요.(숫자만 입력)"
+                                        required>
+                                    <div class="last_input"><input type="checkbox"><em>개인정보 수집 및 이용에 동의합니다. </em>
+                                    </div>
+                                    <button class="contact_btn">
+                                        <span>상담문의 </span>
+                                        <img src="imgs/arrow_right.png" alt="">
+                                    </button>
                                 </div>
-                                <button class="contact_btn">
-                                    <span>상담문의 </span>
-                                    <div class="contact_img"><img src="imgs/arrow_right.png" alt="">
-                                </button>
-                            </div>
+                                <!-- thankyou message  -->
+                                <div class="thankyou_message">
+                                    <span>감사합니다!</span>
+                                    <p>곧 티블 담당자가 연락드리겠습니다.</p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <!-- thankyou message  -->
-                    <div class="thankyou_message mo_thMess">
-                        <span>감사합니다!</span>
-                        <p>곧 티블 담당자가 연락드리겠습니다.</p>
-                    </div>
-                    </form>
                 </div>
             </div>
         </section>
-        <!--mobile 광고 문의 신청하기 영역  -->
+        <!--mobile #contact 영역  신청하기 영역  -->
         <section id="footer">
         </section>
         <!--mobile footer 영역 -->
@@ -1315,21 +1316,9 @@
 
     <script>
 
-
         // wow.js 
         var wow = new WOW({
-            // offset: 1000,
-            // boxClass: 'wow', // animated element css class (default is wow)
-            // animateClass: 'animated', // animation css class (default is animated)
-            // offset: 0, // distance to the element when triggering the animation (default is 0)
-            // mobile: true, // trigger animations on mobile devices (default is true)
-            // live: true, // act on asynchronously loaded content (default is true)
-            // callback: function (box) {
-            // },
-            // scrollContainer: null, // optional scroll container selector, otherwise use window,
-            // resetAnimation: true, // reset animation on end (default is true)
         });
-        // wow.init();
 
         // <!-- fullpage  -->
         $(document).ready(function () {
@@ -1365,8 +1354,6 @@
 
             //methods
             $.fn.fullpage.setAllowScrolling(true);
-
-
 
         });
 

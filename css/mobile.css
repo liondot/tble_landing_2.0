@@ -226,6 +226,34 @@ nav .iqr {
     margin-top: 45px;
 }
 
+
+.visual_image {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    transform: translateY(200px);
+    bottom: -10px;
+    animation: upAnd 1s .3s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes upAnd {
+    0% {
+        transform: translateY(280px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
+
+
 .visual_btn img {
     margin-left: 35px;
     transition: all .3s ease-in-out;
@@ -556,7 +584,7 @@ section#promotion {
     position: absolute;
     top: 5%;
     left: 0;
-    transform: translate(-15%, 10%);
+    transform: translate(-15%, 0%);
     z-index: -1;
     color: #fff;
 }
@@ -1289,6 +1317,7 @@ form input::placeholder {
     #main_wrapper {
         display: block;
     }
+
 
     /***** header 영영 *****/
     header {
@@ -2076,6 +2105,11 @@ form input::placeholder {
     #contact .form {
         width: 90%;
         border-radius: 15px;
+
+    }
+
+    #contact .cont_form .form {
+        width: 90vw !important;
     }
 
     form input {
@@ -2155,18 +2189,24 @@ form input::placeholder {
         font-size: 40px;
     }
 
-    .thankyou_message,
-.footer_thankyou_message {
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    padding: 40px;
-    border-radius: 40px;
-    width: 160px;
-    height: 300px;
-    display: none;
-}
 
+    .thankyou_message,
+    .footer_thankyou_message {
+        background-color: #fff;
+        color: #333;
+        text-align: center;
+        padding: 40px;
+        border-radius: 40px;
+        width: 160px;
+        height: 300px;
+        display: none;
+        width: 100%;
+    }
+
+    .thankyou_message,
+    .footer_thankyou_message {
+        padding: 40px 20px;
+    }
 
 
 
