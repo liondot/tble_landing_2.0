@@ -31,20 +31,19 @@
     <link rel="stylesheet" href="js/wow/animate.css">
     <!-- aos  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- counter  -->
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"> </script>
+ </head>
 
-</head>
-<script>
-    // https 프로토콜 변경 
-    $(document).ready(function(){
-        var protocol = window.location.protocol;
-        var hostname = window.location.hostname;
-        if(protocol.indexOf("https") == -1) {
-            window.location.href = 'https://www.tble-biz.kr';
-        }
-    })
- </script>
+    <script>
+        //    -- // https 프로토콜 변경 
+        // $(document).ready(function () {
+        //     var protocol = window.location.protocol;
+        //     var hostname = window.location.hostname;
+        //     if (protocol.indexOf("https") == -1) {
+        //         window.location.href = 'https://www.tble-biz.kr';
+        //     }
+        // })
+    </script>
+
 
 <body>
     <header>
@@ -731,7 +730,7 @@
                         <p>효과있는 마케팅 티블 체험단과 함께 성장하세요!</p>
                     </div>
                     <div class="visual_btn gotoCont">
-                        <a href="#contact">
+                        <a href="#mo_contact">
                             상담문의
                             <img src="imgs/arrow_right.png" alt="">
                         </a>
@@ -1262,7 +1261,7 @@
         <!--mobile 파트너사 영역  -->
         <section id="contact" class="section">
             <h2 class="hide">컨텍트 영역</h2>
-            <div class="contents">
+            <div class="contents" id="mo_contact">
                 <div class="main_title contact_title">
                     <img src="imgs/contact_title.svg" alt="">
                 </div>
