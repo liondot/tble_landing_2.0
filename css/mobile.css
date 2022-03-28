@@ -1890,7 +1890,7 @@ form input::placeholder {
     }
 
     .campaign_cards .slick-dots {
-        bottom: 35px;
+        bottom: -10px !important;
     }
 
     .campaign_cards .slick-slide {
