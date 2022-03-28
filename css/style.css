@@ -818,7 +818,7 @@ nav .iqr {
     align-items: center;
     font-weight: var(--font-weight-regular);
     font-size: 20px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .grow_line p:after {

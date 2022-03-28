@@ -37,14 +37,14 @@
 </head>
 <script>
     // https 프로토콜 변경 
-    $(document).ready(function(){
-        var protocol = window.location.protocol;
-        var hostname = window.location.hostname;
-        if(protocol.indexOf("https") == -1) {
-            window.location.href = 'https://www.tble-biz.kr';
-        }
-    })
-</script>
+//     $(document).ready(function(){
+//         var protocol = window.location.protocol;
+//         var hostname = window.location.hostname;
+//         if(protocol.indexOf("https") == -1) {
+//             window.location.href = 'https://www.tble-biz.kr';
+//         }
+//     })
+// </script>
 
 <body>
     <header>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="line"></div>
                 <div class="support_main_txt">
-                    <p>
+                    <p data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-duration="900">
                         티블은 정확한 <strong>데이터 기반 분석시스템</strong>을 통해<br>
                         <span>고도화된 마케팅 리포트</span>를 제공합니다.
                     </p>
