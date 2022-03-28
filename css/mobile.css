@@ -1891,6 +1891,7 @@ form input::placeholder {
 
     .campaign_cards .slick-dots {
         bottom: -10px !important;
+        border: 2px solid red;
     }
 
     .campaign_cards .slick-slide {
